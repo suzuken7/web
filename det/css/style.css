@@ -555,19 +555,20 @@ pre {
 }
 
 /* アイキャッチ */
+.top {
+  padding-top: 30px;
+}
+
 #eyecatch {
-  margin: 0 auto;
-  height: 600px;
+  margin-bottom: 25px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
   color: #ffffff;
-}
-#eyecatch h1 {
-  margin: 0;
-  padding: 0;
-  line-height: 480px;
 }
 
 /* ナビゲーションメニュー */
