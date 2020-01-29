@@ -1,0 +1,9 @@
+#管理しないフォルダ
+Bootstrap4SiteFiles/
+myportfolio/
+NunoTheme/
+UdemyCafe/
+
+
+#detのコート以外はgit管理しない
+det_oshirase/img
