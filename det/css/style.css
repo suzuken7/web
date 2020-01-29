@@ -751,6 +751,9 @@ pre {
   padding: 0;
   text-align: center;
 }
+#share a {
+  color: #777777;
+}
 #share li {
   list-style-image: none;
   list-style-type: none;
