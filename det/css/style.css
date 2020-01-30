@@ -1123,6 +1123,12 @@ input[type="radio"]:checked + i:before {
   background: #aaaaaa;
   color: #ffffff;
 }
+
+#footer block {
+  display: inline-block;
+  width: 100%;
+}
+
 #footer > div {
   margin: 0;
   padding: 1rem;
