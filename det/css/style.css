@@ -854,6 +854,7 @@ pre {
   font-size: 0;
   clear: both;
 }
+
 #sample-list li {
   display: inline-block;
   *display: inline;
@@ -862,9 +863,10 @@ pre {
   overflow: hidden;
   width: 32.7%;
   margin: 0.3%;
-  float: left;
   border-radius: 0.5rem;
 }
+
+
 #sample-list li .sample-caption.on {
   bottom: 0;
 }
