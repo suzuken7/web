@@ -929,6 +929,11 @@ pre {
   width: 200px;
 }
 
+.pixiv {
+  font-size: 2rem;
+  
+}
+
 .caption-toggle {
   float: right;
   font-size: 2rem;
