@@ -1,0 +1,8 @@
+.header-menu {
+    font-size: 1.7rem;
+}
+
+/* bootstrapの予約class名と同名のものを指定して大丈夫か？ */
+.nav-item {
+    padding: 0px 15px;
+}
