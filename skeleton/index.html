@@ -28,10 +28,11 @@
 <body>
     <!-- Header Start -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <!-- Bootstrapを使用するときの一番外枠がcontainer -->
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="http://placehold.jp/170x50.png"></a>
+                <a class="navbar-brand" href="#"><img src="http://placehold.jp/150x40.png"></a>
                 <!-- スマホサイズのときにハンバーガーメニューを表示する -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
@@ -39,37 +40,87 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link header-menu" href="#">Top</a>
+                            <a class="nav-link header_menu" href="#top">Top</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-menu" href="#">About</a>
+                            <a class="nav-link header_menu" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-menu" href="#">Services</a>
+                            <a class="nav-link header_menu" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-menu" href="#">Skills</a>
+                            <a class="nav-link header_menu" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-menu" href="#">Works</a>
+                            <a class="nav-link header_menu" href="#works">Works</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-menu" href="#">Contact</a>
+                            <a class="nav-link header_menu" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        </div>
     </header>
     <!-- Header End -->
 
-
     <!-- Top Start -->
-    <p>@@@@@@@@@@@@</p>
+    <div id="top" class="container-fluid">
+        <div class="row top text-center">
+            <img src="http://placehold.jp/1200x615.png">
+        </div>
+    </div>
     <!-- Top End -->
+    
+    <!-- About Start -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+          <div class="col-12 about contents">
+            <p>About</p>
+          </div>  
+        </div>
+    </div>
+    <!-- About End -->
 
+    <!-- Services Start -->
+    <div id="services" class="container-fluid">
+        <div class="row">
+          <div class="col-12 services contents">
+            <p>Services</p>
+          </div>  
+        </div>
+    </div>
+    <!-- Services End -->
 
-    <!-- Content Start -->
+    <!-- Skills Start -->
+    <div id="skills" class="container-fluid">
+        <div class="row">
+          <div class="col-12 skills contents">
+            <p>Skills</p>
+          </div>  
+        </div>
+    </div>
+    <!-- Skills End -->
+
+    <!-- Works Start -->
+    <div id="works" class="container-fluid">
+        <div class="row">
+          <div class="col-12 works contents">
+            <p>Works</p>
+          </div>  
+        </div>
+    </div>
+    <!-- Works End -->
+
+    <!-- Contact Start -->
+    <div id="contact" class="container-fluid">
+        <div class="row">
+          <div class="col-12 contact contents">
+            <p>Contact</p>
+          </div>  
+        </div>
+    </div>
     <!-- Content End -->
 
 

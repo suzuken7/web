@@ -1,0 +1,38 @@
+/* Header */
+.header_menu {
+    font-size: 1.7rem;
+}
+
+/* bootstrapの予約class名と同名のものを指定して大丈夫か？ */
+.nav-item {
+    padding: 0px 15px;
+}
+
+/* Common */
+.contents {
+    color:black;
+    height:500px;
+    font-size:2rem;
+    text-align:center;
+    line-height:500px;
+}
+
+.about, .skills, .contact {
+    background: white;
+}
+
+.services, .works {
+    background: #cccccc;
+}
+
+/* Top */
+.top img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.border {
+    margin: 20px 0;
+    border-top:solid 1px white;
+}
