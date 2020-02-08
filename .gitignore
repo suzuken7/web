@@ -5,5 +5,11 @@ NunoTheme/
 UdemyCafe/
 
 
-#detのコート以外はgit管理しない
+#detのコード以外はgit管理しない
 det/img
+
+#skeletonのコード以外はgit管理しない
+skeleton/img
+
+#flowerのコード以外はgit管理しない
+flower/img

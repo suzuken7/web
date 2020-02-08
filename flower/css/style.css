@@ -1,0 +1,154 @@
+/* ------------------------ */
+/*          Common          */
+/* ------------------------ */
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 320px;
+    background: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+}
+
+.section {
+    display: block;
+}
+
+.plan, .flower, .download2 {
+    background: white;
+}
+.download, .service2 {
+    background: #cccccc;
+}
+
+
+/* ------------------------ */
+/*          Top             */
+/* ------------------------ */
+section.top {
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 660px;
+    text-align: center;
+    position: relative;
+    padding-top: 48px;
+}
+
+section.top .logo {
+    margin: 0 auto 16px;
+    width: 131px;
+    height: 116px;
+    background-image: url("../img/24.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5vh;
+}
+
+.tag {
+    font-size: 1.8rem;
+    color: white;
+    margin: 16px 6vmin 24px;
+}
+
+.apple_btn {
+    width: 202px;
+    height: 60px;
+    margin: 0 auto;
+    background-image: url("../img/17.png");
+    background-size: cover;
+}
+
+.top_content {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 260px;
+    position: absolute; /* 絶対配置指定 */
+    bottom: 24px;       /* 下から24px */
+    left: 0;
+    right: 0;
+}
+
+.footnote {
+    margin: 24px auto;
+}
+
+.footnote p {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+
+/* ------------------------ */
+/*          Service         */
+/* ------------------------ */
+.item {
+    color: white;
+    flex-grow: 1;
+    flex-basis: auto;
+    height: 80vh;
+    min-height: 540px;
+    
+    padding: 8vmin 6vmin;
+}
+
+.item h2 {
+    font-size: 34px;
+}
+
+.item p {
+    font-size: 24px;
+}
+
+.item1 {
+    background-image: url("../img/20.jpg");
+}
+
+.item2 {
+    background-image: url("../img/3.jpg");
+}
+
+.item3 {
+    background-image: url("../img/10.jpg");
+}
+
+
+/* ------------------------ */
+/*          Plan            */
+/* ------------------------ */
+
+
+/* ------------------------ */
+/*          Download        */
+/* ------------------------ */
+
+/* ------------------------ */
+/*          Flower          */
+/* ------------------------ */
+
+/* ------------------------ */
+/*          Service2        */
+/* ------------------------ */
+
+/* ------------------------ */
+/*          Download2       */
+/* ------------------------ */
+
+/* ------------------------ */
+/*          Footer          */
+/* ------------------------ */
+.border {
+    margin: 20px 0;
+    border-top:solid 1px white;
+}
