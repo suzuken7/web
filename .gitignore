@@ -5,11 +5,14 @@ NunoTheme/
 UdemyCafe/
 
 
-#detのコード以外はgit管理しない
+#detのimgはgit管理しない
 det/img
 
-#skeletonのコード以外はgit管理しない
+#skeletonのimgはgit管理しない
 skeleton/img
 
-#flowerのコード以外はgit管理しない
+#flowerのimgはgit管理しない
 flower/img
+
+#30days2nd/day1のimgはgit管理しない
+30days2nd/day1/img
