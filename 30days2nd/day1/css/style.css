@@ -24,7 +24,6 @@
 }
 
 #header .inner {
-    width: 1366px;
     height: 100px;
     opacity: 1;
     margin: 0 auto;
@@ -43,7 +42,7 @@
 #header .menu {
     position: absolute;
     top: 40px;
-    left: 882px;
+    right: 140px;
     width: 370px;
     height: 26px;
     opacity: 1;
@@ -76,9 +75,6 @@ nav a{
     color: #FFFFFF;
 }
 nav a.current{
-    /* text-decoration: underline;
-    text-decoration-color: red; */
-    /* border-bottom: solid 2px red; */
     text-decoration: none;
     border-bottom: 1px solid red;
     padding-bottom: 4.5px;
@@ -111,11 +107,9 @@ nav a.current{
 #main .inner h1 {
     position: absolute;
     top: 249px;
-    left: 309px;
-    width: 748px;
+    width: 100%;
     height: 87px;
-    text-align: left;
-    font: Bold 68px/108px Yu Gothic;
+    text-align: center;
     letter-spacing: 0;
     color: #333333;
     opacity: 1;
@@ -123,12 +117,9 @@ nav a.current{
 
 #main .inner p {
     position: absolute;
-    top: 348px;
-    left: 512px;
-    width: 342px;
+    width: 100%;
     height: 49px;
-    text-align: left;
-    font: Bold 38px/61px Yu Gothic;
+    text-align: center;
     letter-spacing: 0;
     color: #333333;
     opacity: 1;
@@ -137,8 +128,8 @@ nav a.current{
 #main .btn {
     position: absolute;
     top: 479px;
-    left: 488px;
-    width: 390px;
+    max-width: 390px;
+
     height: 83px;
     background: #3F51B5 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -150,12 +141,9 @@ nav a.current{
 
 #main .contact p {
     position: relative;
-    top: 493px;
-    left: 569px;
-    width: 228px;
+    width: 100%;
     height: 49px;
     text-align: center;
-    font: Bold 38px/61px Yu Gothic;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
@@ -166,18 +154,107 @@ nav a.current{
 /*------------------------*/
 /*          query         */
 /*------------------------*/
+/* SE */
 @media screen and (min-width:320px){
+    #header .logo_img {
+        left: 30px;
+    }
     #header .inner {
         width: 320px;
     }
+    .menu {
+        visibility: hidden;
+    }
+
+    #main .inner {
+        width: 440px;
+        line-height: 0px;
+    }
+    #main .inner h1 {
+        font: Bold 45px/60px Yu Gothic;
+    }
+    #main .inner p {
+        font: Bold 38px/60px Yu Gothic;
+        top: 400px;
+    }
+    #main .contact p {
+        font: normal 34px/60px Yu Gothic;
+        top: 550px;
+    }
+    #main .btn {
+        top: 535px;
+    }
+
+    .debug {
+        background-color: chartreuse;
+    }
 }
+
+/* iPad */
 @media screen and (min-width:768px){
     #header .inner {
         width: 768px;
     }
+    #main .inner {
+        width: 768px;
+    }
+
+    .menu {
+        visibility: visible;
+    }
+
+    #main .inner h1 {
+        font: Bold 68px/108px Yu Gothic;
+    }
+    #main .inner p {
+        font: Bold 38px/60px Yu Gothic;
+        top: 380px;
+    }
+    #main .contact p {
+        font: Bold 38px/61px Yu Gothic;
+        top: 550px;
+    }
+
+    .debug {
+        background-color: tomato;
+    }
 }
+
+/* PC */
 @media screen and (min-width:1366px){
     #header .inner {
         width: 1366px;
     }
+    #main .inner {
+        width: 1366px;
+    }
+    .menu {
+        visibility: visible;
+    }
+
+    #main .inner h1 {
+        font: Bold 68px/108px Yu Gothic;
+    }
+    #main .inner p {
+        font: Bold 38px/60px Yu Gothic;
+        top: 380px;
+    }
+    #main .contact p {
+        font: Bold 38px/61px Yu Gothic;
+        top: 550px;
+    }
+
+    .debug {
+        background-color: slategrey;
+    }
+}
+
+
+
+
+/* debug */
+.debug {
+    width: 100%;
+    height: 30px;
+    text-align: center;
 }
