@@ -1,0 +1,277 @@
+/*-------------------------*/
+/*          common         */
+/*-------------------------*/
+/* 不要な余白を消す */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------*/
+/*          header         */
+/*-------------------------*/
+#header {
+    position: absolute;
+    top: 0;
+
+    background: #3F51B5 0% 0% no-repeat padding-box;
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0px 3px 3px #00000029;
+}
+
+#header .inner {
+    height: 100px;
+    top: 40px;
+    margin: 0 auto;
+}
+
+#header .logo_img {
+    position: absolute;
+    top: 31px;
+    width: 200px;
+    height: 39px;
+    background: transparent url(../img/logo.png) 0% 0% no-repeat padding-box;
+}
+
+#header ul{
+    position: absolute;
+    top: 39px;
+    right: 141px;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    font: normal 16px/26px YuGothic;
+    
+    color: #FFFFFF;
+    padding-right: 25px;
+}
+nav li:nth-child(5){
+    padding-right: 0px;
+}
+nav a.current{
+    border-bottom: 2px solid red;
+    padding-bottom: 6px;
+}
+
+
+/*------------------------*/
+/*          main          */
+/*------------------------*/
+#main .main_img {
+    width: 100vw;
+    height: 700px;
+    background: transparent url(../img/mainvisual.png) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    background-position: center;
+}
+
+#main .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 700px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333333;
+}
+
+#main .inner h1 {
+    position: absolute;
+    top: 238px;
+    width: 100%;
+    height: 87px;
+    font: Bold 68px/108px YuGothic;
+}
+
+#main .inner p {
+    position: absolute;
+    top: 342px;
+    width: 100%;
+    height: 49px;
+    font: Bold 38px/60px YuGothic;
+}
+
+#main .btn {
+    position: absolute;
+    top: 479px;
+    max-width: 390px;
+    height: 83px;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+}
+
+#main .contact p {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    color: #FFFFFF;
+    z-index: 1;
+    font: Bold 38px/61px YuGothic;
+    top: 490px;
+}
+
+/*------------------------*/
+/*          card          */
+/*------------------------*/
+#card {
+    background-color: #EFEFEF;
+
+    /* autoで動的にheightを変更した後にpaddingで幅を確保 */
+    height: auto;
+    padding-bottom: 137px;
+}
+#card .inner {
+    text-align: center;
+    margin: 0 auto;
+}
+#card .inner h1 {
+    font: Bold 60px/96px YuGothic;
+    color: #333333;
+    padding: 58px 0 34px 0;
+}
+#card .underline {
+    width: 76px;
+    border-bottom: 5px solid #3F51B5;
+    margin: 0 auto;
+}
+
+#card ul {
+    list-style: none;
+}
+#card .items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 66px;
+}
+#card .item {
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(17, 51, 72, 0.2);
+    text-decoration: none;
+    text-align: left;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    height: 355px;
+    margin: 0 30px 20px 0;
+}
+#card .item_inner {
+    width: 310px;
+    margin: 16px auto;
+}
+#card .card_img {
+    width: 310px;
+    height: 161px;
+    background: transparent url('../img/card-img.png') 0% 0% no-repeat padding-box;
+}
+#card h4 {
+    font: Bold 20px/24px YuGothic;
+    color: #6F7579;
+    padding: 26px 0 20px 0;
+}
+#card p {
+    text-align: left;
+    font: Bold 16px/24px YuGothic;
+    color: #6F7579;
+}
+
+/*------------------------*/
+/*          query         */
+/*------------------------*/
+/* SE */
+@media screen and (min-width:320px) and (max-width:768px){
+    #header .logo_img {
+        left: 30px;
+    }
+    #header nav {
+        visibility: hidden;
+    }
+
+    #main .inner {
+        width: 440px;
+    }
+    #main .inner h1 {
+        font: Bold 45px/60px YuGothic;
+    }
+    #main .inner p {
+        font: Bold 38px/60px YuGothic;
+        top: 400px;
+    }
+    #main .contact p {
+        font: normal 34px/60px YuGothic;
+        top: 550px;
+    }
+    #main .btn {
+        top: 535px;
+    }
+
+    #card .inner {
+        width: 550px;
+    }
+    #card .item {
+        width: calc(62%);
+    }
+
+    .debug {
+        background-color: chartreuse;
+        position: absolute;
+        top: 0;
+    }
+}
+
+/* iPad */
+@media screen and (min-width:768px) and (max-width:1366px) {
+    #header .inner {
+        width: 768px;
+    }
+    #card .inner {
+        width: 800px;
+    }
+    #card .item {
+        width: calc(44% - 10px);
+    }
+    #card .item:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .debug {
+        position: absolute;
+        top: 0;
+        background-color: tomato;
+    }
+}
+
+/* PC */
+@media screen and (min-width:1366px){
+    #header .inner {
+        width: 1086px;
+    }
+    #card .inner {
+        width: 1086px;
+    }
+    #card .item {
+        width: calc(33% - 17px);
+    }
+    /* 3の倍数番目 */
+    #card .item:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .debug {
+        position: absolute;
+        top: 0;
+        background-color: slategrey;   
+    }
+}
+
+
+
+
+/* debug */
+.debug {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
