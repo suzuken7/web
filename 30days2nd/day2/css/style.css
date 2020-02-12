@@ -1,0 +1,355 @@
+/*-------------------------*/
+/*          common         */
+/*-------------------------*/
+/* 不要な余白を消す */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------*/
+/*          header         */
+/*-------------------------*/
+#header {
+    background: #3F51B5 0% 0% no-repeat padding-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0px 3px 3px #00000029;
+
+    /* メイン画像とのzファイト対策 */
+    z-index: 999;
+}
+
+#header .inner {
+    height: 100px;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+#header .logo_img {
+    position: absolute;
+    top: 31px;
+    left: 140px;
+    width: 200px;
+    height: 39px;
+    background: transparent url(../img/logo.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#header .menu {
+    position: absolute;
+    top: 40px;
+    right: 140px;
+    width: 370px;
+    height: 26px;
+    opacity: 1;
+}
+
+nav{
+    text-align: center;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    top: 40px;
+    left: 882px;
+    width: 35px;
+    height: 21px;
+    text-align: left;
+    font: bold 16px/26px Yu Gothic;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+
+    padding-right: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+nav a.current{
+    text-decoration: none;
+    border-bottom: 1px solid red;
+    padding-bottom: 4.5px;
+}
+
+
+/*------------------------*/
+/*          main          */
+/*------------------------*/
+#main .main_img {
+    width: 100vw;
+    height: 700px;
+    background: transparent url(../img/mainvisual.png) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+
+#main .inner {
+    background-color: royalblue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 1366px;
+    height: 700px;
+    text-align: center;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+#main .inner h1 {
+    position: absolute;
+    top: 249px;
+    width: 100%;
+    height: 87px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #333333;
+    opacity: 1;
+}
+
+#main .inner p {
+    position: absolute;
+    width: 100%;
+    height: 49px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #333333;
+    opacity: 1;
+}
+
+#main .btn {
+    position: absolute;
+    top: 479px;
+    max-width: 390px;
+
+    height: 83px;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    opacity: 1;
+
+    z-index: 0;
+}
+
+#main .contact p {
+    position: relative;
+    width: 100%;
+    height: 49px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+
+    z-index: 1;
+}
+
+/*------------------------*/
+/*          card          */
+/*------------------------*/
+#card {
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 1125px;
+}
+#card .inner {
+    background-color: cadetblue;
+    /* innerの幅ってどうやって宣言するべき？　個々に変更しやすいようにブロックごとに宣言するべき？ */
+    height: 1125px;
+    text-align: center;
+    opacity: 1;
+    margin: 0 auto;
+}
+#card .inner h1 {
+    font: Bold 60px/60px Yu Gothic;
+    color: #333333;
+    opacity: 1;
+    padding: 68px 0 45px 0;
+}
+#card .underline {
+    width: 76px;
+    border-bottom: 5px solid #3F51B5;
+    margin: 0 auto;
+}
+
+#card ul {
+    list-style: none;
+}
+#card .items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-top: 69px;
+}
+#card .item {
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(17, 51, 72, 0.2);
+    text-decoration: none;
+    text-align: left;
+    transition: all 0.3s ease 0s;
+    
+    width: calc(33% - 17px);
+    height: 355px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    margin: 0 30px 20px 0;
+}
+/* 3の倍数番目 */
+#card .item:nth-child(3n) {
+    margin-right: 0;
+}
+#card .item_inner {
+    width: 310px;
+    margin: 16px auto;
+}
+#card .card_img {
+    width: 310px;
+    height: 161px;
+    background: transparent url('../img/card-img.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#card h4 {
+    font: Bold 20px/24px Yu Gothic;
+    letter-spacing: 0;
+    color: #6F7579;
+    opacity: 1;
+    padding-top: 26px;
+    padding-bottom: 20px;
+}
+#card p {
+    text-align: left;
+    font: Bold 16px/24px Yu Gothic;
+    letter-spacing: 0;
+    color: #6F7579;
+    opacity: 1;
+}
+
+/*------------------------*/
+/*          query         */
+/*------------------------*/
+/* SE */
+@media screen and (min-width:320px){
+    #header .logo_img {
+        left: 30px;
+    }
+    #header .inner {
+        width: 320px;
+    }
+    .menu {
+        visibility: hidden;
+    }
+
+    #main .inner {
+        width: 440px;
+        line-height: 0px;
+    }
+    #main .inner h1 {
+        font: Bold 45px/60px Yu Gothic;
+    }
+    #main .inner p {
+        font: Bold 38px/60px Yu Gothic;
+        top: 400px;
+    }
+    #main .contact p {
+        font: normal 34px/60px Yu Gothic;
+        top: 550px;
+    }
+    #main .btn {
+        top: 535px;
+    }
+
+    #card .inner {
+        width: 550px;
+    }
+
+    .debug {
+        background-color: chartreuse;
+    }
+}
+
+/* iPad */
+@media screen and (min-width:768px){
+    #header .inner {
+        width: 768px;
+    }
+    #main .inner {
+        width: 768px;
+    }
+
+    .menu {
+        visibility: visible;
+    }
+
+    #main .inner h1 {
+        font: Bold 68px/108px Yu Gothic;
+    }
+    #main .inner p {
+        font: Bold 38px/60px Yu Gothic;
+        top: 380px;
+    }
+    #main .contact p {
+        font: Bold 38px/61px Yu Gothic;
+        top: 550px;
+    }
+
+    #card .inner {
+        width: 800px;
+    }
+
+    .debug {
+        background-color: tomato;
+    }
+}
+
+/* PC */
+@media screen and (min-width:1366px){
+    #header .inner {
+        width: 1366px;
+    }
+    #main .inner {
+        width: 1366px;
+    }
+    .menu {
+        visibility: visible;
+    }
+
+    #main .inner h1 {
+        font: Bold 68px/108px Yu Gothic;
+    }
+    #main .inner p {
+        font: Bold 38px/60px Yu Gothic;
+        top: 380px;
+    }
+    #main .contact p {
+        font: Bold 38px/61px Yu Gothic;
+        top: 550px;
+    }
+
+    #card .inner {
+        width: 1086px;
+    }
+
+    .debug {
+        background-color: slategrey;
+    }
+}
+
+
+
+
+/* debug */
+.debug {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
