@@ -1,0 +1,227 @@
+/*-------------------------*/
+/*          common         */
+/*-------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------*/
+/*          button         */
+/*-------------------------*/
+#heading .inner {
+    width: 475px;
+    margin: 0 auto;
+    font: Bold 24px/39px YuGothic;
+    list-style: none;
+    padding-top: 139px;
+    padding-bottom: 212px;
+}
+
+.inner * {
+    margin-top: 44px;
+}
+
+
+#heading .no1 {
+    border-bottom: solid 3px #3F51B5;
+}
+
+#heading .no2 {
+    border-bottom: dashed 2px #3F51B5;
+}
+
+#heading .no3 {
+    color: white;
+    height: 41px;
+    padding-left: 10px;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+}
+
+#heading .no4 {
+    color: white;
+    height: 41px;
+    padding-left: 10px;
+    background: #7385E9 0% 0% no-repeat padding-box;
+    border-bottom: solid 3px #3F51B5;
+}
+
+#heading .no5 {
+    border-left: solid 5px #3F51B5;
+    padding-left: 12px;
+}
+
+#heading .no6 {
+    width: 182px;
+    background:linear-gradient(#ffffff 50%, #DCEE39 50% 0%);
+    margin-bottom: 44px;
+}
+
+#heading .no7 {
+    display: inline;
+    padding: 3px;
+    background: #DCEE39 0% 0% no-repeat padding-box;
+}
+
+#heading .no8 {
+    position: relative;
+    color: white;
+    height: 41px;
+    padding-left: 10px;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+}
+.no8::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid #3F51B5;
+    width: 0;
+    height: 0;
+}
+
+#heading .no9 {
+    border-bottom: solid 3px #3F51B5;
+    position: relative;
+}
+.no9::after{
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #ffc778;
+    bottom: -3px;
+    width: 18%;
+}
+
+#heading .no10 {
+    padding-left: 15px;
+	position: relative;
+}
+#heading .no10::after {
+    border-right: 4px solid #3f51b5;
+	content: "";
+	display: block;
+	height: 16px;
+	left: 0;
+	position: absolute;
+	top: 11px;
+}
+
+#heading .no11 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#heading .no11::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #3F51B5;
+    bottom: -3px;
+    width: 12%;
+}
+
+#heading .no12 {
+    position: relative;
+    padding-left: 1.2em;
+    line-height: 1.4;
+}
+#heading .no12::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    position: absolute;
+    font-size: 1em;
+    left: 0;
+    top: 0;
+    color: #3F51B5;
+}
+
+#heading .no13 {
+    position: relative;
+    padding-left: 1.2em;
+    line-height: 1.4;
+}
+#heading .no13::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    position: absolute;
+    font-size: 1em;
+    left: 230px;
+    top: -15px;
+    color: #3F51B5;
+}
+
+#heading .no14 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    padding: 0 45px;
+}
+#heading .no14::before, .no14::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 5px;
+    background-color: #3F51B5;
+}
+.no14::before {
+    left: 100px;
+    -webkit-transform: rotate(65deg);
+    transform: rotate(65deg);
+}
+.no14::after {
+    right: 100px;
+    -webkit-transform: rotate(-65deg);
+    transform: rotate(-65deg);
+}
+
+#heading .no15 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0 55px;
+}
+#heading .no15::before, .no15::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 130px;
+    height: 3px;
+    background-color: #3F51B5;
+}
+.no15::before {
+    left: 0px;
+}
+.no15::after {
+    right: 0;
+}
+
+#heading .no16 {
+    width: 200px;
+    padding: 0.3em 0.5em;
+    background: -webkit-repeating-linear-gradient(-45deg, #A7BAFF, #A7BAFF 10px,#7385E9 10px, #7385E9 20px);
+    background: repeating-linear-gradient(-45deg, #A7BAFF, #A7BAFF 10px,#7385E9 10px, #7385E9 20px);
+}
+
+#heading .no17 {
+    display: inline-block;
+	padding: 0.25em 0.5em;
+	position: relative;
+}
+.no17::after {
+    background: -webkit-repeating-linear-gradient(135deg, #A7BAFF, #A7BAFF 10px, #7385e9 10px, #7385e9 20px);
+    background: repeating-linear-gradient(-45deg, #A7BAFF, #A7BAFF 10px, #7385e9 10px, #7385e9 20px);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 215px;
+    z-index: -1;
+}
