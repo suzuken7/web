@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- OGP -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
+
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <script src="./js/smooth-scroll.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- 右下の矢印処理 -->
+    <script>
+        jQuery(window).on("scroll", function($) {
+          if (jQuery(this).scrollTop() > 100) {
+            jQuery('.arrow').fadeIn(700);
+          } else {
+            jQuery('.arrow').fadeOut(300);
+          }
+        });
+        
+        jQuery('.arrow').click(function () {
+          jQuery('body,html').animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        });
+    </script>
+
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <!-- ドロワーメニューの利用宣言 -->
+    <script>
+        $(document).ready(function() {
+            $('.drawer').drawer();
+        });
+    </script>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Title -->
+    <title>DAY23</title>
+</head>
+
+<script>
+    function ShowRedLine() {
+        
+        // この書き方だと一番最初だけ動かない動かない_
+        // $('#header .inner a').click(function() {
+        //     $('#header .inner a').removeClass('hover9');
+        //     $(this).addClass('hover9');
+        // });
+
+        $(document).on('click', '#header .inner a', function() {
+            $('#header .inner a').removeClass('hover9');
+            $(this).addClass('hover9');
+        });
+    }
+</script>
+
+<body class="drawer drawer--right">
+    <!-- header -->
+    <section id="header" role="banner">
+         <!-- ハンバーガーボタン -->
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+        <!-- ナビゲーションの中身 -->
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li><a class="drawer-menu-item data-scroll" href="#card">Card</a></li>
+                <li><a class="drawer-menu-item data-scroll" href="#news">News</a></li>
+                <li><a class="drawer-menu-item data-scroll" href="#price">Price</a></li>
+                <li><a class="drawer-menu-item data-scroll" href="#access">Access</a></li>
+                <li><a class="drawer-menu-item data-scroll" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            
+        </script>
+
+        <div class="inner">
+            <div class="logo_img"></div>
+            <nav>
+                <ul>
+                    <li><a href="#card" onclick="ShowRedLine()" class="hover1 data-scroll">Card</a></li>
+                    <li><a href="#news" onclick="ShowRedLine()" class="hover1 data-scroll">News</a></li>
+                    <li><a href="#price" onclick="ShowRedLine()" class="hover1 data-scroll">Price</a></li>
+                    <li><a href="#access" onclick="ShowRedLine()" class="hover1 data-scroll">Access</a></li>
+                    <li><a href="#contact" onclick="ShowRedLine()" class="hover1 data-scroll">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </section>
+    <!-- header End -->
+    
+    <!-- main -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#main"]', {
+            header: '#header'
+        });
+    </script>
+    <section id="main">
+        <div class="inner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main_img1">
+                        <h1>一番伝えたいことを書く</h1>
+                        <p>リードリードリード</p>
+                        <div class="contact hover1">
+                            <a href="#contact">
+                                <p>お問い合わせ</p>
+                                <div class="inner btn"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main_img2"></div>
+                    <div class="swiper-slide main_img3"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                loop: true,
+                speed: 500,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: true
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+            });
+            </script>
+        </div>
+    </section>
+    <!-- main End -->
+
+    <!-- Card -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#card"]',{
+            header: '#header'
+        });
+    </script>
+    <section id="card">
+        <div class="inner">
+            <h1>Card</h1>
+            <div class="underline"></div>
+            <ul class="items">
+                <li class="item wow bounceIn">
+                    <div class="item_inner">
+                        <div class="card_img"></div>
+                        <h4>タイトルタイトル</h4>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                <li class="item wow bounceInUp">
+                    <div class="item_inner">
+                        <div class="card_img"></div>
+                        <h4>タイトルタイトル</h4>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                <li class="item wow zoomInUp">
+                    <div class="item_inner">
+                        <div class="card_img"></div>
+                        <h4>タイトルタイトル</h4>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                <li class="item wow fadeInUp">
+                    <div class="item_inner">
+                        <div class="card_img"></div>
+                        <h4>タイトルタイトル</h4>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                <li class="item wow rollIn">
+                    <div class="item_inner">
+                        <div class="card_img"></div>
+                        <h4>タイトルタイトル</h4>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                <li class="item wow zoomIn">
+                    <div class="item_inner">
+                        <div class="card_img"></div>
+                        <h4>タイトルタイトル</h4>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+    <!-- Card End -->
+
+    <!-- News -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#news"]',{
+            header: '#header'
+        });
+    </script>
+    <section id="news">
+        <div class="inner">
+            <h1>News</h1>
+            <div class="underline"></div>
+            <div class="items">
+                <div class="no1">
+                    <span class="day">2019-01-30</span>
+                    <a href="#"><div class="label1 hover1"></div></a>
+                    <span class="text hover1"><a href="#">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></span>
+                </div>
+                <div class="bar"></div>
+                <div class="no2">
+                    <span class="day">2019-01-30</span>
+                    <a href="#"><div class="label2 hover1"></div></a>
+                    <span class="text hover1"><a href="#">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></span>
+                </div>
+                <div class="bar"></div>
+                <div class="no3">
+                    <span class="day">2019-01-30</span>
+                    <a href="#"><div class="label3 hover1"></div></a>
+                    <span class="text hover1"><a href="#">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></span>
+                </div>
+                <div class="bar"></div>
+                <div class="no1">
+                    <span class="day">2019-01-30</span>
+                    <a href="#"><div class="label1 hover1"></div></a>
+                    <div class="text hover1"><a href="#">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
+                </div>
+                <div class="bar"></div>
+                <div class="no1">
+                    <span class="day">2019-01-30</span>
+                    <a href="#"><div class="label1 hover1"></div></a>
+                    <span class="text hover1"><a href="#">ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></span>
+                </div>
+                <div class="more hover1"><a href="#">more</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- News End -->
+
+
+    <!-- Price -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#price"]',{
+            header: "#header"
+        });
+    </script>
+    <section id="price">
+        <h1>Price</h1>
+            <div class="underline"></div>
+        <div class="inner">
+            <div class="price_img"></div>
+            <table class="price_table">
+                <tr><th class="row0"></th><th class="center">column1</th><th class="center">column2</th></tr>
+                <tr><td class="row1 center"><span>row1</span></td><td>100円</td><td>100円</td></tr>
+                <tr><td class="row2 center"><span class="center">row2</span></td><td>6000円</td><td>0円</td></tr>
+                <tr><td class="row3 center"><span class="center">row3</span></td><td class="red">6000円<br>※ 今だけ半額</td><td>0円</td></tr>
+                <tr><td class="row4 center"><span class="center">row4</span></td><td>100円</td><td>100円</td></tr>
+            </table>
+        </div>
+        <p>※ 目安なので詳しくは<a href="#">お問い合わせ</a>ください。</p>
+    </section>
+    <!-- Price End -->
+
+    <!-- Access -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#access"]', {
+            header: '#header'
+        });
+    </script>
+    <section id="access">
+        <div class="inner">
+            <h1>Access</h1>
+            <div class="underline"></div>
+            <div class="iframe-wrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278534025053!2d139.76493075103613!3d35.68124053748121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1581945951297!5m2!1sja!2sjp" width="800" height="400"></iframe>
+            </div>
+            <div class="text">
+                <p>住所</p>
+                <p>ほげほげほげのほげの場所</p>
+            </div>
+            <div class="text">
+                <p>アクセス</p>
+                <p>〇〇駅から右に５分</p>
+            </div>
+            <a href="#">
+                <div class="button hover1">Googleマップで見る</div>
+            </a>
+        </div>
+    </section>
+    <!-- Access End -->
+
+    <!-- Contact -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#contact"]',{
+            header: '#header'
+        });
+    </script>
+    <section id="contact">
+        <div class="inner">
+            <h1>Contact</h1>
+            <div class="underline"></div>
+            <div class="form_area">
+                <div class="name">
+                    <p>お名前</p>
+                    <div class="required"></div>
+                    <input class="text-test" type="text" value="" placeholder="山田太郎">
+                </div>
+                <div class="email">
+                    <p>メールアドレス</p>
+                    <div class="required"></div>
+                    <input class="text-test" type="text" value="" placeholder="text@example.com">
+                </div>
+                <div class="type">
+                    <p>お問い合わせ種別</p>
+                    <select class="select-test">
+                        <option hidden>ーーー</option>
+                        <option value="サンプルA">サンプルA</option>
+                        <option value="サンプルB">サンプルB</option>
+                        <option value="サンプルC">サンプルC</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <p>お問い合わせ内容</p>
+                    <textarea class="textarea-text">お問い合わせを入力してください</textarea>
+                </div>
+                <div class="radio">
+                    <label><input class="radio-test" type="radio" name="radio-name"><span>ラジオ１</span></label>
+                    <label><input class="radio-test" type="radio" name="radio-name"><span>ラジオ２</span></label>
+                    <label><input class="radio-test" type="radio" name="radio-name"><span>ラジオ３</span></label>
+                </div>
+                <div class="privacy">
+                    <label><input class="check-test" type="checkbox" name="check-name"><span><a href="#">プライバシーポリシー</a>に合意する</span></label>
+                </div>
+                <a href="#">
+                    <div class="button hover1">送信する</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <ul>
+            <li class="item">
+                <div class="item1">
+                    <div class="logo_img"></div>
+                    <p>住所：ほげほげのほげほげ</p>
+                    <p>TEL：0000-00-0000</p>
+                </div>
+            </li>
+            <li class="item item2">
+                <ul>
+                    <li class="menu">Card</li>
+                    <li class="menu">News</li>
+                    <li class="menu">Price</li>
+                    <li class="menu">Access</li>
+                    <li class="menu">Contact</li>
+                </ul>
+            </li>
+            <li class="item item3">
+                <ul>
+                    <li class="twitter_img"></li>
+                    <li class="facebook_img"></li>
+                    <li class="instagram_img"></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="copyright">
+            <p>Copyright © 2018 @XXXXXXXXXX All rights reserved.</p>
+        </div>
+
+    </section>
+    <!-- Footer End -->
+
+
+    <a href="#main"><div class="arrow data-scroll"></div></a>
+
+</body>
+</html>
