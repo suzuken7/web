@@ -1,0 +1,73 @@
+/*------------------------------------------*
+* common
+*------------------------------------------*/
+body {
+  color: #3e3e3e;
+  font-family: 'Montserrat','YuGothic','sans-serif';
+}
+
+.whiteColor {
+  color: #ffffff;
+}
+
+.ivoryColor {
+  color: #f3f3f3;
+}
+
+.blackColor {
+  color: #3e3e3e;
+}
+
+.yellowColor {
+  color: #ffaa3b;
+}
+
+.blueColor {
+  color: #4973ff;
+}
+
+.redColor {
+  color: #ff4646;
+}
+
+.btn {
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  padding: 20px 10px;
+  background-color: #e25c00;
+  border: 2px solid transparent;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/*------------------------------------------*
+* header
+*------------------------------------------*/
+.mainVisual_img {
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+/*------------------------------------------*
+* footer
+*------------------------------------------*/
+/*------------------------------------------*
+* query   
+*------------------------------------------*/
+/* SE */
+/* iPad */
+/* PC */
+@media screen and (min-width: 1366px) {
+  .inner {
+    max-width: 1180px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
