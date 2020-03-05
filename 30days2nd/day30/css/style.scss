@@ -1,27 +1,24 @@
 /*------------------------------------------*
 * common
 *------------------------------------------*/
+$whiteColor:#f22fff;
+$ivoryColor:#f3f3f3;
+$blackColor:#3e3e3e;
+$yellowColor:#ffaa3b;
+$blueColor:#4973ff;
+$redColor:#ff4646;
+
+
+// レスポンシブ用
+$maxWidth: 1366px;
+$midWidth: 768px;
+$smWidth: 320px;
+
+
 body {
     color: #3e3e3e;
+    background-color: $ivoryColor;
     font-family: 'Montserrat','YuGothic','sans-serif';
-}
-.whiteColor {
-    color: #ffffff;
-}
-.ivoryColor {
-    color: #f3f3f3;
-}
-.blackColor {
-    color: #3e3e3e;
-}
-.yellowColor {
-    color: #ffaa3b;
-}
-.blueColor {
-    color: #4973ff;
-}
-.redColor {
-    color: #ff4646;
 }
 
 .btn {
@@ -43,35 +40,87 @@ body {
 /*------------------------------------------*
 * header
 *------------------------------------------*/
+.header_inner {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: $redColor;
+}
 
+/*------------------------------------------*
+* mainVisual
+*------------------------------------------*/
 .mainVisual_img {
     width: 100vw;
     background-size: cover;
     background-position: center;
 }
 
+/*------------------------------------------*
+* news
+*------------------------------------------*/
+
+/*------------------------------------------*
+* service
+*------------------------------------------*/
+
+/*------------------------------------------*
+* result
+*------------------------------------------*/
+
+/*------------------------------------------*
+* price
+*------------------------------------------*/
+
+/*------------------------------------------*
+* comments
+*------------------------------------------*/
+
+/*------------------------------------------*
+* q&a
+*------------------------------------------*/
+
+/*------------------------------------------*
+* access
+*------------------------------------------*/
+
+/*------------------------------------------*
+* contact
+*------------------------------------------*/
 
 /*------------------------------------------*
 * footer
 *------------------------------------------*/
 
 
-
-
 /*------------------------------------------*
 * query   
 *------------------------------------------*/
 /* SE */
-@media screen and (min-width:320px) and (max-width:768px) {
+@media screen and (min-width: $smWidth) and (max-width: $midWidth) {
 }
 
 /* iPad */
-@media screen and (min-width:768px) and (max-width:1366px) {
+@media screen and (min-width: $midWidth) and (max-width: $maxWidth) {
 }
 
 /* PC */
-@media screen and (min-width:1366px) {
-    .inner {
+@media screen and (min-width: $maxWidth) {
+    .newsInner,
+    .commentsInner,
+    .QAInner,
+    .accessInner
+    {
         max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .serviceInner,
+    .priceInner,
+    .contactInner,
+    .footer
+    {
+        max-width: 960px;
+        margin: 0 auto;
     }
 }
