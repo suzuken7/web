@@ -12,7 +12,7 @@ body {
   width: 300px;
   max-width: 100%;
   padding: 20px 10px;
-  background-color: #e25c00;
+  background-color: #ffffff;
   border: 2px solid transparent;
   text-align: center;
   text-decoration: none;
@@ -27,20 +27,68 @@ body {
 /*------------------------------------------*
 * header
 *------------------------------------------*/
-.header_inner {
+.header__inner {
   position: fixed;
   width: 100%;
   height: 80px;
-  background-color: #ff4646;
+  background: #FFFFFF1A 0% 0% no-repeat padding-box;
+}
+
+.header__menuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 80px;
+  list-style: none;
+}
+
+.header__item {
+  text-decoration: none;
+}
+
+.header__item:hover {
+  opacity: 0.8;
 }
 
 /*------------------------------------------*
 * mainVisual
 *------------------------------------------*/
-.mainVisual_img {
+.mainVisual {
   width: 100vw;
+  height: 648px;
+  background-image: url("../img/mv.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainVisual__Items {
+  position: relative;
+  width: 33%;
+  top: 30%;
+  left: 55%;
+}
+
+.mainVisual__Items_title {
+  font: Bold 30px/45px normal;
+  letter-spacing: 0.02px;
+}
+
+.mainVisual__Items_text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mainVisual__Items_btn {
+  padding: 14px 48px;
+  -webkit-box-shadow: 0px 3px 5px #3E3E3E33;
+          box-shadow: 0px 3px 5px #3E3E3E33;
+  border-radius: 10px;
+  background-color: #ffaa3b;
+  color: #ffffff;
 }
 
 /*------------------------------------------*

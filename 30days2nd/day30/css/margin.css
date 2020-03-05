@@ -14,6 +14,9 @@
 .mt20 {
     margin-top: 20px;
 }
+.mt40 {
+    margin-top: 40px;
+}
 .mr5{
     margin-right: 5px;
 }
@@ -26,6 +29,9 @@
 .mr20 {
     margin-right: 20px;
 }
+.mr40 {
+    margin-right: 40px;
+}
 .mb5{
     margin-bottom: 5px;
 }
@@ -37,6 +43,9 @@
 }
 .mb20 {
     margin-bottom: 20px;
+}
+.mb40 {
+    margin-bottom: 40px;
 }
 .ml5{
     margin-left: 5px;

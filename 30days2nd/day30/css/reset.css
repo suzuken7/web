@@ -80,6 +80,14 @@ select {
   font: inherit;
 }
 
+/* リンクのカラーチェンジをしないように */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 /* Remove all animations and transitions for people that prefer not to see them */
 /* 見たくない人用に、すべてのアニメーションとトランジションを削除 */
 @media (prefers-reduced-motion: reduce) {

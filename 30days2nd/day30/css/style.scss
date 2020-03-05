@@ -1,7 +1,7 @@
 /*------------------------------------------*
 * common
 *------------------------------------------*/
-$whiteColor:#f22fff;
+$whiteColor:#ffffff;
 $ivoryColor:#f3f3f3;
 $blackColor:#3e3e3e;
 $yellowColor:#ffaa3b;
@@ -14,6 +14,8 @@ $maxWidth: 1366px;
 $midWidth: 768px;
 $smWidth: 320px;
 
+$hoverOpacityVal: 0.8;
+
 
 body {
     color: #3e3e3e;
@@ -21,39 +23,85 @@ body {
     font-family: 'Montserrat','YuGothic','sans-serif';
 }
 
+// 継承先で各値は変更する
 .btn {
     display: inline-block;
     width: 300px;
     max-width: 100%;
     padding: 20px 10px;
-    background-color: #e25c00;
+    background-color: $whiteColor;
     border: 2px solid transparent;
     text-align: center;
     text-decoration: none;
     transition: .25s;
 }
 .btn:hover {
-    opacity: 0.8;
+    opacity: $hoverOpacityVal;
 }
 
 
 /*------------------------------------------*
 * header
 *------------------------------------------*/
-.header_inner {
+$headerHeight: 80px;
+
+.header__inner {
     position: fixed;
     width: 100%;
-    height: 80px;
-    background-color: $redColor;
+    height: $headerHeight;
+    background: #FFFFFF1A 0% 0% no-repeat padding-box;
+}
+
+.header__menuList {
+    display: flex;
+    justify-content: center;
+    line-height: $headerHeight;
+    list-style: none;
+}
+
+.header__item {
+    text-decoration: none;
+}
+.header__item:hover {
+    opacity: $hoverOpacityVal;
 }
 
 /*------------------------------------------*
 * mainVisual
 *------------------------------------------*/
-.mainVisual_img {
+.mainVisual {
     width: 100vw;
+    height: 648px;
+    background-image: url("../img/mv.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mainVisual__Items {
+    position: relative;
+    width: 33%;
+    top: 30%;
+    left: 55%;
+}
+
+.mainVisual__Items_title {
+    font: Bold 30px/45px normal;
+    letter-spacing: 0.02px;
+}
+
+.mainVisual__Items_text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mainVisual__Items_btn {
+    padding: 14px 48px;
+    box-shadow: 0px 3px 5px #3E3E3E33;
+    border-radius: 10px;
+    background-color: $yellowColor;
+    color: $whiteColor;
+    
 }
 
 /*------------------------------------------*
