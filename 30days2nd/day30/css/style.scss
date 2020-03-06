@@ -25,7 +25,6 @@ body {
 
 // 継承先で各値は変更する
 .btn {
-    display: inline-block;
     width: 300px;
     max-width: 100%;
     padding: 20px 10px;
@@ -37,6 +36,10 @@ body {
 }
 .btn:hover {
     opacity: $hoverOpacityVal;
+}
+
+.menuTitle {
+    font: bold 36px/44px Montserrat;
 }
 
 
@@ -78,47 +81,113 @@ $headerHeight: 80px;
     background-repeat: no-repeat;
 }
 
-.mainVisual__Items {
+.mainVisual__items {
     position: relative;
     width: 33%;
     top: 30%;
     left: 55%;
 }
 
-.mainVisual__Items_title {
+.mainVisual__items_title {
     font: Bold 30px/45px normal;
     letter-spacing: 0.02px;
 }
 
-.mainVisual__Items_text {
+.mainVisual__items_text {
     font-size: 18px;
     font-weight: bold;
 }
 
-.mainVisual__Items_btn {
+.mainVisual__items_btn {
     padding: 14px 48px;
     box-shadow: 0px 3px 5px #3E3E3E33;
     border-radius: 10px;
     background-color: $yellowColor;
     color: $whiteColor;
-    
 }
 
 /*------------------------------------------*
 * news
 *------------------------------------------*/
+.newsInner {
+    background-color: $whiteColor;
+    height: 665px;
+    box-shadow: 0px 5px 12px #3E3E3E33;
+}
+
+.newsInner__contents {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.newsInner__menuTitle {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.newsInner__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.newsInner__borderTop {
+    border-top: #cecdcd 1px solid;
+}
+
+.newsInner__borderBottom {
+    border-bottom: #cecdcd 1px solid;
+}
+
+.newsInner__item_day {
+    padding-right: 30px;
+}
+
+.newsInner__item_text {
+    width: 125px;
+    border: 2px solid $blueColor;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.newsInner__item_content {
+    width: 58%;
+    padding-left: 30px;
+}
+
+.newsInner__item_arrow {
+    padding-left: 40px;
+}
+
+.newsInner__btn {
+    border: 1px solid $blackColor;
+    width: 248px;
+    height: 64px;
+    color: $blackColor;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 40px auto;
+}
 
 /*------------------------------------------*
 * service
 *------------------------------------------*/
+// .serviceInner {
+//     background-color: tomato;
+//     height: 400px;
+// }
 
 /*------------------------------------------*
 * result
 *------------------------------------------*/
 
+
 /*------------------------------------------*
 * price
 *------------------------------------------*/
+
 
 /*------------------------------------------*
 * comments

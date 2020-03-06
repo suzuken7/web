@@ -8,7 +8,6 @@ body {
 }
 
 .btn {
-  display: inline-block;
   width: 300px;
   max-width: 100%;
   padding: 20px 10px;
@@ -22,6 +21,10 @@ body {
 
 .btn:hover {
   opacity: 0.8;
+}
+
+.menuTitle {
+  font: bold 36px/44px Montserrat;
 }
 
 /*------------------------------------------*
@@ -65,24 +68,24 @@ body {
   background-repeat: no-repeat;
 }
 
-.mainVisual__Items {
+.mainVisual__items {
   position: relative;
   width: 33%;
   top: 30%;
   left: 55%;
 }
 
-.mainVisual__Items_title {
+.mainVisual__items_title {
   font: Bold 30px/45px normal;
   letter-spacing: 0.02px;
 }
 
-.mainVisual__Items_text {
+.mainVisual__items_text {
   font-size: 18px;
   font-weight: bold;
 }
 
-.mainVisual__Items_btn {
+.mainVisual__items_btn {
   padding: 14px 48px;
   -webkit-box-shadow: 0px 3px 5px #3E3E3E33;
           box-shadow: 0px 3px 5px #3E3E3E33;
@@ -94,6 +97,75 @@ body {
 /*------------------------------------------*
 * news
 *------------------------------------------*/
+.newsInner {
+  background-color: #ffffff;
+  height: 665px;
+  -webkit-box-shadow: 0px 5px 12px #3E3E3E33;
+          box-shadow: 0px 5px 12px #3E3E3E33;
+}
+
+.newsInner__contents {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.newsInner__menuTitle {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.newsInner__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+.newsInner__borderTop {
+  border-top: #cecdcd 1px solid;
+}
+
+.newsInner__borderBottom {
+  border-bottom: #cecdcd 1px solid;
+}
+
+.newsInner__item_day {
+  padding-right: 30px;
+}
+
+.newsInner__item_text {
+  width: 125px;
+  border: 2px solid #4973ff;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.newsInner__item_content {
+  width: 58%;
+  padding-left: 30px;
+}
+
+.newsInner__item_arrow {
+  padding-left: 40px;
+}
+
+.newsInner__btn {
+  border: 1px solid #3e3e3e;
+  width: 248px;
+  height: 64px;
+  color: #3e3e3e;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 40px auto;
+}
+
 /*------------------------------------------*
 * service
 *------------------------------------------*/
