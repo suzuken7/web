@@ -24,7 +24,8 @@ body {
 }
 
 // 継承先で各値は変更する
-.btn {
+// comはcommonの略
+.comBtn {
     width: 300px;
     max-width: 100%;
     padding: 20px 10px;
@@ -34,12 +35,13 @@ body {
     text-decoration: none;
     transition: .25s;
 }
-.btn:hover {
+.comBtn:hover {
     opacity: $hoverOpacityVal;
 }
-
-.menuTitle {
-    font: bold 36px/44px Montserrat;
+.comTitle {
+    padding: 60px 0;
+    font-size: 36;
+    font-weight: bold;
 }
 
 
@@ -122,7 +124,6 @@ $headerHeight: 80px;
 
 .newsInner__menuTitle {
     text-align: center;
-    padding: 60px 0;
 }
 
 .newsInner__item {
@@ -174,10 +175,52 @@ $headerHeight: 80px;
 /*------------------------------------------*
 * service
 *------------------------------------------*/
-// .serviceInner {
-//     background-color: tomato;
-//     height: 400px;
-// }
+.serviceInner {
+    background-color: $blackColor;
+    width: 100vw;
+    height: 350px;
+}
+
+.serviceInner__title {
+    text-align: center;
+    color: $whiteColor;
+}
+
+.serviceInner__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 960px;
+    height: 321px;
+    margin: 0 auto;
+}
+
+.serviceInner__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 231px;
+    height: 211px;
+}
+
+.serviceInner__item_img {
+    margin: 0 auto;
+}
+
+.serviceInner__item_title {
+    text-align: center;
+    color: $blackColor;
+    font: Bold 20px/30px "Montserrat";
+    letter-spacing: 4px;
+}
+
+.serviceInner__item_description {
+    text-align: left;
+    font: normal 14px/24px "YuGothic";
+    color: $blackColor;
+}
 
 /*------------------------------------------*
 * result
@@ -232,7 +275,6 @@ $headerHeight: 80px;
         margin: 0 auto;
     }
 
-    .serviceInner,
     .priceInner,
     .contactInner,
     .footer
