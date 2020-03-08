@@ -287,7 +287,53 @@ $headerHeight: 80px;
 /*------------------------------------------*
 * price
 *------------------------------------------*/
+.priceInner {
+    width: 960px;   
+}
 
+.priceInner__title {
+    color: $blackColor;
+    text-align: center;
+}
+
+.horizontalTable {
+    border: 1px solid #ddd;
+}
+
+.horizontalTable__inner {
+    width: 100%;
+}
+
+.horizontalTable__header {
+    width: 30%;
+    padding: 20px;
+    background-color: $blackColor;
+    color: $whiteColor;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.horizontalTable__text {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: $whiteColor;
+    text-align: left;
+    padding-left: 50px;
+    font: {
+        size: 20px;
+        weight: bold;
+    }
+}
+
+.horizontalTable__row:last-child .horizontalTable__header,
+.horizontalTable__row:last-child .horizontalTable__text {
+    border-bottom-width: 0;
+}
+
+.priceInner__attention {
+    padding-top: 24px;
+}
 
 /*------------------------------------------*
 * comments
