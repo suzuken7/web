@@ -200,6 +200,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 231px;
+  height: 211px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -209,30 +211,89 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 231px;
-  height: 211px;
-}
-
-.serviceInner__item_img {
-  margin: 0 auto;
-}
-
-.serviceInner__item_title {
-  text-align: center;
-  color: #3e3e3e;
-  font: Bold 20px/30px "Montserrat";
-  letter-spacing: 4px;
-}
-
-.serviceInner__item_description {
-  text-align: left;
-  font: normal 14px/24px "YuGothic";
-  color: #3e3e3e;
 }
 
 /*------------------------------------------*
 * result
 *------------------------------------------*/
+.resultInner {
+  height: 800px;
+  background-color: #3e3e3e;
+  margin-left: 10%;
+  padding-left: 10%;
+}
+
+.resultInner__title {
+  color: #ffffff;
+}
+
+.resultInner__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.resultInner__item {
+  background-color: #ffffff;
+  height: 368px;
+}
+
+.resultInner__item_description {
+  padding: 18px;
+}
+
+.resultInner__item_descriptionTitle {
+  font: Bold 20px/24px "YuGothic";
+  color: #3e3e3e;
+  padding-bottom: 20px;
+}
+
+.resultInner__item_descriptionText {
+  font: normal 16px/24px "YuGothic";
+  color: #3e3e3e;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+
+.swiper-pagination-bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 60px 0;
+}
+
+.swiper-pagination-bullet {
+  padding: 7px;
+  margin-right: 15px;
+  background: #ffffff !important;
+  opacity: 1 !important;
+  background: #ffffff !important;
+  border: solid 2.5px #3e3e3e;
+  box-shadow: 0 0 0 0px #ffffff;
+  -webkit-box-shadow: 0 0 0 0px #ffffff;
+  -moz-box-shadow: 0 0 0 1px #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff !important;
+  border: solid 2.5px #3e3e3e;
+  box-shadow: 0 0 0 0px #ffffff;
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+  -moz-box-shadow: 0 0 0 1px #ffffff;
+}
+
+.resultInner__btn {
+  position: relative;
+  top: 18%;
+  color: white;
+  background-color: #3e3e3e;
+  border: solid 1px white;
+  font: bold 20px/23px "Montserrat";
+  letter-spacing: 4px;
+}
+
 /*------------------------------------------*
 * price
 *------------------------------------------*/

@@ -14,6 +14,9 @@
 .mt20 {
     margin-top: 20px;
 }
+.mt30 {
+    margin-top: 30px;
+}
 .mt40 {
     margin-top: 40px;
 }
@@ -44,8 +47,14 @@
 .mb20 {
     margin-bottom: 20px;
 }
+.mb30 {
+    margin-bottom: 30px;
+}
 .mb40 {
     margin-bottom: 40px;
+}
+.mb80 {
+    margin-bottom: 80px;
 }
 .mb130 {
     margin-bottom: 130px;
