@@ -18,7 +18,7 @@ $hoverOpacityVal: 0.8;
 
 
 body {
-    color: #3e3e3e;
+    color: $blackColor;
     background-color: $ivoryColor;
     font-family: 'Montserrat','YuGothic','sans-serif';
 }
@@ -40,7 +40,7 @@ body {
 }
 .comTitle {
     padding: 60px 0;
-    font-size: 36;
+    font-size: 36px;
     font-weight: bold;
 }
 
@@ -102,7 +102,7 @@ $headerHeight: 80px;
 
 .mainVisual__items_btn {
     padding: 14px 48px;
-    box-shadow: 0px 3px 5px #3E3E3E33;
+    box-shadow: 0px 3px 5px $blackColor;
     border-radius: 10px;
     background-color: $yellowColor;
     color: $whiteColor;
@@ -114,7 +114,7 @@ $headerHeight: 80px;
 .newsInner {
     background-color: $whiteColor;
     height: 665px;
-    box-shadow: 0px 5px 12px #3E3E3E33;
+    box-shadow: 0px 5px 12px $blackColor;
 }
 
 .newsInner__contents {
@@ -338,14 +338,197 @@ $headerHeight: 80px;
 /*------------------------------------------*
 * comments
 *------------------------------------------*/
+.commentsBackGround {
+    background: $blackColor 0% 0% no-repeat padding-box;
+    width: 70%;
+    height: 616px;
+    z-index: -1;
+    position: absolute;
+    margin-top: 10%;
+    margin-right: auto;
+}
+
+.commentsInner {
+    width: 1180px;
+    height: 616px;
+    position: relative;
+    display: flex;
+}
+
+.commentsInner__comment_items {
+    width: 644px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commentsInner__comment {
+    width: 564px;
+    height: 100%;
+}
+
+.commentsInner__comment_title {
+    padding: 0; // comTitleのを打ち消し_
+    font: {
+        weight: bold;
+        size: 36px;
+        family: "Montserrat";
+    }
+    letter-spacing: 0;
+    color: $blackColor;
+    display: flex;
+    padding: 1.3em 0;
+}
+
+.commentsInner__comment_item {
+    width: 100%;
+    display: flex;
+    padding: 3em 0;
+}
+
+.commentsInner__comment_itemImg {
+    
+}
+
+.commentsInner__comment_itemText {
+    margin-left: auto;
+    width: 72%;
+    font: {
+        size: 16px;
+        font: "YuGothic";
+    };
+    color: $blackColor;
+}
+
+.commentsInner__allCommenter_img {
+    padding-top: 10%;
+}
 
 /*------------------------------------------*
 * q&a
 *------------------------------------------*/
+.QAInner__BG {
+    margin-top: 155px;  // Commentsの背景を認識してないので無理やりずらす…
+
+    background-image: url("/img/sunyu-kim-1053375-unsplash.png");
+    width: 100%;
+    height: 1000px; // これはだめ
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.QAInner__title {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.menu__item {
+    width: 616px;
+    // height: 64px;    // height宣言すると開いたときにサイズ調整してくれない
+    background: white;
+    color: $blackColor;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1px;
+    border-radius: 7px;
+    margin-left: 48%;
+    margin-bottom: 30px;
+}
+
+.menu__item__link {
+    color: $blackColor;
+    display: block;
+    line-height: 64px;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+
+    font: {
+        weight: bold;
+        size: 16px;
+        font: "YuGothic";
+    }
+}
+.menu__item__link:after {
+    content: '';    
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/plus.png");
+    background-position: right center;;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    right: -90%;
+}
+.menu__item__link.on:after {
+    content: '';
+    background-image: url("../img/minus.png");
+    width: 15px;
+    height: 15px;
+    background-position: right center;;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    right: -90%;
+}
+
+.menu__item_Q {
+    background: #3B69FF 0% 0% no-repeat padding-box;
+    color: white;
+    display: inline-flex;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu__item_text {
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
+    -webkit-transform : translateY(-50%);
+    transform : translateY(-50%);
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.openMenu {
+    background: #fff;
+    border-radius: 0 0 7px 7px;
+}
+
+.openMenu_none {
+    display: none;
+}
+
+.openMenu_BG {
+    background-color: #3B69FF33;
+    width: 580px;
+    border-radius: 7px;
+    padding: 18px;
+ }
+
+.openMenu__item {
+    color: $blackColor;
+    padding: 1rem;
+    cursor: pointer;
+}
+
 
 /*------------------------------------------*
 * access
 *------------------------------------------*/
+.accessInner {
+    width: 100%;
+    height: 500px;
+    background: $ivoryColor 0% 0% no-repeat padding-box;
+}
 
 /*------------------------------------------*
 * contact
@@ -370,16 +553,13 @@ $headerHeight: 80px;
 /* PC */
 @media screen and (min-width: $maxWidth) {
     .newsInner,
-    .commentsInner,
-    .QAInner,
-    .accessInner
+    .commentsInner
     {
         max-width: 1180px;
         margin: 0 auto;
     }
 
     .priceInner,
-    .contactInner,
     .footer
     {
         max-width: 960px;

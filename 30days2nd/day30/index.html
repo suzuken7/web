@@ -11,12 +11,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
     <script src="/js/style.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    
+    <script>
+        // Q&Aのアコーディオン開閉処理
+        $(function(){
+            $('.js-menu__item__link').each(function(){
+                $(this).on('click',function(){
+                    $(this).toggleClass('on');
+                    $("+.openMenu",this).slideToggle()
+                    return false;
+                });
+            });
+        });
+    </script>
+
+
 </head>
 <body>
-    <header id="header">
+    <!-- <header id="header">
         <div class="header__inner">
             <ui class="header__menuList">
                 <li><a href="#" class="header__item mr40">News</a></li>
@@ -28,10 +44,10 @@
                 <li><a href="#" class="header__item">Contact</a></li>
             </ui>
         </div>
-    </header>
+    </header> -->
     
     <main>
-        <section id="mainVisual">
+        <!-- <section id="mainVisual">
             <div class="mainVisual mb140">
                 <div class="mainVisual__items">
                     <h1 class="mainVisual__items_title">詩が生れて、画が出来る。<br>とかくに人の世は住みにくい。</h1>
@@ -39,9 +55,9 @@
                     <span class="comBtn mainVisual__items_btn">お問い合わせしてみる</span>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="news" class="mb140">
+        <!-- <section id="news" class="mb140">
             <div class="newsInner">
                 <div class="newsInner__contents">
                     <h2 class="comTitle newsInner__menuTitle">News</h2>
@@ -66,9 +82,9 @@
                     <div class="comBtn newsInner__btn">MORE</div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="service" class="mb255">
+        <!-- <section id="service" class="mb255">
             <div class="serviceInner">
                 <h2 class="comTitle serviceInner__title">Service</h2>
                 <div class="serviceInner__items">
@@ -89,9 +105,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="result" class="mb80">
+        <!-- <section id="result" class="mb80">
             <div class="resultInner">
                 <h2 class="comTitle resultInner__title">Results</h2>
                 <div class="resultInner__items swiperSlide">
@@ -145,9 +161,9 @@
                 <div class="swiper-pagination mt30 mb30"></div>
                 <div class="comBtn resultInner__btn">VIEW ALL</div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="price">
+        <!-- <section id="price">
             <div class="priceInner">
                 <h2 class="comTitle priceInner__title">Price</h2>
                 <div class="horizontalTable">
@@ -170,25 +186,126 @@
                 </div>
                 <div class="priceInner__attention mb140">※上記料金はサンプルです。</div>
             </div>
-        </section>
-
+        </section> -->
 
         <section id="comments">
+            <figure class="commentsBackGround"></figure>
             <div class="commentsInner">
-                
-            </div><!-- .inner -->
+                <div class="commentsInner__comment_items">
+                    <div class="commentsInner__comment">
+                        <h2 class="comTitle commentsInner__comment_title">Comments</h2>
+                        <div class="commentsInner__comment_item">
+                            <figure class="commentsInner__comment_itemImg">
+                                <img src="./img/comments1.png" alt="コメンター1">
+                            </figure>
+                            <p class="commentsInner__comment_itemText">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                        </div>
+                        <div class="commentsInner__comment_item">
+                            <figure class="commentsInner__comment_itemImg">
+                                <img src="./img/comments2.png" alt="コメンター1">
+                            </figure>
+                            <p class="commentsInner__comment_itemText">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="commentsInner__allCommenter_img">
+                    <img src="./img/comments3.png" alt="コメンター">
+                </figure>
+            </div>
         </section>
 
         <section id="QA">
             <div class="QAInner">
-                
-            </div><!-- .inner -->
+                <div class="QAInner__BG">
+                    <h2 class="comTitle QAInner__title">Q&A</h2>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <div class="menu__item__link js-menu__item__link">
+                                <div class="menu__item_Q">Q</div>
+                                <div class="menu__item_text">
+                                    質問質問質問？
+                                </div>
+                            </div>
+                            <div class="openMenu">
+                                <div class="openMenu__item">
+                                    <p class="openMenu_BG">回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item__link js-menu__item__link">
+                                <div class="menu__item_Q">Q</div>
+                                <div class="menu__item_text">
+                                    質問質問質問？<br>また、質問は質問質問？
+                                </div>
+                            </div>
+                            <div class="openMenu">
+                                <div class="openMenu__item">
+                                    <p class="openMenu_BG">回答回答回答回答回答回答回答回答回答回答回答回答</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item__link js-menu__item__link">
+                                <div class="menu__item_Q">Q</div>
+                                <div class="menu__item_text">
+                                    質問質問質問？
+                                </div>
+                            </div>
+                            <div class="openMenu openMenu_none">
+                                <div class="openMenu__item">
+                                    <p class="openMenu_BG">回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item__link js-menu__item__link">
+                                <div class="menu__item_Q">Q</div>
+                                <div class="menu__item_text">
+                                    質問質問質問？
+                                </div>
+                            </div>
+                            <div class="openMenu openMenu_none">
+                                <div class="openMenu__item">
+                                    <p class="openMenu_BG">回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item__link js-menu__item__link">
+                                <div class="menu__item_Q">Q</div>
+                                <div class="menu__item_text">
+                                    質問質問質問？
+                                </div>
+                            </div>
+                            <div class="openMenu openMenu_none">
+                                <div class="openMenu__item">
+                                    <p class="openMenu_BG">回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item__link js-menu__item__link">
+                                <div class="menu__item_Q">Q</div>
+                                <div class="menu__item_text">
+                                    質問質問質問？
+                                </div>
+                            </div>
+                            <div class="openMenu openMenu_none">
+                                <div class="openMenu__item">
+                                    <p class="openMenu_BG">回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="access">
             <div class="accessInner">
                 
-            </div><!-- .inner -->
+            </div>
         </section>
 
         <section id="contact">
@@ -202,7 +319,7 @@
     <footer id="footer">
         <div class="inner">
             
-        </div><!-- .inner -->
+        </div>
     </footer>
 </body>
 </html>

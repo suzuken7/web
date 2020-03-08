@@ -25,5 +25,4 @@ window.addEventListener('DOMContentLoaded', function() {
             disableOnInteraction: true
         },
     });
-  }, false);
-   
+}, false);
