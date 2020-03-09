@@ -387,10 +387,6 @@ $headerHeight: 80px;
     padding: 3em 0;
 }
 
-.commentsInner__comment_itemImg {
-    
-}
-
 .commentsInner__comment_itemText {
     margin-left: auto;
     width: 72%;
@@ -452,7 +448,7 @@ $headerHeight: 80px;
     }
 }
 .menu__item__link:after {
-    content: '';    
+    content: '';  
     width: 15px;
     height: 15px;
     background-image: url("../img/plus.png");
@@ -501,6 +497,7 @@ $headerHeight: 80px;
 .openMenu {
     background: #fff;
     border-radius: 0 0 7px 7px;
+    display: none;
 }
 
 .openMenu_none {
@@ -526,18 +523,166 @@ $headerHeight: 80px;
 *------------------------------------------*/
 .accessInner {
     width: 100%;
-    height: 500px;
     background: $ivoryColor 0% 0% no-repeat padding-box;
+    color: white;
+}
+
+.accessInner__BG {
+    background-color: $blackColor;
+    width: 73%;
+}
+
+.accessInner__Items {
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+
+.accessInner__title {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.accessInner__address {
+    font: Normal 16px/26px "Yu Gothic UI";
+}
+
+.accessInner__btn {
+    background-color: $blackColor;
+    border: 1px solid #FFFFFF;
+}
+
+.accessInner__map {
+    position: absolute;
+    right: 0%;
+    margin-top: -33%;
+    margin-right: 10%;
 }
 
 /*------------------------------------------*
 * contact
 *------------------------------------------*/
+.contact__BG {
+    background-image: url("/img/alex-blajan-159378-unsplash.png");
+    width: 100%;
+    height: 1216px; // 最後消す
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contactInner {
+    width: 960px;
+    height: 1055px;
+    // background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.contactHeader {
+    background-image: url("../img/contact1.png");
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contactHeader__title {
+    color: $whiteColor;
+    text-align: center;
+
+}
+
+.contactItems {
+    background-color: white;
+    height: 855px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+
+
 
 /*------------------------------------------*
 * footer
 *------------------------------------------*/
+.footer {
+    background-color: $blackColor;
+    height: 425px;  // 最後消す
+    position: relative;
+    color: white;
+}
 
+.footerInner {
+    width: 1180px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+}
+
+.fa-twitter {
+    color: #B1B1B1;
+    padding-right: 20px;
+}
+
+.fa-facebook {
+    color: #B1B1B1;
+}
+
+.footer__items_menuList {
+    list-style: none;
+    text-decoration: none;
+    font: {
+        weight: normal;
+        size: 18px;
+        font: "YuGothic";
+    }
+}
+
+.footer__logo {
+    margin-left: auto;
+    position: absolute;
+    top: 50%;
+    -webkit-transform : translateY(-50%);
+    transform : translateY(-50%);
+    right: 0;
+    text-align: right;
+}
+
+.footer__logo_main {
+    color: #E3E3E3;
+    font: {
+        weight: bold;
+        size: 44px;
+        font: "Berlin Sans FB";
+    }
+}
+
+.footer__logo_copy {
+    color: white;
+    font: {
+        size: 12px;
+        fonr: "Montserrat";
+    }
+}
+
+.arrow {
+    position: fixed;
+    bottom: 2%;
+    right: 17%;
+    width: 50px;
+    height: 50px;
+    background: transparent url("/img/totop.png") 0% 0% no-repeat padding-box;
+    
+}
 
 /*------------------------------------------*
 * query   
@@ -559,10 +704,10 @@ $headerHeight: 80px;
         margin: 0 auto;
     }
 
-    .priceInner,
-    .footer
+    .priceInner
     {
         max-width: 960px;
         margin: 0 auto;
+        
     }
 }

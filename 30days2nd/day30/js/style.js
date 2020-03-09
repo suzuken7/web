@@ -1,5 +1,3 @@
-
-
 window.addEventListener('DOMContentLoaded', function() {
     var swiperSlide = new Swiper('.swiperSlide .swiper-container', {
         pagination: '.swiper-pagination',
