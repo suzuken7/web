@@ -51,10 +51,11 @@ body {
 $headerHeight: 80px;
 
 .header__inner {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: $headerHeight;
     background: #FFFFFF1A 0% 0% no-repeat padding-box;
+    z-index: 2;
 }
 
 .header__menuList {
@@ -75,6 +76,7 @@ $headerHeight: 80px;
 * mainVisual
 *------------------------------------------*/
 .mainVisual {
+    position: relative;
     width: 100vw;
     height: 648px;
     background-image: url("../img/mv.png");
@@ -574,7 +576,6 @@ $headerHeight: 80px;
 .contactInner {
     width: 960px;
     height: 1055px;
-    // background-color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -592,19 +593,191 @@ $headerHeight: 80px;
 }
 
 .contactHeader__title {
-    color: $whiteColor;
+    color: white;
     text-align: center;
-
+    padding-bottom: 12px;
+    
 }
 
-.contactItems {
+.contactHeader__text {
+    color: white;
+    text-align: center;
+    font: {
+        size: 16px;
+    }
+}
+
+.contactItems__BG {
     background-color: white;
     height: 855px;
     border-radius: 0px 0px 12px 12px;
+    padding: 60px 90px;
+    font-size: 22px;
+    color: $blackColor;
 }
 
+.contactItems {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
 
+.contactItems__item {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.contactItems__required {
+    display: flex;
+}
+
+.contactItems__required_text {
+    background-color: $redColor;
+    width: 55px;
+    height: 24px;
+    color: white;
+    position: relative;
+    left: 20%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.contactItems__select {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+// コピペ
+.cp_ipselect {
+	overflow: hidden;
+    width: 50%;
+    height: 32px;
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 100%;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl01 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl01::before {
+	position: absolute;
+	top: 0.6em;
+	right: 0.5em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent; // 三角形作ってる
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl01 select {
+    padding-left: 5%;
+    font-size: 18px;
+}
+
+// コピペ2
+.comInput {
+    box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #dddddd;
+	border: none;
+	border-bottom: 2px solid #dddddd;
+    background: transparent;
+    font-size: 22px;
+}
+
+.ef_name input[type='name']:focus {
+	border-bottom: 2px solid $blueColor;
+    outline: none;
+}
+
+.ef_name_sub input[type='name_sub']:focus {
+	border-bottom: 2px solid $blueColor;
+	outline: none;
+}
+
+.cp_address input[type='address'] {
+	color: $blackColor;
+	border-bottom: 2px solid $blackColor;
+}
+.ef_address input[type='address']:focus {
+	border-bottom: 2px solid $blueColor;
+	outline: none;
+}
+
+.contactItems__bottomMenu {   
+    width: 100%;
+    height: 450px;
+    padding-top: 20px;
+}
+
+.contactItems__bottomMenu_textarea {
+    width: 100%;
+    height: 50%;
+}
+
+.cp_ipcheck {
+    padding: 30px 0;
+}
+
+.option-input05 {
+    width: 20px;
+    height: 20px;
+}
+
+.contactItems__bottomMenu_btn {
+    width: 174px;
+    height: 50px;
+    background: #FFAA3B 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 5px #00000033;
+    border-radius: 10px;
+    color: $whiteColor;
+    font: {
+        weight: bold;
+        size: 18px;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio {
+    display: flex;
+}
+
+.radio-label {
+    font-size: 22px;
+    padding-right: 60px;
+}
 
 /*------------------------------------------*
 * footer
@@ -670,18 +843,17 @@ $headerHeight: 80px;
     color: white;
     font: {
         size: 12px;
-        fonr: "Montserrat";
+        font: "Montserrat";
     }
 }
 
 .arrow {
     position: fixed;
     bottom: 2%;
-    right: 17%;
+    right: 3%;
     width: 50px;
     height: 50px;
     background: transparent url("/img/totop.png") 0% 0% no-repeat padding-box;
-    
 }
 
 /*------------------------------------------*

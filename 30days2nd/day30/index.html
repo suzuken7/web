@@ -33,7 +33,7 @@
 
 </head>
 <body>
-    <!-- <header id="header">
+    <header id="header">
         <div class="header__inner">
             <ui class="header__menuList">
                 <li><a href="#" class="header__item mr40">News</a></li>
@@ -45,10 +45,10 @@
                 <li><a href="#" class="header__item">Contact</a></li>
             </ui>
         </div>
-    </header> -->
+    </header>
     
     <main>
-        <!-- <section id="mainVisual">
+        <section id="mainVisual">
             <div class="mainVisual mb140">
                 <div class="mainVisual__items">
                     <h1 class="mainVisual__items_title">詩が生れて、画が出来る。<br>とかくに人の世は住みにくい。</h1>
@@ -56,9 +56,9 @@
                     <span class="comBtn mainVisual__items_btn">お問い合わせしてみる</span>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="news" class="mb140">
+        <section id="news" class="mb140">
             <div class="newsInner">
                 <div class="newsInner__contents">
                     <h2 class="comTitle newsInner__menuTitle">News</h2>
@@ -83,9 +83,9 @@
                     <div class="comBtn newsInner__btn">MORE</div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="service" class="mb255">
+        <section id="service" class="mb255">
             <div class="serviceInner">
                 <h2 class="comTitle serviceInner__title">Service</h2>
                 <div class="serviceInner__items">
@@ -106,9 +106,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="result" class="mb80">
+        <section id="result" class="mb80">
             <div class="resultInner">
                 <h2 class="comTitle resultInner__title">Results</h2>
                 <div class="resultInner__items swiperSlide">
@@ -162,9 +162,9 @@
                 <div class="swiper-pagination mt30 mb30"></div>
                 <div class="comBtn resultInner__btn">VIEW ALL</div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="price">
+        <section id="price">
             <div class="priceInner">
                 <h2 class="comTitle priceInner__title">Price</h2>
                 <div class="horizontalTable">
@@ -187,9 +187,9 @@
                 </div>
                 <div class="priceInner__attention mb140">※上記料金はサンプルです。</div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="comments">
+        <section id="comments">
             <figure class="commentsBackGround"></figure>
             <div class="commentsInner">
                 <div class="commentsInner__comment_items">
@@ -213,9 +213,9 @@
                     <img src="./img/comments3.png" alt="コメンター">
                 </figure>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="QA">
+        <section id="QA">
             <div class="QAInner">
                 <div class="QAInner__BG">
                     <h2 class="comTitle QAInner__title">Q&A</h2>
@@ -301,9 +301,9 @@
                     </ul>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="access">
+        <section id="access">
             <div class="accessInner">
                 <div class="accessInner__BG mb200">
                     <div class="accessInner__Items ml50">
@@ -314,15 +314,78 @@
                     <div class="accessInner__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6693059716285!2d139.7270927152399!3d35.660518380199164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b770913970d%3A0xccc3467fcb15b353!2zR29vZ2xl5ZCI5ZCM5Lya56S-44O75YWt5pys5pyo44Kq44OV44Kj44K5!5e0!3m2!1sja!2sjp!4v1583710619212!5m2!1sja!2sjp" width="720" height="515" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section id="contact">
             <div class="contact__BG">
                 <div class="contactInner">
                     <div class="contactHeader">
                         <h2 class="comTitle contactHeader__title">Contact Us</h2>
+                        <p class="contactHeader__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。</p>
                     </div>
-                    <div class="contactItems">
+                    <div class="contactItems__BG">
+                        <div class="contactItems">
+                            <div class="contactItems__item">
+                                <p>お問い合わせ種別</p>
+                                <div class="contactItems__required">
+                                    <span>氏名　　</span>
+                                    <span class="contactItems__required_text">必須</span>
+                                </div>
+                                <div class="contactItems__required">
+                                    <span>フリガナ</span>
+                                    <span class="contactItems__required_text">必須</span>
+                                </div>
+                                <p>メールアドレス</p>
+                                <p>性別</p>
+                            </div>
+                            <div class="contactItems__select">
+                                <div class="cp_ipselect cp_sl01">
+                                    <select required>
+                                        <option value="" hidden>選択してください</option>
+                                        <option value="1">アイテム1</option>
+                                        <option value="2">アイテム2</option>
+                                        <option value="3">アイテム3</option>
+                                        <option value="4">アイテム4</option>
+                                    </select>
+                                </div>
+                                <div class="cp_name">
+                                    <label class="ef_name">
+                                        <input class="comInput" type="name" placeholder="氏名">
+                                    </label>
+                                </div>
+                                <div class="cp_name_sub">
+                                    <label class="ef_name_sub">
+                                        <input class="comInput" type="name_sub" placeholder="フリガナ">
+                                    </label>
+                                </div>
+                                <div class="cp_address">
+                                    <label class="ef_address">
+                                        <input class="comInput" type="address" placeholder="sample@gmail.com">
+                                    </label>
+                                </div>
+
+                                <div class="radio">
+                                    <div>
+                                        <input id="radio-1" name="radio" type="radio" checked>
+                                        <label for="radio-1" class="radio-label">男性</label>
+                                    </div>
+                                    <div>
+                                        <input id="radio-2" name="radio" type="radio">
+                                        <label  for="radio-2" class="radio-label">女性</label>
+                                    </div>                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="contactItems__bottomMenu">
+                            <p>メッセージ</p>
+                            <textarea name="msg" class="contactItems__bottomMenu_textarea"></textarea>
+                            <div class="cp_ipcheck">
+                                <input type="checkbox" class="option-input05" checked />
+                                個人情報保護方針に同意する         
+                            </div>
+                            <div class="comBtn contactItems__bottomMenu_btn">送信する</div>
+                        </div>
                     </div>
                 </div>
             </div>
