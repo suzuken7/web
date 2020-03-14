@@ -40,6 +40,11 @@ body {
   z-index: 2;
 }
 
+.header_logo {
+  position: absolute;
+  margin: 21.5px 16px;
+}
+
 .header__menuList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +65,142 @@ body {
 }
 
 /*------------------------------------------*
+* side menu
+*------------------------------------------*/
+#sidebarMenu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  background-color: #ffffffee;
+}
+
+.sidebarMenu {
+  margin-top: 30%;
+}
+
+.sidebarMenuInner {
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.sidebarMenuInner li {
+  font-weight: bold;
+  padding: 20px;
+}
+
+.sidebarMenuInner li a {
+  color: #3e3e3e;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  font: "Montserrat";
+  letter-spacing: -0.45px;
+}
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+input[type=checkbox] {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+}
+
+.sidebarIconToggle {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  top: 22px;
+  width: 30px;
+  right: 20px;
+}
+
+.spinner {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #3e3e3e;
+}
+
+.horizontal {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+.diagonal.part-1 {
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+}
+
+.diagonal.part-2 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-top: 8px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+/*------------------------------------------*
 * mainVisual
 *------------------------------------------*/
 .mainVisual {
@@ -70,6 +211,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 140px;
 }
 
 .mainVisual__items {
@@ -106,6 +248,7 @@ body {
   height: 665px;
   -webkit-box-shadow: 0px 5px 12px #3e3e3e;
           box-shadow: 0px 5px 12px #3e3e3e;
+  margin-bottom: 140px;
 }
 
 .newsInner__contents {
@@ -175,7 +318,8 @@ body {
 .serviceInner {
   background-color: #3e3e3e;
   width: 100vw;
-  height: 350px;
+  height: auto;
+  margin-bottom: 255px;
 }
 
 .serviceInner__title {
@@ -196,6 +340,8 @@ body {
   width: 960px;
   height: 321px;
   margin: 0 auto;
+  position: relative;
+  top: 130px;
 }
 
 .serviceInner__item {
@@ -223,6 +369,7 @@ body {
   background-color: #3e3e3e;
   margin-left: 10%;
   padding-left: 10%;
+  margin-bottom: 80px;
 }
 
 .resultInner__title {
@@ -301,6 +448,7 @@ body {
 *------------------------------------------*/
 .priceInner {
   width: 960px;
+  margin: 0 auto;
 }
 
 .priceInner__title {
@@ -350,21 +498,21 @@ body {
 *------------------------------------------*/
 .commentsBackGround {
   background: #3e3e3e 0% 0% no-repeat padding-box;
-  width: 70%;
-  height: 616px;
-  z-index: -1;
-  position: absolute;
-  margin-top: 10%;
-  margin-right: auto;
+  width: 880px;
+  height: 650px;
+  position: relative;
+  top: 50px;
 }
 
 .commentsInner {
   width: 1180px;
   height: 616px;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top: -100px;
+  left: 15%;
 }
 
 .commentsInner__comment_items {
@@ -416,24 +564,23 @@ body {
 }
 
 .commentsInner__allCommenter_img {
-  padding-top: 10%;
+  padding-top: 100px;
 }
 
 /*------------------------------------------*
 * q&a
 *------------------------------------------*/
 .QAInner__BG {
-  margin-top: 155px;
   background-image: url("/img/sunyu-kim-1053375-unsplash.png");
   width: 100%;
   height: 1000px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .QAInner__title {
-  padding-top: 50px;
   text-align: center;
 }
 
@@ -562,9 +709,11 @@ body {
 .accessInner__BG {
   background-color: #3e3e3e;
   width: 73%;
+  margin-bottom: 200px;
 }
 
 .accessInner__Items {
+  margin-left: 150px;
   padding-top: 10%;
   padding-bottom: 15%;
 }
@@ -572,19 +721,24 @@ body {
 .accessInner__title {
   padding-top: 0;
   padding-bottom: 0;
+  margin-bottom: 40px;
 }
 
 .accessInner__address {
   font: Normal 16px/26px "Yu Gothic UI";
+  margin-bottom: 40px;
 }
 
 .accessInner__btn {
   background-color: #3e3e3e;
   border: 1px solid #FFFFFF;
+  margin-bottom: 40px;
 }
 
 .accessInner__map {
   position: absolute;
+  width: 720px;
+  height: 515px;
   right: 0%;
   margin-top: -33%;
   margin-right: 10%;
@@ -798,6 +952,7 @@ body {
 }
 
 .cp_ipcheck {
+  height: 100px;
   padding: 30px 0;
 }
 
@@ -909,23 +1064,5 @@ body {
   width: 50px;
   height: 50px;
   background: transparent url("/img/totop.png") 0% 0% no-repeat padding-box;
-}
-
-/*------------------------------------------*
-* query   
-*------------------------------------------*/
-/* SE */
-/* iPad */
-/* PC */
-@media screen and (min-width: 1366px) {
-  .newsInner,
-  .commentsInner {
-    max-width: 1180px;
-    margin: 0 auto;
-  }
-  .priceInner {
-    max-width: 960px;
-    margin: 0 auto;
-  }
 }
 /*# sourceMappingURL=style.css.map */
