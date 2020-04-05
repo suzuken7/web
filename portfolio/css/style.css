@@ -1,0 +1,9 @@
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.fitImg {
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */

@@ -5,6 +5,12 @@ NunoTheme/
 UdemyCafe/
 くりnote
 
+#portfolioの管理しないもの
+portfolio/img
+portfolio/video
+portfolio/css/style.css.map
+
+
 #detのimgはgit管理しない
 det/img
 
@@ -45,5 +51,4 @@ flower/img
 30days2nd/day28/img
 30days2nd/day29/img
 30days2nd/day30/img
-
 30days2nd/day30/css/style.css.map
