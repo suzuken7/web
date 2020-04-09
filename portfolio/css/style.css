@@ -46,6 +46,71 @@
 }
 
 /*------------------------------------------*
+* global nav
+*------------------------------------------*/
+#global-nav {
+  background: #16244edd;
+  width: 100%;
+  height: 90px;
+}
+
+#global-nav.m_fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 90px;
+}
+
+.global-nav_inner {
+  padding-bottom: 0;
+  padding-top: 0;
+  margin: 0 auto;
+}
+
+.global_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.global_item {
+  display: block;
+  width: 200px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*------------------------------------------*
+* message
+*------------------------------------------*/
+.message {
+  background-color: #f2f3f8;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.message_title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 80px;
+}
+
+.message_text {
+  text-align: center;
+  font-size: 26px;
+  color: gray;
+  padding-bottom: 28px;
+}
+
+/*------------------------------------------*
 * profile
 *------------------------------------------*/
 .profile {

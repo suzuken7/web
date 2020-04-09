@@ -15,7 +15,7 @@ $(window).on('resize',function(){
     $('.box').outerHeight(winH);
     setBgImg($('.fitImg'));
 });
- 
+
 function setBgImg(object){
     //画像サイズ取得
     var imgW = object.width();
@@ -48,3 +48,19 @@ function setBgImg(object){
         'top' : moveY
     });     
 }
+
+
+/*------------------------------------------*
+* global nav
+*------------------------------------------*/
+$( window ).on( 'scroll', function() {
+    if ( winH < jQuery( this ).scrollTop() ) {
+        jQuery( 'body' ).css( 'padding-top', 80 );      // 80:headerの高さ  
+        jQuery( '#global-nav' ).addClass( 'm_fixed' );
+    } else {
+        jQuery( 'body' ).css( 'padding-top', 0 );
+        jQuery( '#global-nav' ).removeClass( 'm_fixed' );
+    }
+});
+
+
