@@ -321,28 +321,66 @@
 * works
 *------------------------------------------*/
 .works {
-  background-color: #555555;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f2f3f8;
 }
 
 .works_title {
+  padding-bottom: 80px;
+  font-size: 60px;
   text-align: center;
-  font-size: 50px;
+  color: black;
 }
 
 .works_items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .works_item {
-  width: 30%;
+  margin: 0 10px 100px 10px;
   text-align: center;
-  padding: 30px;
+}
+
+.works_frame {
+  position: relative;
+  width: 90%;
+  margin: 2.5em auto;
+  padding: 35px 30px 20px;
+  background-color: #e8ddbd;
+  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+}
+
+.works_frame::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 35px;
+  left: 40%;
+  top: -16px;
+  background-color: rgba(204, 186, 136, 0.3);
+  /*テープ色*/
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  /*テープ角度*/
+}
+
+.works_text {
+  color: gray;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #e8ddbd));
+  background: linear-gradient(transparent 50%, #e8ddbd 50%);
 }
 
 /*------------------------------------------*

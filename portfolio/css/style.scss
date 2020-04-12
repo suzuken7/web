@@ -260,7 +260,6 @@ $navHeight: 90px;
     margin: 0 30px 50px 30px;
     background-color: white;
     filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-
 }
 .service_item_icon{
     font-size: 70px;
@@ -268,7 +267,7 @@ $navHeight: 90px;
 }
 .service_item_title {
     font-size: 30px;
-    font-weight: bold;   
+    font-weight: bold;
 }
 .service_border {
     width: 60px;
@@ -289,21 +288,50 @@ $navHeight: 90px;
 * works
 *------------------------------------------*/
 .works {
-    background-color: #555555;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: $bgColor;
 }
 .works_title {
+    padding-bottom: $titlePaddingBottomVal;
+    font-size: $titleFontSize;
     text-align: center;
-    font-size: 50px;
+    color: black;
 }
 .works_items {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 60px;
+    justify-content: center;
 }
 .works_item {
-    width: 30%;
+    margin: 0 10px 100px 10px;
     text-align: center;
-    padding: 30px;
+}
+.works_frame {
+    position: relative;
+    width: 90%;
+    margin: 2.5em auto;
+    padding: 35px 30px 20px;
+    background-color: #e8ddbd;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+.works_frame::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 35px;
+    left: 40%;
+    top: -16px;
+    background-color: rgba(204, 186, 136,0.3);/*テープ色*/
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    transform: rotate( -3deg ); /*テープ角度*/
+}
+.works_text {
+    color: gray;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(transparent 50%, #e8ddbd 50%);
 }
 
 
