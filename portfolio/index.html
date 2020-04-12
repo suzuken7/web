@@ -7,8 +7,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e92658c180.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/style.js"></script>
 </head>
 <body>
@@ -80,63 +80,110 @@
 
         <!-- start about -->
         <section id="about">
-            <div class="profile">
-                <img src="./img/profile_image.jpg" alt="プロフィール画像" class="profile_image">
-                <div class="profile_info">
-                    <h2 class="profile_title">About Me</h2>
-                    <div class="profile_name">
-                        <h3><i class="fas fa-user"></i>　けんすけ <a href="https://twitter.com/ken2web" class="profile_twitter">@ken2web</a></h3>
-                        <br>
-                        <p>はじめまして。けんすけと申します。</p>
-                        <p>寄り添う提案を致します。</p>
-                    </div>
-                    <div class="profile_status">
-                        <h3><i class="fas fa-pen-fancy"></i>　Status</h3>
-                        <br>
-                        <p>都内が主な活動拠点</p>
-                        <p>WordPress制作をメインに活動中。コーディング可。</p>
-                        <p>オンラインコミュニティ「そこあげタイム」在籍</p>
-                        <p>福島県育ち、東京都在中。携帯アプリの企画開発、運営を経験。</p>
-                        <p>フリーランスWebエンジニアとして活動中。</p>
-                        <p>猫が好き。</p>
-                    </div>
-                    <div class="profile_skill">
-                        <h3><i class="fas fa-desktop"></i>　Skills</h3>
-                        <br>
-                        <div class="profile_skill_items">
-                            <div class="profile_skill_item"><i class="fab fa-html5"></i></div>
-                            <div class="profile_skill_item"><i class="fab fa-css3-alt"></i></div>
-                            <div class="profile_skill_item"><i class="fab fa-sass"></i></div>
-                            <div class="profile_skill_item"><i class="fab fa-js-square"></i></div>
-                            <div class="profile_skill_item"><i class="fab fa-php"></i></div>
-                            <div class="profile_skill_item"><i class="fas fa-database"></i></div>
-                            <div class="profile_skill_item"><i class="fab fa-wordpress"></i></div>
-                            <div class="profile_skill_item"><i class="fab fa-github"></i></div>
+            <div class="fixed-bg bg01 ">
+                <div class="overlay_bg1">
+                    <h2 class="about_title">ABOUT</h2>
+                    <div class="about">
+                        <div class="about_profile">
+                            <div class="about_me">
+                                <img src="./img/about.png" alt="プロフィール画像" width="250px" height="250px" class="about_image">
+                                <p class="about_name">鈴木 謙介</p>
+                                <p class="about_job">Web系フリーランスエンジニア</p>
+                            </div>
+                        </div>
+                        <div class="about_info">
+                            <h3 class="about_status_title">Status</h3>
+                            <br>
+                            <div class="about_status_text">
+                                <p>都内が主な活動拠点</p>
+                                <p>WordPress制作をメインに活動中。コーディング可。</p>
+                                <p>オンラインコミュニティ「そこあげタイム」在籍</p>
+                                <p>福島県育ち、東京都在中。携帯アプリの企画開発、運営を経験。</p>
+                                <p>フリーランスWebエンジニアとして活動中。</p>
+                                <p>猫が好き。</p>
+                            </div>
+                            <h3 class="about_skill_title">Skills</h3>
+                            <br>
+                            <div class="about_skill_items">
+                                <div class="about_skill_item">
+                                    <i class="fab fa-html5"></i>
+                                    <p class="about_skill_iconText">HTML5</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <p class="about_skill_iconText">CSS3</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-sass"></i>
+                                    <p class="about_skill_iconText">SASS</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-js-square"></i>
+                                    <p class="about_skill_iconText">JS(JQuery)</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-bootstrap"></i>
+                                    <p class="about_skill_iconText">Bootstrap</p>
+                                </div>
+                            </div>
+                            <div class="about_skill_items">
+                                <div class="about_skill_item">
+                                    <i class="fab fa-wordpress"></i>
+                                    <p class="about_skill_iconText">WordPress</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-php"></i>
+                                    <p class="about_skill_iconText">PHP</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fas fa-database"></i>
+                                    <p class="about_skill_iconText">MySQL</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-github"></i>
+                                    <p class="about_skill_iconText">Git</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-unity"></i>
+                                    <p class="about_skill_iconText">Unity</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end profile -->
+        <!-- end about -->
         
         <!-- start service -->
         <section id="service">
             <div class="service">
                 <h2 class="service_title">Service</h2>
                 <div class="service_items">
-                    <div class="service_item">  
+                    <div class="service_item">
                         <i class="fas fa-file-code service_item_icon"></i>
-                        <h2 class="service_item_title">ランディングページの作成</h2>
+                        <p class="service_item_title">コーディング作業</p>
+                        <div class="service_border"></div>
+                        <p class="service_item_text">お預かりしたXDなどのデザインデータをもとに、HTML/CSS/Bootstrap/JavaScript (jQuery)を用いて適切にコーディングいたします。<br>レスポンシブ対応も可能です。</p>
+                    </div>
+                    <div class="service_item ">  
+                        <i class="fas fa-desktop service_item_icon"></i>
+                        <p class="service_item_title">ランディングページの作成</p>
+                        <div class="service_border"></div>
+                        <p class="service_item_text">お客様のご要望をしっかりヒヤリングした上で、ご要望内容に沿ったLP（ランディングページ）を制作いたします。<br>レスポンシブ対応もお任せください。</p>
+                    </div>
+                </div>
+                <div class="service_items">
+                    <div class="service_item">  
+                        <i class="fas fa-mobile-alt service_item_icon"></i>
+                        <p class="service_item_title">レスポンシブ対応</p>
+                        <div class="service_border"></div>
                         <p class="service_item_text">お客様のご要望をしっかりヒヤリングした上で、ご要望内容に沿ったLP（ランディングページ）を制作いたします。<br>レスポンシブ対応もお任せください。</p>
                     </div>
                     <div class="service_item">
-                        <i class="fas fa-keyboard service_item_icon"></i>
-                        <h2 class="service_item_title">コーディング作業</h2>
-                        <p class="service_item_text">お預かりしたXDなどのデザインデータをもとに、HTML/CSS/Bootstrap/JavaScript (jQuery)を用いて適切にコーディングいたします。<br>レスポンシブ対応も可能です。</p>
-                    </div>
-                    <div class="service_item">
                         <i class="fab fa-wordpress service_item_icon"></i>
-                        <h2 class="service_item_title">WordPressサイト制作</h2>
+                        <p class="service_item_title">WordPressサイト制作</p>
+                        <div class="service_border"></div>
                         <p class="service_item_text">お預かりしたXDなどのデザインデータをもとに、CMS（WordPress）を利用したコーポレートサイトの構築をいたします。デザイン制作込みでの受注も可能です（テンプレートテーマ）。</p>
                     </div>
                 </div>

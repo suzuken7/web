@@ -1,4 +1,23 @@
 /*------------------------------------------*
+* 変数
+*------------------------------------------*/
+$titlePaddingTopVal: 120px;
+$titlePaddingBottomVal: 80px;
+$titleFontSize: 60px;
+$textFontSize: 16px;
+
+$orange: #ca970b;
+$bgColor: #f2f3f8;
+
+
+/*------------------------------------------*
+* common
+*------------------------------------------*/
+.center {
+    margin: 0 auto;
+}
+
+/*------------------------------------------*
 * mainVisual
 *------------------------------------------*/
 .box {
@@ -49,6 +68,7 @@ $navHeight: 90px;
     background: #16244edd;
     width: 100%;
     height: $navHeight;
+    z-index: 10;
 }
 
 #global-nav.m_fixed {
@@ -85,15 +105,15 @@ $navHeight: 90px;
 * message
 *------------------------------------------*/
 .message {
-    background-color: #f2f3f8;
-    padding-top: 120px;
+    background-color: $bgColor;
+    padding-top: $titlePaddingTopVal;
     padding-bottom: 120px;
 }
 
 .message_title {
     text-align: center;
-    font-size: 60px;
-    padding-bottom: 80px;
+    font-size: $titleFontSize;
+    padding-bottom: $titlePaddingBottomVal;
 }
 
 .message_text {
@@ -105,75 +125,162 @@ $navHeight: 90px;
 
 
 /*------------------------------------------*
-* profile
+* about
 *------------------------------------------*/
-.profile {
-    background-color: tomato;
-    display: flex;
-}
-.profile_image {
-    width: 50%;
-}
-.profile_info {
-    background-color: turquoise;
-    width: 100%;
-    margin: 100px 50px;
+.about_title {
+    padding-top: $titlePaddingTopVal;
+    padding-bottom: $titlePaddingBottomVal;
+    font-size: $titleFontSize;
     text-align: center;
+    color: white;
 }
-.profile_name {
-    background-color: yellowgreen;
-    text-align: left;
-}
-.profile_twitter {
-    text-decoration: none;
-}
-.profile_status {
-    margin-top: 50px;
-    text-align: left;
-}
-.profile_skill {
-    margin-top: 50px;
-    text-align: left;
-}
-.profile_skill_items {
+.about {
+    color: white;
     display: flex;
-    justify-content: space-evenly;
-}
-.profile_skill_item {
-    font-size: 50px;
+    padding-bottom: 120px;
 }
 
+.fixed-bg {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+   
+.bg01 {
+    background-image: url(../img/desk.jpg);
+}
+.overlay_bg1 {
+    height: 100vh;
+    background-color: #000000cc;
+}
+.about_profile {
+    width: 50%;
+
+}
+.about_image {
+    height: auto;
+    padding-bottom: 30px;
+}
+.about_me {
+    text-align: left;
+    padding-left: 30%; 
+}
+.about_name {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 30px;
+    color: $orange;
+}
+.about_job {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 30px;
+}
+.about_twitter {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.about_info {
+    width: 40%;
+}
+.about_status_title {
+    position: relative;
+    right: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ca970b;
+}
+.about_status_title::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f406';
+    position: relative;
+    right: 15px;
+}
+.about_status_text {
+    font-size: 20px;
+    font-weight: 700;
+}
+.about_skill_title {
+    position: relative;
+    right: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ca970b;
+    margin-top: 70px;
+}
+.about_skill_title::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f0ad';
+    position: relative;
+    right: 15px;
+}
+.about_skill_items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.about_skill_item {
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+}
+.about_skill_iconText {
+    font-size: 10px;
+    line-height: 2px;
+}
 
 /*------------------------------------------*
 * service
 *------------------------------------------*/
+.service {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: $bgColor;
+}
 .service_title {
+    padding-bottom: $titlePaddingBottomVal;
+    font-size: $titleFontSize;
     text-align: center;
-    font-size: 50px;
-    margin: 50px;
+    color: black;
 }
 .service_items {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
+    justify-content: center;
 }
 .service_item {
-    background-color: yellowgreen;
-    width: 30%;
-    height: 400px;
+    width: 600px;
+    height: 410px;
     text-align: center;
-    padding: 30px;
+    padding: 30px 50px;
+    margin: 0 30px 50px 30px;
+    background-color: white;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+
 }
 .service_item_icon{
-    font-size: 50px;
+    font-size: 70px;
     padding-bottom: 30px;
 }
 .service_item_title {
-    padding: 0px 30px 20px 30px;
+    font-size: 30px;
+    font-weight: bold;   
+}
+.service_border {
+    width: 60px;
+    margin: 0 auto;
+    border-bottom: medium solid orange;
 }
 .service_item_text {
+    padding-top: 30px;
+    color: gray;
     text-align: left;
     font-size: 20px;
+    font-weight: 700;
     letter-spacing: 0.1em;
     line-height: 1.7;
 }
@@ -187,7 +294,6 @@ $navHeight: 90px;
 .works_title {
     text-align: center;
     font-size: 50px;
-    margin: 50px;
 }
 .works_items {
     display: flex;
