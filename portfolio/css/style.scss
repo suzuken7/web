@@ -338,27 +338,27 @@ $navHeight: 90px;
 /*------------------------------------------*
 * contact
 *------------------------------------------*/
-.contact_inner {
-    background-color: rosybrown;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+.contact {
+    padding-top: 120px;
+    padding-bottom: 140px;
 }
 .contact_title {
+    font-size: $titleFontSize;
     text-align: center;
-    font-size: 50px;
+    color: black;
 }
 .contact_text {
-    text-align: center;
+    color: gray;
     font-size: 20px;
+    font-weight: 700;
+    text-align: center;
     padding-bottom: 50px;
 }
-
 
 //-----------------------------------------------------
 // 変数
 //-----------------------------------------------------
-$c-main: #4d767b;
+$c-main: #ca970b;
 $c-sub: #9ebfc0;
 $c-text: #333;
 
@@ -459,7 +459,7 @@ img {
     }
 
     &-input {
-        margin-bottom: 1em;
+        margin-bottom: 2em;
 
         input {
 
@@ -468,7 +468,7 @@ img {
     }
 
     &-textarea {
-        margin-bottom: 1em;
+        margin-bottom: 3em;
 
         textarea {
 
@@ -485,12 +485,16 @@ img {
         }
 
         input {
-            width: 100%;
-            max-width: 100%;
+            width: 40%;
+            height: 50px;
             background-color: $c-main;
             border-radius: 6px;
             color: #fff;
-            padding: 1.2em;
+            display: flex;
+            font-size: 1.8rem;
+            font-weight: 500;
+            justify-content: center;
+            margin: 0 auto;
         }
     }
 
@@ -500,20 +504,20 @@ img {
 }
 
 
-
-
-
 /*------------------------------------------*
 * footer
 *------------------------------------------*/
 .footer {
-    background-color: yellowgreen;
+    background-color: #16244eee;
     text-align: center;
+    padding: 10px 0;
 }
 .footer-icon {
-    font-size: 50px;
+    color: #76d9ff;
+    font-size: 40px;
+    padding-bottom: 10px;
 }
 .footer_copyright {
-    font-size: 20px;
-    margin: 20px 0 10px 0;
+    color: white;
+    font-size: 10px;
 }
