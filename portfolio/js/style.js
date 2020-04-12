@@ -64,3 +64,69 @@ $( window ).on( 'scroll', function() {
 });
 
 
+function changeColor() {
+    var timing = 40; // 変化するタイミングを微調整する
+  
+    var scrollY = window.pageYOffset;
+    // var body = document.body;
+    var body = document.global_item;
+  
+    var trigger1 = document.getElementById('about');
+    var trigger2 = document.getElementById('service');
+    var trigger3 = document.getElementById('works');
+    var trigger4 = document.getElementById('contact');
+  
+    var trigger1Y = trigger1.getBoundingClientRect().top;
+    var trigger2Y = trigger2.getBoundingClientRect().top;
+    var trigger3Y = trigger3.getBoundingClientRect().top;
+    var trigger4Y = trigger4.getBoundingClientRect().top;
+  
+    var navAbout    = document.getElementById("nav_about");
+    var navService  = document.getElementById("nav_service");
+    var navWorks    = document.getElementById("nav_works");
+    var navContact  = document.getElementById("nav_contact");
+
+    var doch = $(document).innerHeight(); //ページ全体の高さ
+    var winh = $(window).innerHeight(); //ウィンドウの高さ
+    var bottom = doch - winh; //ページ全体の高さ - ウィンドウの高さ = ページの最下部位置
+    
+    var activeColor = "rgba(202,151,13,255)";
+    var inactiveColor = "rgba(202,151,13,0)";
+
+    // 先に一番下の条件を判定する_
+    if (trigger4Y - timing < 0 || bottom <= $(window).scrollTop()) {
+        navAbout.style.backgroundColor = inactiveColor;
+        navService.style.backgroundColor = inactiveColor;
+        navWorks.style.backgroundColor = inactiveColor;
+        navContact.style.backgroundColor = inactiveColor;
+        navContact.style.backgroundColor = activeColor;
+    }
+    else if(trigger2Y - timing > 0 && 0 >= trigger1Y - timing) {    
+        navAbout.style.backgroundColor = activeColor;
+        navService.style.backgroundColor = inactiveColor;
+        navWorks.style.backgroundColor = inactiveColor;
+        navContact.style.backgroundColor = inactiveColor;
+    }
+    else if(trigger3Y - timing > 0 && 0 >= trigger2Y - timing) {
+        navAbout.style.backgroundColor = inactiveColor;
+        navService.style.backgroundColor = activeColor;
+        navWorks.style.backgroundColor = inactiveColor;
+        navContact.style.backgroundColor = inactiveColor;
+    } 
+    else if(trigger4Y - timing > 0 && 0 >= trigger3Y - timing) {
+        navAbout.style.backgroundColor = inactiveColor;
+        navService.style.backgroundColor = inactiveColor;
+        navWorks.style.backgroundColor = activeColor;
+        navContact.style.backgroundColor = inactiveColor;
+    }
+    else {  
+        navAbout.style.backgroundColor = inactiveColor;
+        navService.style.backgroundColor = inactiveColor;
+        navWorks.style.backgroundColor = inactiveColor;
+        navContact.style.backgroundColor = inactiveColor;
+        navContact.style.backgroundColor = inactiveColor;
+    }
+
+}
+  
+window.addEventListener('scroll', changeColor);
