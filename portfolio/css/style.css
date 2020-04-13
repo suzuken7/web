@@ -400,11 +400,11 @@
 
 .service_item {
   width: 40%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
   text-align: center;
   padding: 30px 50px;
-  margin: 0 20px 50px 20px;
+  margin: 0 30px 50px 30px;
   background-color: white;
   -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
           filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
@@ -656,6 +656,10 @@
   padding-bottom: 10px;
 }
 
+.footer-icon:hover {
+  opacity: 0.7;
+}
+
 .footer_copyright {
   color: white;
   font-size: 10px;
@@ -778,7 +782,7 @@
   }
   .about_info {
     margin: 0 auto;
-    width: 50%;
+    width: 500px;
   }
   .about_status_title {
     text-align: center;
@@ -806,6 +810,10 @@
   }
   .works_items {
     display: block;
+  }
+  .contact {
+    width: 700px;
+    margin: 0 auto;
   }
 }
 
