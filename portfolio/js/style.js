@@ -94,7 +94,7 @@ function changeColor() {
     var inactiveColor = "rgba(202,151,13,0)";
 
     // 先に一番下の条件を判定する_
-    if (trigger4Y - timing < 0 || bottom <= $(window).scrollTop()) {
+    if (trigger4Y - timing < 0 || bottom - timing <= $(window).scrollTop()) {
         navAbout.style.backgroundColor = inactiveColor;
         navService.style.backgroundColor = inactiveColor;
         navWorks.style.backgroundColor = inactiveColor;
@@ -128,7 +128,6 @@ function changeColor() {
     }
 
 }
-  
 window.addEventListener('scroll', changeColor);
 
 // スムーススクロール_
