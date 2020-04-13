@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>Portfolio</title>
+    <title>Kensuke's Portfolio</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -23,11 +23,17 @@
 
     <main>
         <!-- start mainVisual -->
-        <section id="mainVisual">
+        <section id="mainVisual">            
             <div class="box">
-                <video class="fitImg" src="./video/01.mp4" muted autoplay loop alt=""></video>
+                <video class="fitImg showPC" src="./video/01.mp4" muted autoplay loop alt=""></video>
+                <!-- 携帯表示 -->
+                <div class="showMobile">
+                    <p class="mobileTitle">Kensuke Suzuki</p>
+                    <p class="mobileSubTitle">Web Engineer</p>
+                    <img class="resizeImage" src="./img/test.png" alt="mainVisual">
+                </div>
             </div>
-            <div class="overlay_bg">
+            <div class="overlay_bg showPC">
                 <h1 class="overlay_text overlay_title">Hello, Welcome to My Portfolio</h1>
                 <span class="overlay_text overlay_subTitle">
                     『人との出会いは奇跡』<br>
@@ -35,7 +41,7 @@
                 </span>
                 <a href="#message" class="scroll-down" address="true"></a>
             </div>
-        </section>
+         </section>
         <!-- end mainVisual -->
 
         <!-- start global-nav -->
