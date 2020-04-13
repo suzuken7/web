@@ -399,11 +399,12 @@
 }
 
 .service_item {
-  width: 600px;
-  height: 410px;
+  width: 40%;
+  max-width: 600px;
+  height: auto;
   text-align: center;
   padding: 30px 50px;
-  margin: 0 30px 50px 30px;
+  margin: 0 20px 50px 20px;
   background-color: white;
   -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
           filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
@@ -800,6 +801,7 @@
     margin: 0 auto;
   }
   .service_item {
+    width: 100%;
     margin: 50px auto;
   }
   .works_items {
