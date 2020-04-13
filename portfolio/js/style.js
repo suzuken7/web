@@ -188,3 +188,13 @@ function stopload(){
     $('.loading').delay(1000).fadeOut(700);
 }
 setTimeout('stopload()',10000);
+
+
+// ハンバーガーメニュー
+(function($) {
+    $(function(){
+        $('.menu-btn').on('click', function(){
+            $('.menu').toggleClass('is-active');
+        }); 
+    });
+})(jQuery);

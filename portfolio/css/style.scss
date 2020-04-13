@@ -200,6 +200,9 @@ $navHeight: 90px;
     transition: 0.3s;
 }
 
+
+
+
 /*------------------------------------------*
 * message
 *------------------------------------------*/
@@ -653,60 +656,39 @@ $navHeight: 90px;
     background: #000;
     z-index: 9999;
     font-size: 27px;
-  }
-  .animation{
-      position: absolute;
+}
+.animation{
+    position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #fff;
-      -webkit-animation: lodanimetion 1500ms ease-out forwards infinite;
+    -webkit-animation: lodanimetion 1500ms ease-out forwards infinite;
     animation: lodanimetion 1500ms ease-out forwards infinite;
-  }
-  @keyframes lodanimetion {
+}
+@keyframes lodanimetion {
     from,to {
           opacity: 0;
     }
     50% {
           opacity: .5;
     }
-  }
-
-
-
-
-
-
-
-
-
-
-  
-
-// デバッグ_
-.debug {
-    position: fixed;
-    width: 100%;
-    height: 30px;
-    z-index: 10000;    
 }
 
 @media (min-width: ($w-pc)) {
     // @content;
-    .debug {
-        background-color: blue;
+    .global_name {
+        visibility: hidden;
     }
-        
+    .menu-btn {
+        visibility: hidden;
+    }
 }
 
 @media (max-width: ($w-tab)) {
-    // @content;
-    .debug {
-        background-color: greenyellow;
-    }
-    
+    // @content;    
     .about {
         display: block;
     }
@@ -765,15 +747,89 @@ $navHeight: 90px;
         width: 700px;
         margin: 0 auto;
     }
-    
+
+    .global_name {
+        visibility: hidden;
+    }
+    .menu-btn {
+        visibility: hidden;
+    }
 
 }
 
 @media (max-width: ($w-sp)) {
     // @content;
-    .debug {
-        background-color: tomato;
+    .global_list {
+        display: none;
     }
+    .menu-btn {
+        visibility: visible;
+    }
+    .global_name {
+        visibility: visible;
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        line-height: 90px;
+        padding-left: 30px;
+    }
+}
 
 
+/*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+.menu-btn{
+    z-index: 10000;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    margin-left: auto;
+    margin-right: 30px;
+    
+    position: relative;
+    top: 20px;
+}
+
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba($color: #000000, $alpha: 0.8);
+}
+.menu__item{
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+}
+  
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+    transform: translateX(100vw);
+    transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+    transform: translateX(0);
 }
