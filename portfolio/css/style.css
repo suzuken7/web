@@ -778,7 +778,7 @@
   .global_name {
     visibility: hidden;
   }
-  .menu-btn {
+  .menu-btn, .menu {
     visibility: hidden;
   }
   .showMobile {
@@ -848,7 +848,7 @@
   .global_name {
     visibility: hidden;
   }
-  .menu-btn {
+  .menu-btn, .menu {
     visibility: hidden;
   }
   .showMobile {
@@ -863,7 +863,7 @@
   .global_list {
     display: none;
   }
-  .menu-btn {
+  .menu-btn, .menu {
     visibility: visible;
   }
   .global_name {
