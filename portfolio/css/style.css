@@ -847,8 +847,9 @@ body {
     right: 0;
   }
   .about_status_text {
-    text-align: center;
+    text-align: left;
     padding-bottom: 50px;
+    padding-left: 50px;
   }
   .about_skill_title {
     text-align: center;

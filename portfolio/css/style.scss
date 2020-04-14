@@ -313,7 +313,6 @@ $navHeight: 70px;
     background-image: url(../img/desk.jpg);
 }
 .overlay_bg1 {
-    // height: 100vh;
     background-color: #000000cc;
 }
 .about_profile {
@@ -788,8 +787,9 @@ $navHeight: 70px;
         right: 0;
     }
     .about_status_text {
-        text-align: center;
+        text-align: left;
         padding-bottom: 50px;
+        padding-left: 50px;
     }
     .about_skill_title {
         text-align: center;
