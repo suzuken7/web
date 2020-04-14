@@ -361,8 +361,10 @@ $navHeight: 70px;
     right: 15px;
 }
 .about_status_text {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 22px;
+    // font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.1em;
 }
 .about_skill_title {
     position: relative;
@@ -416,8 +418,8 @@ $navHeight: 70px;
     justify-content: center;
 }
 .service_item {
-    width: 40%;
-    max-width: 500px;
+    width: 50%;
+    max-width: 550px;
     height: auto;
     text-align: center;
     padding: 30px 50px;
@@ -443,7 +445,7 @@ $navHeight: 70px;
     color: gray;
     text-align: left;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.1em;
     line-height: 1.7;
 }
