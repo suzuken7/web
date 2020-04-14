@@ -6,6 +6,10 @@
 /*------------------------------------------*
 * 変数
 *------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
 /*------------------------------------------*
 * body
 *------------------------------------------*/
@@ -33,7 +37,7 @@ body {
   right: 20px;
   left: 0;
   text-align: center;
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   text-shadow: 2px 3px 4px #808080;
@@ -47,7 +51,7 @@ body {
   right: 20px;
   left: 0;
   text-align: center;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.05em;
   text-shadow: 2px 3px 4px #808080;
@@ -89,14 +93,14 @@ body {
 }
 
 .overlay_title {
-  font-size: 50px;
+  font-size: 5rem;
   letter-spacing: 0.05em;
   text-shadow: 2px 3px 4px #222222;
 }
 
 .overlay_subTitle {
   top: 160px;
-  font-size: 25px;
+  font-size: 2.5rem;
   letter-spacing: 0.1em;
   text-shadow: 2px 3px 4px #222222;
 }
@@ -217,7 +221,7 @@ body {
   line-height: 70px;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -272,21 +276,21 @@ body {
 *------------------------------------------*/
 .message {
   background-color: #e2f3e888;
-  padding-top: 120px;
-  padding-bottom: 140px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .message_title {
   text-align: center;
-  font-size: 90px;
-  padding-bottom: 80px;
+  font-size: 5rem;
+  padding-bottom: 40px;
   font-family: "Comic Sans MS", sans-serif;
   letter-spacing: 0.05em;
 }
 
 .message_text {
   text-align: center;
-  font-size: 26px;
+  font-size: 2rem;
   color: gray;
   padding-bottom: 28px;
 }
@@ -295,9 +299,9 @@ body {
 * about
 *------------------------------------------*/
 .about_title {
-  padding-top: 200px;
-  padding-bottom: 80px;
-  font-size: 90px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  font-size: 5rem;
   text-align: center;
   color: white;
   font-family: "Comic Sans MS", sans-serif;
@@ -309,9 +313,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 120px;
   height: auto;
-  min-height: 860px;
+  min-height: 750px;
 }
 
 .fixed-bg {
@@ -330,7 +333,7 @@ body {
 }
 
 .about_profile {
-  width: 50%;
+  width: 60%;
 }
 
 .about_image {
@@ -344,21 +347,15 @@ body {
 }
 
 .about_name {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   padding-left: 30px;
   color: #e5ab47;
 }
 
 .about_job {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  padding-left: 30px;
-}
-
-.about_twitter {
-  font-size: 30px;
-  padding-top: 20px;
   padding-left: 30px;
 }
 
@@ -369,7 +366,7 @@ body {
 .about_status_title {
   position: relative;
   right: 30px;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   color: #e5ab47;
 }
@@ -382,8 +379,8 @@ body {
 }
 
 .about_status_text {
-  font-size: 22px;
-  line-height: 40px;
+  font-size: 2rem;
+  line-height: 30px;
   letter-spacing: 0.1em;
 }
 
@@ -393,7 +390,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: #e5ab47;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .about_skill_title::before {
@@ -430,14 +427,13 @@ body {
 * service
 *------------------------------------------*/
 .service {
-  padding-top: 200px;
-  padding-bottom: 120px;
+  padding-top: 120px;
   background-color: #e2f3e888;
 }
 
 .service_title {
-  padding-bottom: 80px;
-  font-size: 90px;
+  padding-bottom: 40px;
+  font-size: 5rem;
   text-align: center;
   color: black;
   font-family: "Comic Sans MS", sans-serif;
@@ -455,23 +451,23 @@ body {
 
 .service_item {
   width: 50%;
-  max-width: 550px;
+  max-width: 350px;
   height: auto;
   text-align: center;
   padding: 30px 50px;
-  margin: 0 30px 50px 30px;
+  margin: 50px 30px 50px 30px;
   background-color: white;
   -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
           filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
 }
 
 .service_item_icon {
-  font-size: 70px;
+  font-size: 60px;
   padding-bottom: 30px;
 }
 
 .service_item_title {
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -485,7 +481,7 @@ body {
   padding-top: 30px;
   color: gray;
   text-align: left;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1.7;
@@ -503,14 +499,14 @@ body {
 * works
 *------------------------------------------*/
 .works {
-  padding-top: 200px;
-  padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 40px;
   background-color: #e2f3e888;
 }
 
 .works_title {
-  padding-bottom: 80px;
-  font-size: 90px;
+  padding-bottom: 40px;
+  font-size: 5rem;
   text-align: center;
   color: black;
   font-family: "Comic Sans MS", sans-serif;
@@ -533,7 +529,8 @@ body {
 
 .works_frame {
   position: relative;
-  width: 500px;
+  max-width: 480px;
+  max-height: 400px;
   margin: 2.5em auto;
   padding: 35px 30px 30px;
   background-color: #e8ddbd;
@@ -561,7 +558,7 @@ body {
 .works_text {
   color: gray;
   display: inline-block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #e8ddbd));
   background: linear-gradient(transparent 50%, #e8ddbd 50%);
@@ -604,7 +601,7 @@ body {
 }
 
 .contact_title {
-  font-size: 90px;
+  font-size: 5rem;
   text-align: center;
   color: black;
   font-family: "Comic Sans MS", sans-serif;
@@ -613,10 +610,9 @@ body {
 
 .contact_text {
   color: gray;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 1.5rem;
   text-align: center;
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
 .contact-submit {
@@ -820,6 +816,7 @@ body {
 @media (max-width: 1023px) {
   .about {
     display: block;
+    padding-bottom: 100px;
   }
   .about_profile {
     margin: 0 auto;
@@ -849,7 +846,7 @@ body {
   .about_status_text {
     text-align: left;
     padding-bottom: 50px;
-    padding-left: 50px;
+    padding-left: 40px;
   }
   .about_skill_title {
     text-align: center;
@@ -908,6 +905,9 @@ body {
   }
   .showPC {
     display: none !important;
+  }
+  .contact {
+    max-width: 400px;
   }
 }
 
