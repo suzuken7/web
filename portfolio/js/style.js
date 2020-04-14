@@ -198,3 +198,33 @@ setTimeout('stopload()',10000);
         }); 
     });
 })(jQuery);
+
+
+// タイトルアニメーション
+// $(function() {
+//     var title = $('.title_anime');
+//     var txt_array = title.text().split('');
+    
+//     $('.title_anime').html('');
+    
+//     $.each(txt_array, function(index, element) {
+//         var new_element = $("<span/>").text(element).css({ opacity: 0 });
+//         title.append(new_element);
+//         new_element.delay(index * 100);
+//         new_element.animate({opacity: 1}, 3000);
+//     });
+// });
+
+// $(function() {
+//     var title2 = $('.title_anime2');
+//     var txt_array2 = title2.text().split('');
+    
+//     $('.title_anime2').html('');
+    
+//     $.each(txt_array2, function(index, element) {
+//         var new_element = $("<span/>").text(element).css({ opacity: 0 });
+//         title2.append(new_element);
+//         new_element.delay(index * 100);
+//         new_element.animate({opacity: 1}, 3000);
+//     });
+// });

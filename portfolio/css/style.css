@@ -1,12 +1,16 @@
 @charset "UTF-8";
 /*------------------------------------------*
+* import
+*------------------------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/*------------------------------------------*
 * 変数
 *------------------------------------------*/
 /*------------------------------------------*
-* common
+* body
 *------------------------------------------*/
-.center {
-  margin: 0 auto;
+body {
+  font-family: 'Noto Sans Japanese', sans-serif;
 }
 
 /*------------------------------------------*
@@ -15,6 +19,10 @@
 .resizeImage {
   width: 100%;
   height: 100vh;
+}
+
+.pickColor {
+  color: #e5ab47;
 }
 
 .mobileTitle {
@@ -28,6 +36,7 @@
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 0.1em;
+  text-shadow: 2px 3px 4px #808080;
 }
 
 .mobileSubTitle {
@@ -41,6 +50,7 @@
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 0.05em;
+  text-shadow: 2px 3px 4px #808080;
 }
 
 .box {
@@ -74,17 +84,21 @@
   margin: auto;
   max-width: 700px;
   width: 100%;
-  height: 50px;
-  font-size: 24px;
+  height: 100px;
   z-index: 3;
 }
 
 .overlay_title {
-  font-size: 40px;
+  font-size: 50px;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 3px 4px #222222;
 }
 
 .overlay_subTitle {
-  top: 150px;
+  top: 160px;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 3px 4px #222222;
 }
 
 .scroll-down {
@@ -169,7 +183,7 @@
 #global-nav {
   background: #147472dd;
   width: 100%;
-  height: 90px;
+  height: 70px;
   z-index: 10;
 }
 
@@ -177,7 +191,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 90px;
+  height: 70px;
 }
 
 .global-nav_inner {
@@ -199,8 +213,8 @@
 .global_item {
   display: block;
   width: 200px;
-  height: 90px;
-  line-height: 90px;
+  height: 70px;
+  line-height: 70px;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -212,6 +226,8 @@
   display: inline-block;
   text-decoration: none;
   line-height: 30px;
+  text-shadow: 1px 2px 3px #222222;
+  letter-spacing: 0.1em;
 }
 
 .global_item_anim::after {
@@ -255,15 +271,17 @@
 * message
 *------------------------------------------*/
 .message {
-  background-color: #e2f3e833;
+  background-color: #e2f3e888;
   padding-top: 120px;
   padding-bottom: 140px;
 }
 
 .message_title {
   text-align: center;
-  font-size: 60px;
+  font-size: 90px;
   padding-bottom: 80px;
+  font-family: "Comic Sans MS", sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .message_text {
@@ -279,9 +297,11 @@
 .about_title {
   padding-top: 200px;
   padding-bottom: 80px;
-  font-size: 60px;
+  font-size: 90px;
   text-align: center;
   color: white;
+  font-family: "Comic Sans MS", sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .about {
@@ -411,14 +431,16 @@
 .service {
   padding-top: 200px;
   padding-bottom: 120px;
-  background-color: #e2f3e833;
+  background-color: #e2f3e888;
 }
 
 .service_title {
   padding-bottom: 80px;
-  font-size: 60px;
+  font-size: 90px;
   text-align: center;
   color: black;
+  font-family: "Comic Sans MS", sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .service_items {
@@ -482,14 +504,16 @@
 .works {
   padding-top: 200px;
   padding-bottom: 120px;
-  background-color: #e2f3e833;
+  background-color: #e2f3e888;
 }
 
 .works_title {
   padding-bottom: 80px;
-  font-size: 60px;
+  font-size: 90px;
   text-align: center;
   color: black;
+  font-family: "Comic Sans MS", sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .works_items {
@@ -579,9 +603,11 @@
 }
 
 .contact_title {
-  font-size: 60px;
+  font-size: 90px;
   text-align: center;
   color: black;
+  font-family: "Comic Sans MS", sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .contact_text {
@@ -872,7 +898,7 @@
     color: white;
     font-size: 24px;
     position: absolute;
-    line-height: 90px;
+    line-height: 70px;
     padding-left: 30px;
   }
   .showMobile {
@@ -904,7 +930,7 @@
   margin-left: auto;
   margin-right: 30px;
   position: relative;
-  top: 20px;
+  top: 10px;
 }
 
 /*----------------------------

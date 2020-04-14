@@ -12,14 +12,11 @@
     <script type="text/javascript" src="./js/style.js"></script>
 </head>
 <body>
+    <!-- start loading -->
     <div class="loading">
         <div class="animation">Now Loading...</div>
     </div>
-
-    <!-- start header -->
-    <header id="header">
-    </header>
-    <!-- end header -->
+    <!-- end loading -->
 
     <main>
         <!-- start mainVisual -->
@@ -28,17 +25,18 @@
                 <video class="fitImg showPC" src="./video/01.mp4" muted autoplay loop alt=""></video>
                 <!-- 携帯表示 -->
                 <div class="showMobile">
-                    <p class="mobileTitle">Kensuke Suzuki</p>
+                    <p class="mobileTitle"><span class="pickColor">K</span>ensuke<span class="pickColor">S</span>uzuki</p>
                     <p class="mobileSubTitle">Web Engineer</p>
                     <img class="resizeImage" src="./img/test.png" alt="mainVisual">
                 </div>
             </div>
+            <!-- PC表示 -->
             <div class="overlay_bg showPC">
-                <h1 class="overlay_text overlay_title">Hello, Welcome to My Portfolio</h1>
-                <span class="overlay_text overlay_subTitle">
-                    『人との出会いは奇跡』<br>
-                    Web制作にも、そんな思いを込めて。
-                </span>
+                <h1 class="overlay_text overlay_title">
+                    <span class="pickColor">K</span>ensuke's&nbsp;
+                    <span class="pickColor">P</span>ortfolio
+                </h1>
+                <p class="overlay_text overlay_subTitle">Web Engineer</p>
                 <a href="#message" class="scroll-down" address="true"></a>
             </div>
          </section>
@@ -197,7 +195,7 @@
         <!-- start service -->
         <section id="service">
             <div class="service">
-                <h2 class="service_title">Service</h2>
+                <h2 class="service_title">SERVICE</h2>
                 <div class="service_items fadein">
                     <div class="service_item">
                         <i class="fas fa-file-code service_item_icon"></i>
@@ -233,7 +231,7 @@
         <!-- start works -->
         <section id="works">
             <div class="works">
-                <h2 class="works_title">Works</h2>
+                <h2 class="works_title">WORKS</h2>
                 <div class="works_items">
                     <div class="works_item">
                         <div class="works_frame">
@@ -295,7 +293,7 @@
         <!-- start contact -->
         <section id="contact">
             <div class="contact">
-                <h2 class="contact_title">Contact</h2>
+                <h2 class="contact_title">CONTACT</h2>
                 <p class="contact_text">お気軽にお問い合わせください</p>
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSddPhiQ73j0m-BlJqCZVW6AMGKhWhzCM-4tlkGiPkUDAC89sg/formResponse" method="post" name="myForm" class="contact-form" target="contact-dummy">
                     <p class="contact-input"><input id="name" type="text" name="entry.2005620554" placeholder="Name" required ></p>
