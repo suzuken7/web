@@ -90,8 +90,8 @@ function changeColor() {
     var winh = $(window).innerHeight(); //ウィンドウの高さ
     var bottom = doch - winh; //ページ全体の高さ - ウィンドウの高さ = ページの最下部位置
     
-    var activeColor = "rgba(202,151,13,255)";
-    var inactiveColor = "rgba(202,151,13,0)";
+    var activeColor = "rgba(229,171,71,0.8)";
+    var inactiveColor = "rgba(20,116,114,0)";
 
     // 先に一番下の条件を判定する_
     if (trigger4Y - timing < 0 || bottom - timing <= $(window).scrollTop()) {
