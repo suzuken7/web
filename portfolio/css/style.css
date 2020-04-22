@@ -6,6 +6,9 @@
 /*------------------------------------------*
 * 変数
 *------------------------------------------*/
+/*------------------------------------------*
+* html
+*------------------------------------------*/
 html {
   font-size: 62.5%;
 }
@@ -20,6 +23,15 @@ body {
 /*------------------------------------------*
 * mainVisual
 *------------------------------------------*/
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.fitImg {
+  position: absolute;
+}
+
 .resizeImage {
   width: 100%;
   height: 100vh;
@@ -29,8 +41,10 @@ body {
   color: #e5ab47;
 }
 
-.mobileTitle {
+.showMobile_title {
+  margin: 0 auto;
   color: white;
+  width: 350px;
   position: absolute;
   top: 20%;
   bottom: 0;
@@ -43,7 +57,7 @@ body {
   text-shadow: 2px 3px 4px #808080;
 }
 
-.mobileSubTitle {
+.showMobile_subTitle {
   color: #eeeeee;
   position: absolute;
   top: calc(20% + 90px);
@@ -55,15 +69,6 @@ body {
   font-weight: bold;
   letter-spacing: 0.05em;
   text-shadow: 2px 3px 4px #808080;
-}
-
-.box {
-  position: relative;
-  overflow: hidden;
-}
-
-.fitImg {
-  position: absolute;
 }
 
 .overlay_bg {
@@ -105,13 +110,7 @@ body {
   text-shadow: 2px 3px 4px #222222;
 }
 
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
+.scroll_down {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -119,7 +118,7 @@ body {
   display: block;
   width: 50px;
   height: 50px;
-  border: 2px solid #FFF;
+  border: 2px solid white;
   background-size: 14px auto;
   border-radius: 50%;
   z-index: 2;
@@ -129,7 +128,7 @@ body {
   transition: all .2s ease-in;
 }
 
-.scroll-down:before {
+.scroll_down:before {
   position: absolute;
   top: calc(50% - 8px);
   left: calc(50% - 6px);
@@ -283,7 +282,7 @@ body {
 .message_title {
   text-align: center;
   font-size: 5rem;
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
   font-family: "Comic Sans MS", sans-serif;
   letter-spacing: 0.05em;
 }
@@ -300,21 +299,12 @@ body {
 *------------------------------------------*/
 .about_title {
   padding-top: 100px;
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
   font-size: 5rem;
   text-align: center;
   color: white;
   font-family: "Comic Sans MS", sans-serif;
   letter-spacing: 0.05em;
-}
-
-.about {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  min-height: 750px;
 }
 
 .fixed-bg {
@@ -330,6 +320,15 @@ body {
 
 .overlay_bg1 {
   background-color: #000000cc;
+}
+
+.about {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  min-height: 750px;
 }
 
 .about_profile {
@@ -390,7 +389,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: #e5ab47;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .about_skill_title::before {
@@ -414,12 +413,12 @@ body {
 
 .about_skill_item {
   width: 100px;
-  font-size: 50px;
+  font-size: 5rem;
   text-align: center;
 }
 
 .about_skill_iconText {
-  font-size: 10px;
+  font-size: 1rem;
   line-height: 2px;
 }
 
@@ -427,12 +426,13 @@ body {
 * service
 *------------------------------------------*/
 .service {
-  padding-top: 120px;
+  padding-top: 12rem;
+  padding-bottom: 100px;
   background-color: #e2f3e888;
 }
 
 .service_title {
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
   font-size: 5rem;
   text-align: center;
   color: black;
@@ -450,7 +450,6 @@ body {
 }
 
 .service_item {
-  width: 50%;
   max-width: 350px;
   height: auto;
   text-align: center;
@@ -462,19 +461,13 @@ body {
 }
 
 .service_item_icon {
-  font-size: 60px;
+  font-size: 6rem;
   padding-bottom: 30px;
 }
 
 .service_item_title {
   font-size: 2.5rem;
   font-weight: bold;
-}
-
-.service_border {
-  width: 60px;
-  margin: 0 auto;
-  border-bottom: medium solid #e5ab47;
 }
 
 .service_item_text {
@@ -485,6 +478,12 @@ body {
   font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1.7;
+}
+
+.service_border {
+  width: 60px;
+  margin: 0 auto;
+  border-bottom: medium solid #e5ab47;
 }
 
 .fadein {
@@ -499,13 +498,13 @@ body {
 * works
 *------------------------------------------*/
 .works {
-  padding-top: 120px;
-  padding-bottom: 40px;
+  padding-top: 12rem;
+  padding-bottom: 4rem;
   background-color: #e2f3e888;
 }
 
 .works_title {
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
   font-size: 5rem;
   text-align: center;
   color: black;
@@ -598,6 +597,8 @@ body {
 .contact {
   padding-top: 140px;
   padding-bottom: 140px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .contact_title {
@@ -613,11 +614,6 @@ body {
   font-size: 1.5rem;
   text-align: center;
   padding-bottom: 100px;
-}
-
-.contact-submit {
-  width: 30%;
-  margin: 0 auto;
 }
 
 .contact-form {
@@ -645,8 +641,8 @@ body {
 .contact-input input {
   border-radius: 4px;
   outline: none;
-  width: 100%;
-  max-width: 100%;
+  width: 80%;
+  max-width: 80%;
   background-color: #fff;
   padding: 0.6em 0.8em;
   height: 2.8em;
@@ -659,8 +655,8 @@ body {
 .contact-textarea textarea {
   border-radius: 4px;
   outline: none;
-  width: 100%;
-  max-width: 100%;
+  width: 80%;
+  max-width: 80%;
   background-color: #fff;
   padding: 0.6em 0.8em;
   height: 2.8em;
@@ -669,6 +665,8 @@ body {
 
 .contact-submit {
   text-align: center;
+  width: 30%;
+  margin: 0 auto;
 }
 
 .contact-submit:hover {
@@ -758,6 +756,9 @@ body {
   text-align: center;
 }
 
+/*------------------------------------------*
+* loading
+*------------------------------------------*/
 .loading {
   position: fixed;
   width: 100vw;
@@ -885,7 +886,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .global_list {
     display: none;
   }
@@ -903,11 +904,70 @@ body {
   .showMobile {
     display: block !important;
   }
+  .showMobile-title {
+    font-size: 3rem;
+  }
   .showPC {
     display: none !important;
   }
+  .mobileTitle {
+    font-size: 3rem;
+  }
+  .message_text {
+    font-size: 1.2rem;
+  }
+  .about {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .about_name {
+    font-size: 2.5rem;
+  }
+  .about_job {
+    font-size: 1.2rem;
+  }
+  .about_info {
+    width: 350px;
+  }
+  .about_status_text {
+    font-size: 1.5rem;
+    padding: 0 50px;
+  }
+  .about_skill_items {
+    width: 300px;
+  }
+  .about_skill_item {
+    width: 60px;
+    font-size: 3rem;
+  }
+  .service_item_title {
+    font-size: 1.5rem;
+  }
+  .service_item {
+    width: 200px;
+    margin: 50px auto;
+  }
+  .service_item_text {
+    font-size: 1rem;
+  }
+  .works_frame {
+    width: 230px;
+    height: 230px;
+  }
+  .works_frame::before {
+    left: 27%;
+    top: -16px;
+  }
+  .img_wrap img {
+    width: 230px;
+    height: 230px;
+  }
+  .works_text {
+    font-size: 1.5rem;
+  }
   .contact {
-    max-width: 400px;
+    width: 350px;
+    text-align: center;
   }
 }
 

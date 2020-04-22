@@ -6,8 +6,8 @@
 /*------------------------------------------*
 * 変数
 *------------------------------------------*/
-$titlePaddingTopVal: 120px;
-$titlePaddingBottomVal: 40px;
+$titlePaddingTopVal: 12rem;
+$titlePaddingBottomVal: 4rem;
 $titleFontSize: 5rem;
 $textFontSize: 16px;
 $titleSpacing: 0.05em;
@@ -18,11 +18,16 @@ $barColor: #147472dd;
 
 $w-pc: 1024px;      // PC
 $w-tab: $w-pc - 1;  // タブレット
-$w-sp: 767px;       // スマホ
+$w-sp: 768px;       // スマホ
 
 $comicFont: "Comic Sans MS", sans-serif;
 
 
+/*------------------------------------------*
+* html
+*------------------------------------------*/
+// 2rem = 20px
+// 1.4rem = 14px
 html {
     font-size: 62.5%;
 }
@@ -30,8 +35,6 @@ html {
 /*------------------------------------------*
 * body
 *------------------------------------------*/
-// 2rem = 20px
-// 1.4rem = 14px
 body {
     font-family: 'Noto Sans Japanese', sans-serif;
 }
@@ -39,119 +42,135 @@ body {
 /*------------------------------------------*
 * mainVisual
 *------------------------------------------*/
-.resizeImage { 
-    width: 100%; 
-    height: 100vh;
-}
-.pickColor{
-    color: $orange;
-}
-
-.mobileTitle {
-    color: white;
-    position: absolute;
-    top: 20%;
-    bottom: 0;
-    right: 20px;
-    left: 0;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    text-shadow: 2px 3px 4px #808080;
-}
-.mobileSubTitle {
-    color: #eeeeee;
-    position: absolute;
-    top: calc(20% + 90px);
-    bottom: 0;
-    right: 20px;
-    left: 0;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    text-shadow: 2px 3px 4px #808080;
-}
-
 .box {
     position: relative;
     overflow: hidden;
 }
+
 .fitImg{
     position: absolute;
 }
-.overlay_bg {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.resizeImage { 
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
-    background-size: 3px 3px;
-    z-index: 2;
-}
-.overlay_text {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: #fff;
-    margin: auto;
-    max-width: 700px;
-    width: 100%;
-    height: 100px;
-    z-index: 3;
-}
-.overlay_title {    
-    font-size: 5rem;
-    letter-spacing: 0.05em;
-    text-shadow: 2px 3px 4px #222222;
-}
-.overlay_subTitle {
-    top: 160px;
-    font-size: 2.5rem;
-    letter-spacing: 0.1em;
-    text-shadow: 2px 3px 4px #222222;
 }
 
-.scroll-down {
-    opacity: 1;
-    -webkit-transition: all .5s ease-in 3s;
-    transition: all .5s ease-in 3s;
-  }
-  
-.scroll-down {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    margin-left: -16px;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #FFF;
-    background-size: 14px auto;
-    border-radius: 50%;
-    z-index: 2;
-    -webkit-animation: bounce 2s infinite 2s;
-    animation: bounce 2s infinite 2s;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+.pickColor{
+    color: $orange;
 }
-  
-.scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
+
+.showMobile {
+
+    &_title {
+        margin: 0 auto;
+        color: white;
+        width: 350px;
+        position: absolute;
+        top: 20%;
+        bottom: 0;
+        right: 20px;
+        left: 0;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        text-shadow: 2px 3px 4px #808080;
+    }
+
+    &_subTitle {
+        color: #eeeeee;
+        position: absolute;
+        top: calc(20% + 90px);
+        bottom: 0;
+        right: 20px;
+        left: 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        text-shadow: 2px 3px 4px #808080;    
+    }
+}
+
+.overlay {
+
+    $shadow: 2px 3px 4px #222222;
+
+    &_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+        background-size: 3px 3px;
+        z-index: 2;
+    }
+
+    &_text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        margin: auto;
+        max-width: 700px;
+        width: 100%;
+        height: 100px;
+        z-index: 3;    
+    }
+
+    &_title {
+        font-size: 5rem;
+        letter-spacing: 0.05em;
+        text-shadow: $shadow;
+    }
+
+    &_subTitle {
+        top: 160px;
+        font-size: 2.5rem;
+        letter-spacing: 0.1em;
+        text-shadow: $shadow;
+    }
+
+}
+
+.scroll {
+
+    // スクロールダウン示唆のサークル部分_
+    &_down {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        margin-left: -16px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid white;
+        background-size: 14px auto;
+        border-radius: 50%;
+        z-index: 2;
+        -webkit-animation: bounce 2s infinite 2s;
+        animation: bounce 2s infinite 2s;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+    }
+    
+    &_down:before {
+        position: absolute;
+        top: calc(50% - 8px);
+        left: calc(50% - 6px);
+        transform: rotate(-45deg);
+        display: block;
+        width: 12px;
+        height: 12px;
+        content: "";
+        border: 2px solid white;
+        border-width: 0px 0 2px 2px;
+    }
 }
   
 @keyframes bounce {
@@ -258,8 +277,6 @@ $navHeight: 70px;
 }
 
 
-
-
 /*------------------------------------------*
 * message
 *------------------------------------------*/
@@ -267,21 +284,21 @@ $navHeight: 70px;
     background-color: $bgColor;
     padding-top: 100px;
     padding-bottom: 100px;
-}
 
-.message_title {
-    text-align: center;
-    font-size: $titleFontSize;
-    padding-bottom: $titlePaddingBottomVal;
-    font-family: $comicFont;
-    letter-spacing: $titleSpacing;
-}
+    &_title {
+        text-align: center;
+        font-size: $titleFontSize;
+        padding-bottom: $titlePaddingBottomVal;
+        font-family: $comicFont;
+        letter-spacing: $titleSpacing;    
+    }
 
-.message_text {
-    text-align: center;
-    font-size: 2rem;
-    color: gray;
-    padding-bottom: 28px;
+    &_text {
+        text-align: center;
+        font-size: 2rem;
+        color: gray;
+        padding-bottom: 28px;
+    }
 }
 
 
@@ -297,151 +314,171 @@ $navHeight: 70px;
     font-family: $comicFont;
     letter-spacing: $titleSpacing;
 }
-.about {
-    color: white;
-    display: flex;
-    height: auto;
-    min-height: 750px;
-}
-
 .fixed-bg {
     height: 100%;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-   
 .bg01 {
     background-image: url(../img/desk.jpg);
 }
 .overlay_bg1 {
     background-color: #000000cc;
 }
-.about_profile {
-    width: 50%;
-}
-.about_image {
+
+.about {
+    color: white;
+    display: flex;
     height: auto;
-    padding-bottom: 30px;
-}
-.about_me {
-    text-align: left;
-    padding-left: 30%; 
-}
-.about_name {
-    font-size: 3rem;
-    font-weight: 700;
-    padding-left: 30px;
-    color: $orange;
-}
-.about_job {
-    font-size: 2rem;
-    font-weight: 700;
-    padding-left: 30px;
+    min-height: 750px;
+
+    &_profile {
+        width: 50%;
+    }
+
+    &_image {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    &_me {
+        text-align: left;
+        padding-left: 30%;
+    }
+
+    &_name {
+        font-size: 3rem;
+        font-weight: 700;
+        padding-left: 30px;
+        color: $orange;
+    }
+
+    &_job {
+        font-size: 2rem;
+        font-weight: 700;
+        padding-left: 30px;
+    }
+
+    &_info {
+        width: 40%;
+    }
+
+    &_status_title {
+        position: relative;
+        right: 30px;
+        font-size: 3rem;
+        font-weight: 700;
+        color: $orange;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: '\f406';
+            position: relative;
+            right: 15px;    
+        }
+    }
+
+    &_status_text {
+        font-size: 2rem;
+        line-height: 30px;
+        letter-spacing: 0.1em;    
+    }
+
+    &_skill_title {
+        position: relative;
+        right: 30px;
+        font-size: 30px;
+        font-weight: 700;
+        color: $orange;
+        margin-top: 60px;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: '\f0ad';
+            position: relative;
+            right: 15px;        
+        }
+    }
+
+    &_skill_items {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        padding-bottom: 30px;
+        width: 500px;
+    }
+
+    &_skill_item {
+        width: 100px;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    &_skill_iconText {
+        font-size: 1rem;
+        line-height: 2px;
+    }
 }
 
-.about_info {
-    width: 40%;
-}
-.about_status_title {
-    position: relative;
-    right: 30px;
-    font-size: 3rem;
-    font-weight: 700;
-    color: $orange;
-}
-.about_status_title::before {
-    font-family: "Font Awesome 5 Free";
-    content: '\f406';
-    position: relative;
-    right: 15px;
-}
-.about_status_text {
-    font-size: 2rem;
-    line-height: 30px;
-    letter-spacing: 0.1em;
-}
-.about_skill_title {
-    position: relative;
-    right: 30px;
-    font-size: 30px;
-    font-weight: 700;
-    color: $orange;
-    margin-top: 80px;
-}
-.about_skill_title::before {
-    font-family: "Font Awesome 5 Free";
-    content: '\f0ad';
-    position: relative;
-    right: 15px;
-}
-.about_skill_items {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    padding-bottom: 30px;
-    width: 500px;
-}
-.about_skill_item {
-    width: 100px;
-    font-size: 50px;
-    text-align: center;
-}
-.about_skill_iconText {
-    font-size: 10px;
-    line-height: 2px;
-}
 
 /*------------------------------------------*
 * service
 *------------------------------------------*/
 .service {
     padding-top: $titlePaddingTopVal;
+    padding-bottom: 100px;
     background-color: $bgColor;
-}
-.service_title {
-    padding-bottom: $titlePaddingBottomVal;
-    font-size: $titleFontSize;
-    text-align: center;
-    color: black;
-    font-family: $comicFont;
-    letter-spacing: $titleSpacing;
-}
-.service_items {
-    display: flex;
-    justify-content: center;
-}
-.service_item {
-    width: 50%;
-    max-width: 350px;
-    height: auto;
-    text-align: center;
-    padding: 30px 50px;
-    margin: 50px 30px 50px 30px;
-    background-color: white;
-    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-}
-.service_item_icon{
-    font-size: 60px;
-    padding-bottom: 30px;
-}
-.service_item_title {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-.service_border {
-    width: 60px;
-    margin: 0 auto;
-    border-bottom: medium solid $orange;
-}
-.service_item_text {
-    padding-top: 30px;
-    color: gray;
-    text-align: left;
-    font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    line-height: 1.7;
+
+    &_title {
+        padding-bottom: $titlePaddingBottomVal;
+        font-size: $titleFontSize;
+        text-align: center;
+        color: black;
+        font-family: $comicFont;
+        letter-spacing: $titleSpacing;
+    }
+
+    &_items {
+        display: flex;
+        justify-content: center; 
+    }
+
+    &_item {
+        max-width: 350px;
+        height: auto;
+        text-align: center;
+        padding: 30px 50px;
+        margin: 50px 30px 50px 30px;
+        background-color: white;
+        filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+        
+        &_icon {
+            font-size: 6rem;
+            padding-bottom: 30px;    
+        }
+
+        &_title {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        &_text {
+            padding-top: 30px;
+            color: gray;
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            line-height: 1.7;
+        }
+    }
+
+    &_border {
+        width: 60px;
+        margin: 0 auto;
+        border-bottom: medium solid $orange;    
+    }
 }
 
 .fadein {
@@ -458,50 +495,57 @@ $navHeight: 70px;
     padding-top: $titlePaddingTopVal;
     padding-bottom: $titlePaddingBottomVal;
     background-color: $bgColor;
-}
-.works_title {
-    padding-bottom: $titlePaddingBottomVal;
-    font-size: $titleFontSize;
-    text-align: center;
-    color: black;
-    font-family: $comicFont;
-    letter-spacing: $titleSpacing;
-}
-.works_items {
-    display: flex;
-    justify-content: center;
-}
-.works_item {
-    margin: 0 50px 100px 50px;
-    text-align: center;
-}
-.works_frame {
-    position: relative;
-    max-width: 480px;
-    max-height: 400px;
-    margin: 2.5em auto;
-    padding: 35px 30px 30px;
-    background-color: #e8ddbd;
-    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-}
-.works_frame::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 140px;
-    height: 35px;
-    left: 40%;
-    top: -16px;
-    background-color: rgba(204, 186, 136,0.3);/*テープ色*/
-    box-shadow: 0 0 3px rgba(0,0,0,0.1);
-    transform: rotate( -3deg ); /*テープ角度*/
-}
-.works_text {
-    color: gray;
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: 700;
-    background: linear-gradient(transparent 50%, #e8ddbd 50%);
+
+    &_title {
+        padding-bottom: $titlePaddingBottomVal;
+        font-size: $titleFontSize;
+        text-align: center;
+        color: black;
+        font-family: $comicFont;
+        letter-spacing: $titleSpacing;
+    }
+
+    &_items {
+        display: flex;
+        justify-content: center;
+    }
+
+    &_item {
+        margin: 0 50px 100px 50px;
+        text-align: center;
+    }
+
+    &_frame {
+        position: relative;
+        max-width: 480px;
+        max-height: 400px;
+        margin: 2.5em auto;
+        padding: 35px 30px 30px;
+        background-color: #e8ddbd;
+        filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 140px;
+            height: 35px;
+            left: 40%;
+            top: -16px;
+            background-color: rgba(204, 186, 136,0.3);/*テープ色*/
+            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+            transform: rotate( -3deg ); /*テープ角度*/        
+        }
+    }
+
+    &_text {
+        color: gray;
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 700;
+        background: linear-gradient(transparent 50%, #e8ddbd 50%);    
+    }
+
 }
 
 .img_wrap{
@@ -528,62 +572,36 @@ $navHeight: 70px;
 /*------------------------------------------*
 * contact
 *------------------------------------------*/
-.contact {
-    padding-top: 140px;
-    padding-bottom: 140px;
-}
-.contact_title {
-    font-size: $titleFontSize;
-    text-align: center;
-    color: black;
-    font-family: $comicFont;
-    letter-spacing: $titleSpacing;
-}
-.contact_text {
-    color: gray;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-bottom: 100px;
-}
-
-.contact-submit {
-    width: 30%;
-    margin: 0 auto;
-}
-
-
-@mixin pc {
-
-    @media (min-width: ($w-pc)) {
-        @content;
-    }
-}
-
-@mixin tab {
-
-    @media (max-width: ($w-tab)) {
-        @content;
-    }
-}
-
-@mixin sp {
-
-    @media (max-width: ($w-sp)) {
-        @content;
-    }
-}
-
 @mixin contact-form {
     border-radius: 4px;
     outline: none;
-    width: 100%;
-    max-width: 100%;
+    width:  80%;
+    max-width: 80%;
     background-color: #fff;
     padding: 0.6em 0.8em;
     height: 2.8em;
 }
 
 .contact {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    text-align: center;
+    margin: 0 auto;
+
+    &_title {
+        font-size: $titleFontSize;
+        text-align: center;
+        color: black;
+        font-family: $comicFont;
+        letter-spacing: $titleSpacing;    
+    }
+
+    &_text {
+        color: gray;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 100px;
+    }
 
     &-form {
         margin: 0 auto;
@@ -607,7 +625,6 @@ $navHeight: 70px;
         margin-bottom: 2em;
 
         input {
-
             @include contact-form;
         }
     }
@@ -624,6 +641,8 @@ $navHeight: 70px;
 
     &-submit {
         text-align: center;
+        width: 30%;
+        margin: 0 auto;
 
         &:hover {
             opacity: 0.6;
@@ -648,6 +667,7 @@ $navHeight: 70px;
     }
 }
 
+
 /*------------------------------------------*
 * footer
 *------------------------------------------*/
@@ -655,25 +675,28 @@ $navHeight: 70px;
     background-color: $barColor;
     text-align: center;
     padding: 10px 0;
-}
-.footer-icon {
-    color: #76d9ff;
-    font-size: 40px;
-    padding-bottom: 10px;
-}
-.footer-icon:hover {
-    opacity: 0.7;
+
+    &-icon {
+        color: #76d9ff;
+        font-size: 40px;
+        padding-bottom: 10px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &_copyright {
+        color: white;
+        font-size: 10px;
+    }
 }
 
-.footer_copyright {
-    color: white;
-    font-size: 10px;
-}
 
 /*------------------------------------------*
 * Top Arrow
 *------------------------------------------*/
-#page_top{
+#page_top {
     width: 50px;
     height: 50px;
     position: fixed;
@@ -681,33 +704,37 @@ $navHeight: 70px;
     bottom: 20px;
     background: $orange;
     opacity: 0.6;
-}
-#page_top a{
-    position: relative;
-    display: block;
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-}
-#page_top a::before{
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: '\f062';
-    font-size: 25px;
-    color: #fff;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 0;
-    bottom: 10px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    text-align: center;
+
+    a {
+        // background-color: black;
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+
+        &::before {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: '\f062';
+            font-size: 25px;
+            color: #fff;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 0;
+            bottom: 10px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+        }
+    }
 }
 
-
-
+/*------------------------------------------*
+* loading
+*------------------------------------------*/
 .loading{
     position: fixed;
     width: 100vw;
@@ -739,7 +766,6 @@ $navHeight: 70px;
 }
 
 @media (min-width: ($w-pc)) {
-    // @content;
     .global_name {
         visibility: hidden;
     }
@@ -824,8 +850,6 @@ $navHeight: 70px;
     .showMobile { display: none !important; }
     .showPC { display: block !important; }
 
-
-
 }
 
 @media (max-width: ($w-sp)) {
@@ -845,11 +869,78 @@ $navHeight: 70px;
         padding-left: 30px;
     }
 
-    .showMobile { display: block !important; }
+    .showMobile { 
+        display: block !important;
+
+        &-title {
+            font-size: 3rem;
+        }
+    }
     .showPC { display: none !important; }
 
+    .mobileTitle {
+        font-size: 3rem;
+    }
+
+    .message_text {
+        font-size: 1.2rem;
+    }
+
+    .about {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .about_name {
+        font-size: 2.5rem;
+    }
+    .about_job {
+        font-size: 1.2rem;
+    }
+    .about_info {
+        width: 350px;
+    }
+    .about_status_text {
+        font-size: 1.5rem;
+        padding: 0 50px;
+    }
+    .about_skill_items {
+        width: 300px;
+    }
+    .about_skill_item {
+        width: 60px;
+        font-size: 3rem;
+    }
+
+    .service_item_title {
+        font-size: 1.5rem;
+    }
+    .service_item {
+        width: 200px;
+        margin: 50px auto;
+    }
+    .service_item_text {
+        font-size: 1rem;
+    }
+
+    .works_frame {
+        width: 230px;
+        height: 230px;
+    }
+    .works_frame::before {
+        left: 27%;
+        top: -16px;
+    }
+    .img_wrap img {
+        width: 230px;
+        height: 230px;
+    }
+    .works_text {
+        font-size: 1.5rem;
+    }
+
     .contact {
-        max-width: 400px;
+        width: 350px;
+        text-align: center;;
     }
 }
 

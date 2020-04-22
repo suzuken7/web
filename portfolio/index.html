@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
+    <!-- TwitterCard -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ken2web" />
+    <meta property="og:url" content="http://suzukenblog.org/portfolio/" />
+    <meta property="og:title" content="Kensuke's Portfolio" />
+    <meta property="og:description" content="1から制作したポートフォリオです" />
+    <meta property="og:image" content="http://suzukenblog.org/portfolio/img/twitterCard.png" />
+
+    <!-- css -->
     <title>Kensuke's Portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/e92658c180.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/style.js"></script>
+    
 </head>
 <body>
     <!-- start loading -->
@@ -25,8 +37,8 @@
                 <video class="fitImg showPC" src="./video/01.mp4" muted autoplay loop alt=""></video>
                 <!-- 携帯表示 -->
                 <div class="showMobile">
-                    <p class="mobileTitle"><span class="pickColor">K</span>ensuke&nbsp;<span class="pickColor">S</span>uzuki</p>
-                    <p class="mobileSubTitle">Web Engineer</p>
+                    <p class="showMobile_title"><span class="pickColor">K</span>ensuke&nbsp;<span class="pickColor">S</span>uzuki</p>
+                    <p class="showMobile_subTitle">Web Engineer</p>
                     <img class="resizeImage" src="./img/mobile.png" alt="mainVisual">
                 </div>
             </div>
@@ -37,9 +49,9 @@
                     <span class="pickColor">P</span>ortfolio
                 </h1>
                 <p class="overlay_text overlay_subTitle">Web Engineer</p>
-                <a href="#message" class="scroll-down" address="true"></a>
+                <a href="#message" class="scroll_down" address="true"></a>
             </div>
-         </section>
+        </section>
         <!-- end mainVisual -->
 
         <!-- start global-nav -->
@@ -119,7 +131,7 @@
 
         <!-- start about -->
         <section id="about">
-            <div class="fixed-bg bg01 ">
+            <div class="fixed-bg bg01">
                 <div class="overlay_bg1">
                     <h2 class="about_title">ABOUT</h2>
                     <div class="about">
@@ -135,9 +147,8 @@
                             <br>
                             <div class="about_status_text">
                                 <p>福島県出身　東京都在住。</p>
-                                <p>大学在学中はホテルマンとしても勤務。</p>
-                                <p>卒業後は都内ゲーム会社に就職。</p>
-                                <p>10年間、ゲーム制作とアプリマネジメントに勤める。</p>
+                                <p>大学卒業後は都内ゲーム会社に就職。</p>
+                                <p>ゲーム制作とアプリマネジメントに勤める。</p>
                                 <p>現在はフリーランスエンジニアとして都内を中心に活動中。</p>
                                 <p>猫が好き。</p>
                             </div>
@@ -324,16 +335,6 @@
         </div>
     </footer>
     <!-- end footer -->
-
-    <script>
-        function showMessage() {
-            document.getElementById('name').value = "";
-            document.getElementById('email').value = "";
-            document.getElementById('content').value = "";
-            document.getElementById('submit').value = "お問い合わせありがとうございました";
-        }
-    </script>
-
 
 </body>
 </html>
