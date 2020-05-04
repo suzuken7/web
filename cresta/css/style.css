@@ -3,6 +3,9 @@
 * 変数
 *------------------------------------------*/
 /*------------------------------------------*
+* メディアクエリ
+*------------------------------------------*/
+/*------------------------------------------*
 * ホバー時に黒の半透明を置く
 *------------------------------------------*/
 /*------------------------------------------*
@@ -34,6 +37,12 @@
   /* 線の長さ */
 }
 
+@media (max-width: 768px) {
+  .com_border:after {
+    width: 90px;
+  }
+}
+
 .com_title {
   font-size: 6rem;
   margin-bottom: 70px;
@@ -42,11 +51,23 @@
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .com_title {
+    font-size: 30px;
+  }
+}
+
 .com_endTitle {
   font-size: 9rem;
   color: black;
   opacity: 0.1;
   padding-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .com_endTitle {
+    font-size: 40px;
+  }
 }
 
 .com_btn {
@@ -108,14 +129,37 @@ body {
   margin-top: 30%;
 }
 
+@media (max-width: 768px) {
+  .jumbotron .home_text {
+    text-align: center;
+  }
+}
+
 .jumbotron .home_title {
   font-size: 7rem;
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .jumbotron .home_title {
+    letter-spacing: 3px;
+    font-size: 3.7rem;
+    padding-bottom: 30px;
+  }
+}
+
 .jumbotron .home_subTitle {
   font-size: 3rem;
   padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .jumbotron .home_subTitle {
+    width: 250px;
+    font-size: 3rem;
+    margin: 0 auto;
+    padding-left: 0;
+  }
 }
 
 /*------------------------------------------*
@@ -136,16 +180,34 @@ body {
   margin-bottom: 60px;
 }
 
+@media (max-width: 768px) {
+  .concept_subTitle {
+    font-size: 2rem;
+  }
+}
+
 .concept_text {
   font-size: 1.55rem;
+}
+
+@media (max-width: 768px) {
+  .concept_text {
+    margin-bottom: 30px;
+  }
 }
 
 .concept_image {
   margin-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .concept_image {
+    margin-left: 0;
+  }
+}
+
 /*------------------------------------------*
-* concept
+* works
 *------------------------------------------*/
 .works {
   padding-top: 100px;
@@ -159,8 +221,20 @@ body {
   margin-bottom: 80px;
 }
 
+@media (max-width: 768px) {
+  .works .card {
+    margin-bottom: 30px;
+  }
+}
+
 .works .card-body {
   height: 70px;
+}
+
+@media (max-width: 768px) {
+  .works .card-body {
+    font-size: 1.6rem;
+  }
 }
 
 .works .card-text {
@@ -177,84 +251,104 @@ body {
 
 .service .row {
   color: white;
-  height: 320px;
   line-height: 320px;
   font-size: 4rem;
 }
 
 .service_img1 {
-  background: url(../img/service-img01@2x.jpg) center/cover no-repeat;
+  background: url("../img/service-img01@2x.jpg") center/cover no-repeat;
 }
 
-.service_img1:hover:before {
-  position: absolute;
-  content: '';
-  display: block;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
+@media (min-width: 1024px) {
+  .service_img1:hover:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .service_img1:hover p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
 }
 
-.service_img1:hover p {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+@media (max-width: 768px) {
+  .service_img1 {
+    margin-bottom: 30px;
+  }
 }
 
 .service_img2 {
-  background: url(../img/service-img02@2x.jpg) center/cover no-repeat;
+  background: url("../img/service-img02@2x.jpg") center/cover no-repeat;
 }
 
-.service_img2:hover:before {
-  position: absolute;
-  content: '';
-  display: block;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
+@media (min-width: 1024px) {
+  .service_img2:hover:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .service_img2:hover p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
 }
 
-.service_img2:hover p {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+@media (max-width: 768px) {
+  .service_img2 {
+    margin-bottom: 30px;
+  }
 }
 
 .service_img3 {
-  background: url(../img/service-img03@2x.jpg) center/cover no-repeat;
+  background: url("../img/service-img03@2x.jpg") center/cover no-repeat;
 }
 
-.service_img3:hover:before {
-  position: absolute;
-  content: '';
-  display: block;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
+@media (min-width: 1024px) {
+  .service_img3:hover:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .service_img3:hover p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
 }
 
-.service_img3:hover p {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+@media (max-width: 768px) {
+  .service_img3 {
+    margin-bottom: 30px;
+  }
 }
 
 /*------------------------------------------*

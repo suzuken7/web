@@ -1,14 +1,36 @@
 /*------------------------------------------*
 * 変数
 *------------------------------------------*/
-$w-pc: 1024px;      // PC
-$w-tab: $w-pc - 1;  // タブレット
-$w-sp: 768px;       // スマホ
+$w-pc: 1024px;  // PC
+$w-tab: 680px;  // タブレット
+$w-sp: 768px;   // スマホ
 
 $title_size: 6rem;
 $endTitle_size: 9rem;
 $title_topSpace: 100px;
 $title_bottomSpace: 70px;
+
+
+/*------------------------------------------*
+* メディアクエリ
+*------------------------------------------*/
+@mixin pc {
+    @media (min-width: ($w-pc)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: ($w-tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($w-sp)) {
+        @content;
+    }
+}
 
 
 /*------------------------------------------*
@@ -43,6 +65,7 @@ $title_bottomSpace: 70px;
     @content;
 }
 
+
 /*------------------------------------------*
 * common
 *------------------------------------------*/
@@ -57,12 +80,21 @@ $title_bottomSpace: 70px;
     flex-grow: 1;
     margin-left: 3rem;  /* 文字の左隣 */
     width: 200px;       /* 線の長さ */
+
+    @include sp {
+        width: 90px;
+    }
+
 }
 
 .com_title {
     font-size: $title_size;
     margin-bottom: 70px;
     display: flex;
+
+    @include sp {
+        font-size: 30px;
+    }
 }
 
 .com_endTitle {
@@ -70,6 +102,10 @@ $title_bottomSpace: 70px;
     color: black;
     opacity: 0.1;
     padding-top: 70px;
+
+    @include sp {
+        font-size: 40px;
+    }
 }
 
 .com_btn {
@@ -133,16 +169,33 @@ body {
     .home {
         &_text {
             margin-top: 30%;
+            
+            @include sp {
+                text-align: center;
+            }
         }
 
         &_title {
             font-size: 7rem;
             font-weight: bold;
+
+            @include sp {
+                letter-spacing: 3px;
+                font-size: 3.7rem;
+                padding-bottom: 30px;
+            }
         }
 
         &_subTitle {
             font-size: 3rem;
             padding-left: 30px;
+
+            @include sp {
+                width: 250px;
+                font-size: 3rem;
+                margin: 0 auto;
+                padding-left: 0;
+            }
         }
     }
 
@@ -152,8 +205,10 @@ body {
 * concept
 *------------------------------------------*/
 .concept {
+
     margin-top: $title_topSpace;
     padding-bottom: 70px;
+    
     
     &_title {
         font-size: $title_size;
@@ -163,21 +218,33 @@ body {
     &_subTitle {
         font-size: 3rem;
         margin-bottom: 60px;
+
+        @include sp {
+            font-size: 2rem;
+        }
     }
 
     &_text {
         font-size: 1.55rem;
+        
+        @include sp {
+            margin-bottom: 30px;
+        }
     }
 
     &_image {
         margin-left: 20px;
+
+        @include sp {
+            margin-left: 0;
+        }
     }
 
 }
 
 
 /*------------------------------------------*
-* concept
+* works
 *------------------------------------------*/
 .works {
     padding-top: $title_topSpace;
@@ -194,8 +261,16 @@ body {
 
     .card {
 
+        @include sp {
+            margin-bottom: 30px;
+        }
+
         &-body {
             height: 70px;
+
+            @include sp {
+                font-size: 1.6rem;
+            }
         }
         &-text {
             color: black;
@@ -208,6 +283,18 @@ body {
 /*------------------------------------------*
 * service
 *------------------------------------------*/
+@mixin ShowImage($imagePath:"") {
+    background:url($imagePath) center/cover no-repeat;
+    
+    @include pc {
+        @include hover_black;
+    }
+
+    @include sp {
+        margin-bottom: 30px;
+    }    
+}
+
 .service {
     $imgHeight: 320px;
 
@@ -216,24 +303,20 @@ body {
 
     .row {
         color: white;
-        height: $imgHeight;
         line-height: $imgHeight;
         font-size: 4rem;
     }
 
-    &_img1 {
-        background:url(../img/service-img01@2x.jpg) center/cover no-repeat;
-        @include hover_black;
+    &_img1 {   
+        @include ShowImage("../img/service-img01@2x.jpg");
     }
     
-    &_img2 {
-        background:url(../img/service-img02@2x.jpg) center/cover no-repeat;
-        @include hover_black;
+    &_img2 {        
+        @include ShowImage("../img/service-img02@2x.jpg");
     }
 
     &_img3 {
-        background:url(../img/service-img03@2x.jpg) center/cover no-repeat;
-        @include hover_black;
+        @include ShowImage("../img/service-img03@2x.jpg");
     }
 
 }
