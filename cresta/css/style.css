@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/*------------------------------------------*
+* 変数
+*------------------------------------------*/
+/*------------------------------------------*
+* ホバー時に黒の半透明を置く
+*------------------------------------------*/
+/*------------------------------------------*
+* common
+*------------------------------------------*/
+.com_border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* 垂直中心 */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* 水平中心 */
+}
+
+.com_border:after {
+  border-top: 5px solid;
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 3rem;
+  /* 文字の左隣 */
+  width: 200px;
+  /* 線の長さ */
+}
+
+.com_title {
+  font-size: 6rem;
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.com_endTitle {
+  font-size: 9rem;
+  color: black;
+  opacity: 0.1;
+  padding-top: 70px;
+}
+
+.com_btn {
+  color: black;
+  background-color: #F7D43F;
+  border-color: #F7D43F;
+  width: 225px;
+  height: 60px;
+  font-size: 1.6rem;
+  border-radius: 30px;
+}
+
+.com_btn:hover {
+  background-color: #AD8E09;
+  border-color: #AD8E09;
+}
+
+/*------------------------------------------*
+* html
+*------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+/*------------------------------------------*
+* body
+*------------------------------------------*/
+body {
+  font-family: 'Noto Serif', 'Noto Serif JP', sans-serif !important;
+}
+
+/*------------------------------------------*
+* navbar
+*------------------------------------------*/
+.navbar-brand p {
+  font-size: 2.6rem;
+}
+
+.nav-item:nth-child(-n+4) {
+  padding-right: 30px;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+}
+
+/*------------------------------------------*
+* jumbotron
+*------------------------------------------*/
+.jumbotron {
+  background: url(../img/fv-bgi_01@2x.jpg) center no-repeat;
+  background-size: cover;
+  padding: 0 !important;
+  height: 752px;
+  color: white;
+}
+
+.jumbotron .home_text {
+  margin-top: 30%;
+}
+
+.jumbotron .home_title {
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.jumbotron .home_subTitle {
+  font-size: 3rem;
+  padding-left: 30px;
+}
+
+/*------------------------------------------*
+* concept
+*------------------------------------------*/
+.concept {
+  margin-top: 100px;
+  padding-bottom: 70px;
+}
+
+.concept_title {
+  font-size: 6rem;
+  margin-bottom: 70px;
+}
+
+.concept_subTitle {
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+
+.concept_text {
+  font-size: 1.55rem;
+}
+
+.concept_image {
+  margin-left: 20px;
+}
+
+/*------------------------------------------*
+* concept
+*------------------------------------------*/
+.works {
+  padding-top: 100px;
+  background: url(../img/works-bgi@2x.jpg) center no-repeat;
+  background-size: cover;
+  color: white;
+  padding-bottom: 70px;
+}
+
+.works .container .row {
+  margin-bottom: 80px;
+}
+
+.works .card-body {
+  height: 70px;
+}
+
+.works .card-text {
+  color: black;
+}
+
+/*------------------------------------------*
+* service
+*------------------------------------------*/
+.service {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.service .row {
+  color: white;
+  height: 320px;
+  line-height: 320px;
+  font-size: 4rem;
+}
+
+.service_img1 {
+  background: url(../img/service-img01@2x.jpg) center/cover no-repeat;
+}
+
+.service_img1:hover:before {
+  position: absolute;
+  content: '';
+  display: block;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.service_img1:hover p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.service_img2 {
+  background: url(../img/service-img02@2x.jpg) center/cover no-repeat;
+}
+
+.service_img2:hover:before {
+  position: absolute;
+  content: '';
+  display: block;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.service_img2:hover p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.service_img3 {
+  background: url(../img/service-img03@2x.jpg) center/cover no-repeat;
+}
+
+.service_img3:hover:before {
+  position: absolute;
+  content: '';
+  display: block;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.service_img3:hover p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/*------------------------------------------*
+* contact
+*------------------------------------------*/
+.contact {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  color: white;
+  background: url(../img/contact-bgi@2x.jpg) center/cover no-repeat;
+}
+
+.contact_text {
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+/*------------------------------------------*
+* copyright
+*------------------------------------------*/
+.copyright {
+  height: 80px;
+}
+
+.copyright p {
+  color: black;
+  font-size: 14;
+  line-height: 80px;
+}
+
+/*------------------------------------------*
+* contactPage
+*------------------------------------------*/
+.contactPage .jumbotron {
+  background: url(../img/contact-page-bgi@2x.jpg) center no-repeat;
+  background-size: cover;
+  padding: 0 !important;
+  height: 450px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.contactPage .jumbotron .row {
+  height: 250px;
+}
+
+.contactPage .jumbotron h2 {
+  margin: 0 auto;
+}
+
+.contactPage .jumbotron p {
+  padding-left: 30px;
+}
+
+.contactPage .jumbotron .com_title {
+  margin-bottom: 0;
+}
+
+.contactPage .jumbotron .com_endTitle {
+  padding-top: 0;
+}
+
+/*------------------------------------------*
+* form
+*------------------------------------------*/
+form {
+  margin-top: 100px;
+}
+
+form .container {
+  font-size: 16px;
+}
+
+form .container .row {
+  padding-bottom: 25px;
+}
+
+form .container .form-check {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+form .container p, form .container .form-group {
+  font-weight: bold;
+}
+
+form .container button {
+  margin: 80px 0;
+}
+/*# sourceMappingURL=style.css.map */

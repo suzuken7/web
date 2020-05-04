@@ -1,0 +1,337 @@
+/*------------------------------------------*
+* 変数
+*------------------------------------------*/
+$w-pc: 1024px;      // PC
+$w-tab: $w-pc - 1;  // タブレット
+$w-sp: 768px;       // スマホ
+
+$title_size: 6rem;
+$endTitle_size: 9rem;
+$title_topSpace: 100px;
+$title_bottomSpace: 70px;
+
+
+/*------------------------------------------*
+* ホバー時に黒の半透明を置く
+*------------------------------------------*/
+@mixin hover_black {
+
+    &:hover {
+        &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        // 文字の部分は暗転させない
+        p {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+        }
+    }
+
+    @content;
+}
+
+/*------------------------------------------*
+* common
+*------------------------------------------*/
+.com_border {
+    display: flex;
+    align-items: center;        /* 垂直中心 */
+    justify-content: center;    /* 水平中心 */
+}
+.com_border:after {
+    border-top: 5px solid;
+    content: "";
+    flex-grow: 1;
+    margin-left: 3rem;  /* 文字の左隣 */
+    width: 200px;       /* 線の長さ */
+}
+
+.com_title {
+    font-size: $title_size;
+    margin-bottom: 70px;
+    display: flex;
+}
+
+.com_endTitle {
+    font-size: $endTitle_size;
+    color: black;
+    opacity: 0.1;
+    padding-top: 70px;
+}
+
+.com_btn {
+    color: black;
+    background-color: #F7D43F;
+    border-color: #F7D43F;
+    width: 225px;
+    height: 60px;
+    font-size: 1.6rem;
+    border-radius: 30px;
+
+    &:hover {
+        background-color: #AD8E09;
+        border-color: #AD8E09;
+    }
+}
+
+/*------------------------------------------*
+* html
+*------------------------------------------*/
+// 2rem = 20px
+// 1.4rem = 14px
+html {
+    font-size: 62.5%;
+}
+
+/*------------------------------------------*
+* body
+*------------------------------------------*/
+body {
+    font-family: 'Noto Serif', 'Noto Serif JP', sans-serif !important;
+}
+
+/*------------------------------------------*
+* navbar
+*------------------------------------------*/
+.navbar-brand {
+    p {
+        font-size: 2.6rem;
+    }
+}
+
+.nav-item:nth-child(-n+4){
+    padding-right: 30px;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+}
+
+/*------------------------------------------*
+* jumbotron
+*------------------------------------------*/
+.jumbotron { 
+    background:url(../img/fv-bgi_01@2x.jpg) center no-repeat; 
+    background-size: cover;
+    padding: 0 !important;
+    height: 752px;
+    color: white;
+
+    .home {
+        &_text {
+            margin-top: 30%;
+        }
+
+        &_title {
+            font-size: 7rem;
+            font-weight: bold;
+        }
+
+        &_subTitle {
+            font-size: 3rem;
+            padding-left: 30px;
+        }
+    }
+
+}
+
+/*------------------------------------------*
+* concept
+*------------------------------------------*/
+.concept {
+    margin-top: $title_topSpace;
+    padding-bottom: 70px;
+    
+    &_title {
+        font-size: $title_size;
+        margin-bottom: 70px;
+    }
+    
+    &_subTitle {
+        font-size: 3rem;
+        margin-bottom: 60px;
+    }
+
+    &_text {
+        font-size: 1.55rem;
+    }
+
+    &_image {
+        margin-left: 20px;
+    }
+
+}
+
+
+/*------------------------------------------*
+* concept
+*------------------------------------------*/
+.works {
+    padding-top: $title_topSpace;
+    background:url(../img/works-bgi@2x.jpg) center no-repeat; 
+    background-size: cover;
+    color: white;
+    padding-bottom: 70px;
+    
+    .container {
+        .row {
+            margin-bottom: 80px;
+        }
+    }
+
+    .card {
+
+        &-body {
+            height: 70px;
+        }
+        &-text {
+            color: black;
+        }
+    }
+
+}
+
+
+/*------------------------------------------*
+* service
+*------------------------------------------*/
+.service {
+    $imgHeight: 320px;
+
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    .row {
+        color: white;
+        height: $imgHeight;
+        line-height: $imgHeight;
+        font-size: 4rem;
+    }
+
+    &_img1 {
+        background:url(../img/service-img01@2x.jpg) center/cover no-repeat;
+        @include hover_black;
+    }
+    
+    &_img2 {
+        background:url(../img/service-img02@2x.jpg) center/cover no-repeat;
+        @include hover_black;
+    }
+
+    &_img3 {
+        background:url(../img/service-img03@2x.jpg) center/cover no-repeat;
+        @include hover_black;
+    }
+
+}
+
+
+/*------------------------------------------*
+* contact
+*------------------------------------------*/
+.contact {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    color: white;
+    background:url(../img/contact-bgi@2x.jpg) center/cover no-repeat;
+
+
+    &_text {
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+
+/*------------------------------------------*
+* copyright
+*------------------------------------------*/
+.copyright {
+    height: 80px;
+
+    p {
+        color: black;
+        font-size: 14;
+        line-height: 80px;
+    }
+}
+
+
+/*------------------------------------------*
+* contactPage
+*------------------------------------------*/
+.contactPage {
+    
+    .jumbotron {
+        background:url(../img/contact-page-bgi@2x.jpg) center no-repeat; 
+        background-size: cover;
+        padding: 0 !important;
+        height: 450px;
+        color: white;
+        margin-bottom: 0;
+
+        .row {
+            height: 250px;
+        }
+     
+        h2 {
+            margin: 0 auto;
+        }
+
+        p {
+            padding-left: 30px;
+        }
+
+        .com_title {
+            margin-bottom: 0;
+        }
+    
+        .com_endTitle {
+            padding-top: 0;
+        }
+    }
+   
+}
+
+/*------------------------------------------*
+* form
+*------------------------------------------*/
+form {
+    margin-top: 100px;
+
+    .container {
+        font-size: 16px;
+        
+        .row {
+            padding-bottom: 25px;
+        }
+
+        .form-check {
+            margin-left: 15px;
+            margin-right: 10px;
+        }
+
+        p, .form-group {
+            font-weight: bold;
+        }
+
+        button {
+            margin: 80px 0;
+        }
+    }
+
+    
+}

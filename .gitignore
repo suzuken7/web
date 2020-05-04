@@ -4,12 +4,16 @@ myportfolio/
 NunoTheme/
 UdemyCafe/
 くりnote
+Bootstrap
+
 
 #portfolioの管理しないもの
 portfolio/img
 portfolio/video
 portfolio/css/style.css.map
 
+#crestaの管理しないもの
+cresta/img
 
 #detのimgはgit管理しない
 det/img
