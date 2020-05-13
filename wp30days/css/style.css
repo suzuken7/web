@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/*------------------------------------------*
+* 変数
+*------------------------------------------*/
+/*------------------------------------------*
+* メディアクエリ
+*------------------------------------------*/
+/*------------------------------------------*
+* html
+*------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+/*------------------------------------------*
+* body
+*------------------------------------------*/
+body {
+  font-family: 'system-ui', 'ヒラギノ角ゴ Pro W3', sans-serif !important;
+}
+
+/*------------------------------------------*
+* common
+*------------------------------------------*/
+.com_hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+/*------------------------------------------*
+* container
+*------------------------------------------*/
+.container {
+  background-color: skyblue;
+  max-width: 810px;
+}
+
+/*------------------------------------------*
+* navbar
+*------------------------------------------*/
+#home li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 2.2rem;
+}
+
+#home li p:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+nav {
+  text-align: center;
+  padding: 25px 0;
+  background: url(../img/com_bg.png) center/cover no-repeat;
+  height: 640px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav .navTop::before {
+  content: "トップ";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: -6px;
+}
+
+nav .navNews::before {
+  content: "ニュース";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: -6px;
+}
+
+nav .navStory::before {
+  content: "ストーリー";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: -6px;
+}
+
+nav .navComments::before {
+  content: "著名人コメント";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: -6px;
+}
+
+nav .navCast::before {
+  content: "キャスト";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: -6px;
+}
+
+nav .navInquiry::before {
+  content: "問い合わせ";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: -6px;
+}
+
+/*------------------------------------------*
+* home
+*------------------------------------------*/
+/*------------------------------------------*
+* introduction
+*------------------------------------------*/
+/*------------------------------------------*
+* news
+*------------------------------------------*/
+/*------------------------------------------*
+* story
+*------------------------------------------*/
+/*------------------------------------------*
+* comments
+*------------------------------------------*/
+/*------------------------------------------*
+* cast
+*------------------------------------------*/
+/*------------------------------------------*
+* schedule
+*------------------------------------------*/
+/*------------------------------------------*
+* copyright
+*------------------------------------------*/
+/*# sourceMappingURL=style.css.map */

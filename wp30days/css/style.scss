@@ -1,0 +1,173 @@
+/*------------------------------------------*
+* 変数
+*------------------------------------------*/
+$w-pc: 1024px;  // PC
+$w-tab: 680px;  // タブレット
+$w-sp: 768px;   // スマホ
+
+
+$white: #ffffff;
+$black: #333333;
+$brown: #421f15;
+$orange: #c63205;
+
+
+/*------------------------------------------*
+* メディアクエリ
+*------------------------------------------*/
+@mixin pc {
+    @media (min-width: ($w-pc)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: ($w-tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($w-sp)) {
+        @content;
+    }
+}
+
+
+/*------------------------------------------*
+* html
+*------------------------------------------*/
+// 2rem = 20px
+// 1.4rem = 14px
+html {
+    font-size: 62.5%;
+}
+
+/*------------------------------------------*
+* body
+*------------------------------------------*/
+body {
+    font-family: 'system-ui', 'ヒラギノ角ゴ Pro W3', sans-serif !important;
+}
+
+/*------------------------------------------*
+* common
+*------------------------------------------*/
+.com_hover {
+    transition : 0.3s;
+    opacity: 0.8;
+}
+
+/*------------------------------------------*
+* container
+*------------------------------------------*/
+.container {
+    background-color: skyblue;
+    max-width: 810px;
+}
+
+
+/*------------------------------------------*
+* navbar
+*------------------------------------------*/
+// これじゃないと下線が消えない
+#home li a {
+    text-decoration: none;
+    color: $black;
+    font-size: 2.2rem;
+}
+#home li p:hover {
+    transition : 0.3s;
+    opacity: 0.8;
+}
+
+nav {
+    text-align: center;
+    padding: 25px 0;
+    background:url(../img/com_bg.png) center/cover no-repeat;
+    height: 640px;  // FIXME:後で消す_
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    @mixin rubyParam {
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: -6px;    // 位置調整
+        @content;
+    }
+
+    .navTop::before {
+        content: "トップ";
+        @include rubyParam;
+    }
+
+    .navNews::before {
+        content: "ニュース";
+        @include rubyParam;
+    }
+
+    .navStory::before {
+        content: "ストーリー";
+        @include rubyParam;
+    }
+
+    .navComments::before {
+        content: "著名人コメント";
+        @include rubyParam;
+    }
+
+    .navCast::before {
+        content: "キャスト";
+        @include rubyParam;
+    }
+
+    .navInquiry::before {
+        content: "問い合わせ";
+        @include rubyParam;
+    }
+}
+
+/*------------------------------------------*
+* home
+*------------------------------------------*/
+
+
+/*------------------------------------------*
+* introduction
+*------------------------------------------*/
+
+
+/*------------------------------------------*
+* news
+*------------------------------------------*/
+
+
+/*------------------------------------------*
+* story
+*------------------------------------------*/
+
+
+/*------------------------------------------*
+* comments
+*------------------------------------------*/
+
+
+/*------------------------------------------*
+* cast
+*------------------------------------------*/
+
+
+/*------------------------------------------*
+* schedule
+*------------------------------------------*/
+
+
+/*------------------------------------------*
+* copyright
+*------------------------------------------*/
+
+
