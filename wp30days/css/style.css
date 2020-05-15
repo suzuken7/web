@@ -276,7 +276,6 @@ nav .navInquiry::before {
 
 .news .container .side_card .text {
   padding: 15px;
-  line-height: 10px;
 }
 
 .news .container .side_card img {
@@ -362,6 +361,14 @@ nav .navInquiry::before {
 *------------------------------------------*/
 .cast {
   padding-bottom: 30px;
+}
+
+.cast .cast_bg {
+  background: url(../img/com_bg.png) center/cover no-repeat;
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  z-index: -1;
 }
 
 .cast .item {
