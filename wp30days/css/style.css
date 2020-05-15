@@ -19,6 +19,10 @@ body {
   font-family: 'system-ui', 'ヒラギノ角ゴ Pro W3', sans-serif !important;
 }
 
+body p {
+  margin: 0;
+}
+
 /*------------------------------------------*
 * common
 *------------------------------------------*/
@@ -279,23 +283,183 @@ nav .navInquiry::before {
   height: 88px;
 }
 
-.news .container .row {
-  background-color: turquoise;
-}
-
 /*------------------------------------------*
 * story
 *------------------------------------------*/
+.story {
+  background: url(../img/top/story.png) center/cover no-repeat;
+  padding-bottom: 60px;
+  color: #ffffff;
+}
+
+.story_text {
+  width: 40%;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-left: auto;
+}
+
+.story .com_btn {
+  width: 115px;
+  height: 35px;
+  margin-left: auto;
+}
+
 /*------------------------------------------*
 * comments
 *------------------------------------------*/
+.comments {
+  background: url(../img/com_bg.png) center/cover no-repeat;
+  padding: 60px 0;
+}
+
+.comments .container .title_text {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.comments_image {
+  background: url(../img/top/comments.png) center/cover no-repeat;
+  color: #ffffff;
+  height: 215px;
+  position: relative;
+}
+
+.comments_image .info {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 30px;
+}
+
+.comments_image .info .position {
+  font-size: 2rem;
+}
+
+.comments_image .info .name {
+  font-size: 2.6rem;
+}
+
+.comments_image .info .text {
+  font-size: 1.4rem;
+}
+
+.comments_image .com_btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 115px;
+  height: 35px;
+}
+
 /*------------------------------------------*
 * cast
 *------------------------------------------*/
+.cast {
+  padding-bottom: 30px;
+}
+
+.cast .item {
+  text-align: center;
+}
+
+.cast .item img {
+  margin-bottom: 38px;
+}
+
+.cast .item .work {
+  font-size: 1.6rem;
+}
+
+.cast .item .job {
+  color: gray;
+}
+
+.cast .item .name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.cast .item .text {
+  color: gray;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.cast .btn-flat-border {
+  width: 115px;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #c63205;
+  border: solid 5px #c63205;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 /*------------------------------------------*
 * schedule
 *------------------------------------------*/
+.schedule {
+  background: url(../img/com_bg.png) center/cover no-repeat;
+  padding: 60px 0;
+}
+
+.schedule .container {
+  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.schedule .container .com_title {
+  padding: 30px 0;
+}
+
+.schedule .container .menu {
+  padding-bottom: 60px;
+}
+
+.schedule .container .item {
+  width: 70%;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.schedule .button {
+  text-align: center;
+}
+
+.schedule .inquiry {
+  background-color: #421f15;
+  border-color: #421f15;
+  margin-right: 15px;
+}
+
+.schedule .reserve {
+  margin-left: 15px;
+  border-color: #c63205;
+}
+
 /*------------------------------------------*
 * copyright
 *------------------------------------------*/
+.copyright {
+  padding: 33px 0;
+  background-color: #333333;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
