@@ -11,7 +11,6 @@ $black: #333333;
 $brown: #421f15;
 $orange: #c63205;
 
-$titleFontSize: 43px;
 
 /*------------------------------------------*
 * メディアクエリ
@@ -71,6 +70,10 @@ body {
         transition : 0.3s;
         opacity: 0.8;
     }
+}
+
+.com_title {
+    font-size: 43px;    
 }
 
 /*------------------------------------------*
@@ -216,9 +219,6 @@ nav {
         background: rgba(255,255,255,0.3);
         position: relative;
         
-        .title {
-            font-size: $titleFontSize;
-        }
         .subTitle {
             font-size: 34px;
         }
@@ -240,16 +240,78 @@ nav {
         }
 
     }
-
     
 }
 
 
+/*------------------------------------------*
+* movie
+*------------------------------------------*/
+.movie {
+    background:url(../img/com_bg.png) center/cover no-repeat;
+    padding-bottom: 30px;
+
+    iframe {
+        width: 100%;
+        height: 600px;
+    }
+}
 
 /*------------------------------------------*
 * news
 *------------------------------------------*/
+.news {
+    background:url(../img/com_bg.png) center/cover no-repeat;
+    padding-bottom: 60px;
 
+    .container {
+        position: relative;
+
+        .button {
+            position: absolute;
+            top: 4%;
+            right: 0;
+        }
+
+        .com_btn {
+            width: 120px;
+            height: 40px;
+        }
+
+        .card {
+            margin-bottom: 30px;
+            &-body {
+                height: 120px;
+            }
+        }
+
+        .card_day {
+            color: gray;
+            font-size: 1.2rem;
+        }
+        .card_title {
+            font-size: 1.6rem;
+        }
+
+        .side_card {
+            // width: 50%;
+            
+            background-color: $white;
+
+            .text {
+                padding: 15px;
+                line-height: 10px;
+            }
+
+            img {
+                height: 88px; 
+            }
+        }
+        .row {
+            background-color: turquoise;
+        }
+    }
+}
 
 /*------------------------------------------*
 * story

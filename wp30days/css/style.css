@@ -43,6 +43,10 @@ body {
   opacity: 0.8;
 }
 
+.com_title {
+  font-size: 43px;
+}
+
 /*------------------------------------------*
 * container
 *------------------------------------------*/
@@ -188,10 +192,6 @@ nav .navInquiry::before {
   position: relative;
 }
 
-.introduction .container .title {
-  font-size: 43px;
-}
-
 .introduction .container .subTitle {
   font-size: 34px;
 }
@@ -214,8 +214,75 @@ nav .navInquiry::before {
 }
 
 /*------------------------------------------*
+* movie
+*------------------------------------------*/
+.movie {
+  background: url(../img/com_bg.png) center/cover no-repeat;
+  padding-bottom: 30px;
+}
+
+.movie iframe {
+  width: 100%;
+  height: 600px;
+}
+
+/*------------------------------------------*
 * news
 *------------------------------------------*/
+.news {
+  background: url(../img/com_bg.png) center/cover no-repeat;
+  padding-bottom: 60px;
+}
+
+.news .container {
+  position: relative;
+}
+
+.news .container .button {
+  position: absolute;
+  top: 4%;
+  right: 0;
+}
+
+.news .container .com_btn {
+  width: 120px;
+  height: 40px;
+}
+
+.news .container .card {
+  margin-bottom: 30px;
+}
+
+.news .container .card-body {
+  height: 120px;
+}
+
+.news .container .card_day {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.news .container .card_title {
+  font-size: 1.6rem;
+}
+
+.news .container .side_card {
+  background-color: #ffffff;
+}
+
+.news .container .side_card .text {
+  padding: 15px;
+  line-height: 10px;
+}
+
+.news .container .side_card img {
+  height: 88px;
+}
+
+.news .container .row {
+  background-color: turquoise;
+}
+
 /*------------------------------------------*
 * story
 *------------------------------------------*/
