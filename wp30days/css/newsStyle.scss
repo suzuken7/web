@@ -1,0 +1,93 @@
+/*------------------------------------------*
+* home
+*------------------------------------------*/
+.home {
+    .top {
+        $topHeight: 180px;
+        height: $topHeight;
+    
+        .container {
+            height: $topHeight;
+            position: relative;
+
+            .title {
+                position: absolute;
+                top: 50%;
+    	        left: 0;
+	            transform: translate(0, -50%);
+            }
+            .news_day {
+                font-size: 3.5rem;
+                line-height: 45px;
+
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0, -50%);
+            }
+            .subTitle {
+                padding-top: 0;
+                text-align: left;
+                font-size: 2rem;
+                letter-spacing: 0.7px;
+            }
+            h2 {
+                text-align: left;
+                font-size: 5.5rem;
+            }
+            .com_btn {
+                width: 150px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            .button {
+                bottom: -12%;
+            }
+            .breadcrumbs {
+                color: black;
+                font-size: 1.2rem;
+                position: absolute;
+                bottom: -40%;
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------*
+* news
+*------------------------------------------*/
+.news {
+    padding-bottom: 0;
+
+    .container {
+        .paging {
+            font-size: 2rem;
+            text-align: center;
+
+            a {
+                text-align:center;
+                margin:0px 2px;
+                padding:5px 10px;
+                text-decoration:none;
+                font-weight:bold;
+                color:#FFFF00;
+                opacity: 1;
+                border:1px solid #000000;
+                background:#FFFFFF;
+            }
+
+            .next {
+                color: black;
+                background:none;
+            }
+        }
+
+        .paging a:hover {background:#FFCC99;}
+        .paging a:visited {background:#000000;}
+        .paging a:active {background:#FFFFFF;}
+    }
+    
+}
+
+
