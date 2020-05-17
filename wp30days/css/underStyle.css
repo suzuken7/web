@@ -1,0 +1,221 @@
+/*------------------------------------------*
+* home
+*------------------------------------------*/
+.home .top {
+  height: 180px;
+}
+
+.home .top .container {
+  height: 180px;
+  position: relative;
+}
+
+.home .top .container .title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.home .top .container .news_day {
+  font-size: 3.5rem;
+  line-height: 45px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.home .top .container .subTitle {
+  padding-top: 0;
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: 0.7px;
+}
+
+.home .top .container h2 {
+  text-align: left;
+  font-size: 5.5rem;
+}
+
+.home .top .container .com_btn {
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
+}
+
+.home .top .container .button {
+  bottom: -12%;
+}
+
+.home .top .container .breadcrumbs {
+  color: black;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: -40%;
+}
+
+/*------------------------------------------*
+* news
+*------------------------------------------*/
+.news {
+  padding-bottom: 0;
+}
+
+.news .container .paging {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.news .container .paging a {
+  text-align: center;
+  margin: 0px 2px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFF00;
+  opacity: 1;
+  border: 1px solid #000000;
+  background: #FFFFFF;
+}
+
+.news .container .paging .next {
+  color: black;
+  background: none;
+}
+
+.news .container .paging a:hover {
+  background: #FFCC99;
+}
+
+.news .container .paging a:visited {
+  background: #000000;
+}
+
+.news .container .paging a:active {
+  background: #FFFFFF;
+}
+
+/*------------------------------------------*
+* pickupNews
+*------------------------------------------*/
+.pickupNews {
+  background: url(../img/com_bg.png) center/cover no-repeat;
+}
+
+.pickupNews .container {
+  text-align: left;
+}
+
+.pickupNews .container img {
+  width: 100%;
+}
+
+.pickupNews .container .titleInfo {
+  background-color: black;
+  color: white;
+  padding: 14px 30px;
+}
+
+.pickupNews .container .titleInfo .day {
+  font-size: 1.2rem;
+}
+
+.pickupNews .container .titleInfo .title {
+  font-size: 2.6rem;
+}
+
+.pickupNews .container .pickupNewsInfo {
+  background-color: white;
+  padding: 30px;
+  text-align: left;
+}
+
+.pickupNews .container .pickupNewsInfo .subTitle {
+  font-size: 2.2rem;
+}
+
+.pickupNews .container .pickupNewsInfo .caption {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.pickupNews .container .pickupNewsInfo .text {
+  text-align: left;
+  font-size: 1.6rem;
+  color: gray;
+}
+
+.pickupNews .container .pagingNews {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.pickupNews .container .pagingNews .day {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.pickupNews .container .pagingNews .title {
+  font-size: 1.4rem;
+}
+
+.pickupNews .container .pagingNews .paging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  width: 45%;
+}
+
+.pickupNews .container .pagingNews .paging a {
+  width: 41px;
+  height: 33px;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFF00;
+  opacity: 1;
+  border: 1px solid #000000;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.pickupNews .container .pagingNews .paging .next {
+  color: black;
+  background: none;
+}
+
+.pickupNews .container .pagingNews .paging_left a {
+  margin-right: 10px;
+}
+
+.pickupNews .container .pagingNews .paging_right {
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+.pickupNews .container .pagingNews .paging_right a {
+  margin-left: 10px;
+}
+
+.pickupNews .container .pagingNews .paging a:hover {
+  background: #FFCC99;
+}
+
+.pickupNews .container .pagingNews .paging a:visited {
+  background: #000000;
+}
+
+.pickupNews .container .pagingNews .paging a:active {
+  background: #FFFFFF;
+}
+/*# sourceMappingURL=underStyle.css.map */

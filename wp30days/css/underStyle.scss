@@ -1,0 +1,196 @@
+/*------------------------------------------*
+* home
+*------------------------------------------*/
+.home {
+    .top {
+        $topHeight: 180px;
+        height: $topHeight;
+    
+        .container {
+            height: $topHeight;
+            position: relative;
+
+            .title {
+                position: absolute;
+                top: 50%;
+    	        left: 0;
+	            transform: translate(0, -50%);
+            }
+            .news_day {
+                font-size: 3.5rem;
+                line-height: 45px;
+
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0, -50%);
+            }
+            .subTitle {
+                padding-top: 0;
+                text-align: left;
+                font-size: 2rem;
+                letter-spacing: 0.7px;
+            }
+            h2 {
+                text-align: left;
+                font-size: 5.5rem;
+            }
+            .com_btn {
+                width: 150px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            .button {
+                bottom: -12%;
+            }
+            .breadcrumbs {
+                color: black;
+                font-size: 1.2rem;
+                position: absolute;
+                bottom: -40%;
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------*
+* news
+*------------------------------------------*/
+.news {
+    padding-bottom: 0;
+
+    .container {
+        .paging {
+            font-size: 2rem;
+            text-align: center;
+
+            a {
+                text-align:center;
+                margin:0px 2px;
+                padding:5px 10px;
+                text-decoration:none;
+                font-weight:bold;
+                color:#FFFF00;
+                opacity: 1;
+                border:1px solid #000000;
+                background:#FFFFFF;
+            }
+
+            .next {
+                color: black;
+                background:none;
+            }
+        }
+
+        .paging a:hover {background:#FFCC99;}
+        .paging a:visited {background:#000000;}
+        .paging a:active {background:#FFFFFF;}
+    }
+}
+    
+/*------------------------------------------*
+* pickupNews
+*------------------------------------------*/
+.pickupNews {
+    background:url(../img/com_bg.png) center/cover no-repeat;
+    .container {
+        text-align: left;
+        img {
+            width: 100%;
+        }
+
+        .titleInfo {
+            background-color: black;
+            color: white;
+            padding: 14px 30px;
+            .day {
+                font-size: 1.2rem;
+            }
+            .title {
+                font-size: 2.6rem;
+            }
+        }
+
+        .pickupNewsInfo {
+            background-color: white;
+            padding: 30px;
+            text-align: left;
+
+            .subTitle {
+                font-size: 2.2rem;
+            }
+            .caption {
+                font-size: 1.8rem;
+                font-weight: bold;
+                padding: 20px 0;
+            }
+            .text {
+                text-align: left;
+                font-size: 1.6rem;
+                color: gray
+            }
+        }
+
+        .pagingNews {
+            padding-top: 20px;
+            display: flex;
+            position: relative;
+ 
+            .day {
+                font-size: 1.2rem;
+                color: gray;
+            }
+            .title {
+                font-size: 1.4rem;
+            }
+
+            .paging {
+                display: flex;
+                font-size: 2rem;
+                width: 45%;
+    
+                a {
+                    width: 41px;
+                    height: 33px;
+                    text-align:center;
+                    margin-top: 10px;
+                    // margin-right: 10px;
+                    text-decoration:none;
+                    font-weight:bold;
+                    color:#FFFF00;
+                    opacity: 1;
+                    border:1px solid #000000;
+                    background:#FFFFFF;
+                    border-radius: 50%;
+                }
+    
+                .next {
+                    color: black;
+                    background:none;
+                }
+            }
+
+            .paging_left {
+                a {
+                    margin-right: 10px;
+                }
+            }
+            .paging_right {
+                position: absolute;
+                right: 0;
+                text-align: right;
+                a {
+                    margin-left: 10px;
+                }
+            }
+    
+            .paging a:hover {background:#FFCC99;}
+            .paging a:visited {background:#000000;}
+            .paging a:active {background:#FFFFFF;}
+        }
+    }
+}
+
+
+
