@@ -160,7 +160,7 @@ nav {
 
 .home {
     background:url(../img/com_bg.png) center/cover no-repeat;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
 
     .top {
         $topHeight: 520px;
@@ -259,6 +259,7 @@ nav {
             
         }
     }
+
 }
 
 
@@ -267,7 +268,8 @@ nav {
 *------------------------------------------*/
 .introduction {
     background:url(../img/com_bg.png) center/cover no-repeat;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
+    padding: 60px 0;
 
     .container {
         background-color: $white;

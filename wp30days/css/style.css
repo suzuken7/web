@@ -142,7 +142,6 @@ nav .navInquiry::before {
 
 .home {
   background: url(../img/com_bg.png) center/cover no-repeat;
-  padding-bottom: 60px;
 }
 
 .home .top {
@@ -260,7 +259,7 @@ nav .navInquiry::before {
 *------------------------------------------*/
 .introduction {
   background: url(../img/com_bg.png) center/cover no-repeat;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 .introduction .container {

@@ -19,8 +19,8 @@
 }
 
 .home .top .container .news_day {
-  font-size: 3.5rem;
-  line-height: 45px;
+  font-size: 2.5rem;
+  line-height: 30px;
   position: absolute;
   top: 50%;
   right: 0;
@@ -31,13 +31,13 @@
 .home .top .container .subTitle {
   padding-top: 0;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.7px;
 }
 
 .home .top .container h2 {
   text-align: left;
-  font-size: 5.5rem;
+  font-size: 4rem;
 }
 
 .home .top .container .com_btn {
@@ -55,6 +55,50 @@
   font-size: 1.2rem;
   position: absolute;
   bottom: -40%;
+}
+
+.home .story_top {
+  background: url(../img/story/story1.png) center/cover no-repeat;
+  height: 635px;
+  position: relative;
+}
+
+.home .story_top .container .breadcrumbs {
+  color: white;
+}
+
+.home .story_top .container .storyInfo {
+  margin-top: 60px;
+}
+
+.home .story_top .container .storyInfo .storyBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 130px;
+}
+
+.home .story_top .container .storyInfo .storyBlock h3 {
+  width: 50%;
+  font-size: 2.6rem;
+  line-height: 150px;
+}
+
+.home .story_top .container .storyInfo .storyBlock p {
+  width: 50%;
+  text-align: left;
+  line-height: 1.8rem;
+}
+
+.home .story_top::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
 }
 
 /*------------------------------------------*
@@ -217,5 +261,75 @@
 
 .pickupNews .container .pagingNews .paging a:active {
   background: #FFFFFF;
+}
+
+/*------------------------------------------*
+* underStory
+*------------------------------------------*/
+.underStory {
+  color: white;
+  background-color: black;
+}
+
+.underStory .story2 {
+  background: url(../img/story/story2.png) center/cover no-repeat;
+  height: 350px;
+}
+
+.underStory .story2 .container {
+  position: relative;
+}
+
+.underStory .story2 .container p {
+  width: 48%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+  line-height: 1.8rem;
+  letter-spacing: 0.8px;
+}
+
+.underStory .story3 {
+  background: url(../img/story/story3.png) center/cover no-repeat;
+  height: 350px;
+}
+
+.underStory .story3 .container {
+  position: relative;
+}
+
+.underStory .story3 .container p {
+  width: 48%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+  line-height: 1.8rem;
+  letter-spacing: 0.8px;
+  left: auto;
+  right: 0;
+}
+
+.underStory .story4 {
+  background: url(../img/story/story4.png) center/cover no-repeat;
+  height: 350px;
+}
+
+.underStory .story4 .container {
+  position: relative;
+}
+
+.underStory .story4 .container p {
+  width: 48%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+  line-height: 1.8rem;
+  letter-spacing: 0.8px;
 }
 /*# sourceMappingURL=underStyle.css.map */
