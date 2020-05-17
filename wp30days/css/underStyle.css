@@ -54,7 +54,7 @@
   color: black;
   font-size: 1.2rem;
   position: absolute;
-  bottom: -40%;
+  bottom: -30%;
 }
 
 .home .story_top {
@@ -331,5 +331,35 @@
           transform: translate(0, 50%);
   line-height: 1.8rem;
   letter-spacing: 0.8px;
+}
+
+/*------------------------------------------*
+* underComments
+*------------------------------------------*/
+.underComments .row {
+  padding-top: 30px;
+}
+
+.underComments .row .name {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.underComments .row .job {
+  color: gray;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.underComments .row .text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.comments {
+  padding-bottom: 0;
 }
 /*# sourceMappingURL=underStyle.css.map */

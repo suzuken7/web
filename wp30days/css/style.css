@@ -160,7 +160,7 @@ nav .navInquiry::before {
 
 .home .top .container .subTitle {
   padding-top: 60px;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 @media (max-width: 1199px) {
@@ -176,7 +176,7 @@ nav .navInquiry::before {
 }
 
 .home .top .container h2 {
-  font-size: 11rem;
+  font-size: 8rem;
   font-weight: 700;
 }
 
@@ -193,7 +193,7 @@ nav .navInquiry::before {
 }
 
 .home .top .container .day {
-  font-size: 4rem;
+  font-size: 3rem;
   max-width: 290px;
   line-height: 45px;
   position: absolute;
