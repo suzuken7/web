@@ -326,3 +326,70 @@
 .comments {
     padding-bottom: 0;
 }
+
+
+/*------------------------------------------*
+* underCast
+*------------------------------------------*/
+.cast {
+    
+    .com_title {
+        padding-top: 60px;
+    }
+}
+
+.cast2 {
+    background:url(../img/com_bg.png) center/cover no-repeat;
+    padding-top: 60px;
+
+    .status {
+        display: flex;
+        padding-bottom: 30px;
+    }
+    img {
+        width: 130px;
+        height: 130px;
+    }
+    .info {
+        padding-left: 10px;
+    }
+    .work {
+        font-size: 1.7rem;
+    }
+    .name {
+        font-size: 2.3rem;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+    .job {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+    }
+    .text {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+}
+
+.cast3 {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 10px;
+
+    .row {
+        padding-bottom: 40px;
+
+        .work {
+            font-size: 1.7rem;
+            color: gray;
+        }
+        .name {
+            font-size: 2.3rem;
+            padding-bottom: 10px;
+        }
+        .job {
+            font-size: 1.2rem;
+        }
+    }
+
+}

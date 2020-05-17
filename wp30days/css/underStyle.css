@@ -362,4 +362,76 @@
 .comments {
   padding-bottom: 0;
 }
+
+/*------------------------------------------*
+* underCast
+*------------------------------------------*/
+.cast .com_title {
+  padding-top: 60px;
+}
+
+.cast2 {
+  background: url(../img/com_bg.png) center/cover no-repeat;
+  padding-top: 60px;
+}
+
+.cast2 .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.cast2 img {
+  width: 130px;
+  height: 130px;
+}
+
+.cast2 .info {
+  padding-left: 10px;
+}
+
+.cast2 .work {
+  font-size: 1.7rem;
+}
+
+.cast2 .name {
+  font-size: 2.3rem;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.cast2 .job {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.cast2 .text {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+.cast3 {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+
+.cast3 .row {
+  padding-bottom: 40px;
+}
+
+.cast3 .row .work {
+  font-size: 1.7rem;
+  color: gray;
+}
+
+.cast3 .row .name {
+  font-size: 2.3rem;
+  padding-bottom: 10px;
+}
+
+.cast3 .row .job {
+  font-size: 1.2rem;
+}
 /*# sourceMappingURL=underStyle.css.map */
