@@ -393,3 +393,65 @@
     }
 
 }
+
+/*------------------------------------------*
+* underInquiry
+*------------------------------------------*/
+.underInquiry {
+    background-color: gray;
+    background:url(../img/com_bg.png) center/cover no-repeat;
+    padding-top: 60px;
+    font-size: 1.6rem;
+
+    .container {
+        $textAreaSize: 130px;
+        background: rgba(255,255,255,0.3);
+        
+        .item, .messageItem {
+            padding-bottom: 10px;
+        }
+
+        .text {
+            padding: 30px;
+        }
+
+        label {
+            text-align: right;
+            width: 30%;
+        }
+        input {
+            width: 65%;
+        }
+        textarea {
+            border-color: white;
+            width: 65%;
+            height: $textAreaSize;
+            position: absolute;
+            right: 4.5%;
+        }
+
+        .messageItem {
+            height: $textAreaSize;
+            position: relative;
+        }
+        .message {
+            position: absolute;
+            line-height: $textAreaSize;
+        }
+        .button {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+
+        // confirm_
+        .confirm_text {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+    }
+}
+

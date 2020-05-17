@@ -434,4 +434,65 @@
 .cast3 .row .job {
   font-size: 1.2rem;
 }
+
+/*------------------------------------------*
+* underInquiry
+*------------------------------------------*/
+.underInquiry {
+  background-color: gray;
+  background: url(../img/com_bg.png) center/cover no-repeat;
+  padding-top: 60px;
+  font-size: 1.6rem;
+}
+
+.underInquiry .container {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.underInquiry .container .item, .underInquiry .container .messageItem {
+  padding-bottom: 10px;
+}
+
+.underInquiry .container .text {
+  padding: 30px;
+}
+
+.underInquiry .container label {
+  text-align: right;
+  width: 30%;
+}
+
+.underInquiry .container input {
+  width: 65%;
+}
+
+.underInquiry .container textarea {
+  border-color: white;
+  width: 65%;
+  height: 130px;
+  position: absolute;
+  right: 4.5%;
+}
+
+.underInquiry .container .messageItem {
+  height: 130px;
+  position: relative;
+}
+
+.underInquiry .container .message {
+  position: absolute;
+  line-height: 130px;
+}
+
+.underInquiry .container .button {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.underInquiry .container .confirm_text {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 /*# sourceMappingURL=underStyle.css.map */

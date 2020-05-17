@@ -368,7 +368,7 @@ nav .navInquiry::before {
 
 .news .container .button {
   position: absolute;
-  top: 4%;
+  top: 8%;
   right: 0;
 }
 
@@ -403,7 +403,7 @@ nav .navInquiry::before {
 }
 
 .news .container .side_card img {
-  height: 88px;
+  height: 100px;
 }
 
 @media (max-width: 768px) {
