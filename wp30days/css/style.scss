@@ -47,7 +47,7 @@ html {
 * body
 *------------------------------------------*/
 body {
-    font-family: 'system-ui', 'ヒラギノ角ゴ Pro W3', sans-serif !important;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif !important;
 
     p {
         margin: 0;
@@ -202,7 +202,7 @@ nav {
             }
 
             .day {
-                font-size: 3rem;
+                font-size: 2.8rem;
                 max-width: 290px;
                 line-height: 45px;
 
@@ -336,19 +336,20 @@ nav {
 *------------------------------------------*/
 .movie {
     background:url(../img/com_bg.png) center/cover no-repeat;
-   
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden;
 
-    iframe {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
+    .youtube {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
@@ -588,21 +589,27 @@ nav {
 
         .menu {
             padding-bottom: 60px;
-        }
+        
+            .item {
+                width: 90%;
+                font-size: 2rem;
+                font-weight: bold;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+    
+                @include sp {
+                    width: 80%;
+                    font-size: 1.2rem;
+                }
 
-        .item {
-            width: 70%;
-            font-size: 2rem;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-
-            @include sp {
-                width: 80%;
-                font-size: 1.2rem;
+                .underline {
+                    border-bottom: 1px solid #000;
+                }
             }
         }
+
+        
     }
 
     .button {
