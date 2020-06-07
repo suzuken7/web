@@ -26,31 +26,23 @@ body {
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
-  background-color: tomato;
 }
 
 /*------------------------------------------*
 * グローバルナビ
 *------------------------------------------*/
-#global-navi {
-  background: #333;
-  position: fixed;
-  top: 0;
-  right: 0px;
-  width: 100%;
-}
-
 #global-navi-wrapper nav ul li {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 30px 20px 25px 28px;
 }
 
 #global-navi-wrapper nav ul li a {
-  color: #ddd;
+  text-decoration: none;
+  color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   #global-navi-wrapper nav {
     position: fixed;
     top: 0;
@@ -59,7 +51,7 @@ body {
     height: 100%;
     padding-top: 50px;
     background: #333;
-    font-size: 16px;
+    font-size: 1.6rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     z-index: 2;
@@ -67,10 +59,6 @@ body {
   #global-navi-wrapper nav ul li {
     display: block;
     padding: 20px 28px;
-  }
-  #global-navi-wrapper nav ul li a {
-    text-decoration: none;
-    color: #ddd;
   }
   #global-navi-wrapper .btn-gnavi {
     position: fixed;
@@ -85,7 +73,7 @@ body {
     -webkit-transition: all 400ms;
     transition: all 400ms;
   }
-  #global-navi-wrapper .btn-gnavi span {
+  #global-navi-wrapper span {
     position: absolute;
     width: 30px;
     height: 4px;
@@ -94,13 +82,13 @@ body {
     -webkit-transition: all 400ms;
     transition: all 400ms;
   }
-  #global-navi-wrapper .btn-gnavi span:nth-child(1) {
+  #global-navi-wrapper span:nth-child(1) {
     top: 0;
   }
-  #global-navi-wrapper .btn-gnavi span:nth-child(2) {
+  #global-navi-wrapper span:nth-child(2) {
     top: 10px;
   }
-  #global-navi-wrapper .btn-gnavi span:nth-child(3) {
+  #global-navi-wrapper span:nth-child(3) {
     top: 20px;
   }
   #global-navi-wrapper .btn-gnavi.open {
@@ -109,24 +97,15 @@ body {
   }
   #global-navi-wrapper .btn-gnavi.open span {
     background: #fff;
-  }
-  #global-navi-wrapper .btn-gnavi.open span {
     width: 24px;
   }
-  #global-navi-wrapper .contents section p {
-    position: absolute;
-    top: 50%;
-    width: 30%;
-    line-height: 1.4;
-    font-size: 20px;
-    color: #fff;
-    text-shadow: 0 0 6px #666;
-  }
-  #global-navi-wrapper .contents section:nth-child(odd) p {
-    left: 10%;
-  }
-  #global-navi-wrapper .contents section:nth-child(even) p {
-    right: 10%;
-  }
+}
+
+.global-navi {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
