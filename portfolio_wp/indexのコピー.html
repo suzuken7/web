@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- TwitterCard -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ken2web" />
+    <meta property="og:url" content="https://kensuke-suzuki.com" />
+    <meta property="og:title" content="Kensuke's Portfolio" />
+    <meta property="og:description" content="1から制作したポートフォリオです" />
+    <meta property="og:image" content="http://suzukenblog.org/portfolio/img/twitterCard.png" />
+
+    <!-- css -->
+    <title>Kensuke's Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e92658c180.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/style.js"></script>
+    
+</head>
+<body>
+    <!-- start loading -->
+    <div class="loading">
+        <div class="animation">Now Loading...</div>
+    </div>
+    <!-- end loading -->
+
+    <main>
+        <!-- start mainVisual -->
+        <section id="mainVisual">
+            <div class="box">
+                <video class="fitImg showPC" src="./video/01.mp4" muted autoplay loop alt=""></video>
+                <!-- 携帯表示 -->
+                <div class="showMobile">
+                    <p class="showMobile_title"><span class="pickColor">K</span>ensuke&nbsp;<span class="pickColor">S</span>uzuki</p>
+                    <p class="showMobile_subTitle">Web Engineer</p>
+                    <img class="resizeImage" src="./img/mobile.png" alt="mainVisual">
+                </div>
+            </div>
+            <!-- PC表示 -->
+            <div class="overlay_bg showPC">
+                <h1 class="overlay_text overlay_title">
+                    <span class="pickColor">K</span>ensuke's&nbsp;
+                    <span class="pickColor">P</span>ortfolio
+                </h1>
+                <p class="overlay_text overlay_subTitle">Web Engineer</p>
+                <a href="#message" class="scroll_down" address="true"></a>
+            </div>
+        </section>
+        <!-- end mainVisual -->
+
+        <!-- start global-nav -->
+        <nav id="global-nav">
+            <div class="global-nav_inner">
+                <ul class="global_list">
+                    <li><a href="#about" class="global_item" id="nav_about">
+                        <div class="global_item_anim">ABOUT</div>
+                    </a></li>
+                    <li><a href="#service" class="global_item" id="nav_service">
+                        <div class="global_item_anim">SERVICE</div>
+                    </a></li>
+                    <li><a href="#works" class="global_item" id="nav_works">
+                        <div class="global_item_anim">WORKS</div>    
+                    </a></li>
+                    <li><a href="#contact" class="global_item" id="nav_contact">
+                        <div class="global_item_anim">CONTACT</div>
+                    </a></li>
+                </ul>
+                <ul class="global_list menu">
+                    <li><a href="#about" class="global_item">
+                        <div class="global_item_anim">ABOUT</div>
+                    </a></li>
+                    <li><a href="#service" class="global_item">
+                        <div class="global_item_anim">SERVICE</div>
+                    </a></li>
+                    <li><a href="#works" class="global_item">
+                        <div class="global_item_anim">WORKS</div>    
+                    </a></li>
+                    <li><a href="#contact" class="global_item">
+                        <div class="global_item_anim">CONTACT</div>
+                    </a></li>
+                </ul>
+
+                <a href="#"><p class="global_name">Kensuke Suzuki</p></a>
+                <div class="menu-btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                
+            </div>
+        </nav>
+        <!-- end global-nav -->
+
+        <!-- start message -->
+        <section id="message">
+            <div class="message">
+                <h2 class="message_title">MESSAGE</h2>
+                <p class="message_text">
+                    ご訪問いただきありがとうございます。<br>
+                </p>
+                <p class="message_text">
+                    WEB系フリーランスエンジニアの<br>
+                    鈴木 謙介と申します。<br>
+                </p>
+                <p class="message_text">
+                    コーディング作業を中心に活動しています。
+                </p>
+                <p class="message_text">
+                    お客様のご要望をしっかりと確認した上で<br>
+                    迅速かつ丁寧に対応致します。
+                </p>
+                <p class="message_text">
+                    納期厳守はもちろんのこと、<br>
+                    納品後の修正も迅速に致します。
+                </p>
+                <p class="message_text">
+                    また、個人としての強みを生かし<br>
+                    企業よりも低価格でご提供できます。
+                </p>
+                <p class="message_text">
+                    この出会いが良き出会いになるよう、<br>
+                    精一杯努めさせていただきます。
+                </p>
+            </div>
+        </section>
+        <!-- end message -->
+
+        <!-- start about -->
+        <section id="about">
+            <div class="fixed-bg bg01">
+                <div class="overlay_bg1">
+                    <h2 class="about_title">ABOUT</h2>
+                    <div class="about">
+                        <div class="about_profile">
+                            <div class="about_me">
+                                <img src="./img/about.png" alt="プロフィール画像" width="250px" height="250px" class="about_image">
+                                <p class="about_name">鈴木 謙介</p>
+                                <p class="about_job">Web系フリーランスエンジニア</p>
+                            </div>
+                        </div>
+                        <div class="about_info">
+                            <h3 class="about_status_title">Status</h3>
+                            <br>
+                            <div class="about_status_text">
+                                <p>福島県出身　東京都在住。</p>
+                                <p>大学卒業後は都内ゲーム会社に就職。</p>
+                                <p>ゲーム制作とアプリマネジメントに勤める。</p>
+                                <p>現在はフリーランスエンジニアとして</p>
+                                <p>Web制作を中心に活動中。</p>
+                            </div>
+                            <h3 class="about_skill_title">Skills</h3>
+                            <br>
+                            <div class="about_skill_items">
+                                <div class="about_skill_item">
+                                    <i class="fab fa-html5"></i>
+                                    <p class="about_skill_iconText">HTML5</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <p class="about_skill_iconText">CSS3</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-sass"></i>
+                                    <p class="about_skill_iconText">SASS</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-js-square"></i>
+                                    <p class="about_skill_iconText">JS(JQuery)</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-bootstrap"></i>
+                                    <p class="about_skill_iconText">Bootstrap</p>
+                                </div>
+                            </div>
+                            <div class="about_skill_items">
+                                <div class="about_skill_item">
+                                    <i class="fab fa-wordpress"></i>
+                                    <p class="about_skill_iconText">WordPress</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-php"></i>
+                                    <p class="about_skill_iconText">PHP</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fas fa-database"></i>
+                                    <p class="about_skill_iconText">MySQL</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-github"></i>
+                                    <p class="about_skill_iconText">Git</p>
+                                </div>
+                                <div class="about_skill_item">
+                                    <i class="fab fa-unity"></i>
+                                    <p class="about_skill_iconText">Unity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about -->
+        
+        <!-- start service -->
+        <section id="service">
+            <div class="service">
+                <h2 class="service_title">SERVICE</h2>
+                <div class="service_items fadein">
+                    <div class="service_item">
+                        <i class="fas fa-file-code service_item_icon"></i>
+                        <p class="service_item_title">コーディング作業</p>
+                        <div class="service_border"></div>
+                        <p class="service_item_text">データの軽量化や、保守性を意識したコーディングを行います。<br>既存サイトの不具合対応や更新もお任せください。</p>
+                    </div>
+                    <div class="service_item ">  
+                        <i class="fas fa-desktop service_item_icon"></i>
+                        <p class="service_item_title">ランディングページの作成</p>
+                        <div class="service_border"></div>
+                        <p class="service_item_text">お預かりしたデザインデータ等をもとに適切にコーディング、ランディングページの制作を致します。<br>アニメーション対応やレスポンシブ(スマホ)対応もお任せください。</p>
+                    </div>
+                </div>
+                <div class="service_items fadein">
+                    <div class="service_item">
+                        <i class="fas fa-mobile-alt service_item_icon"></i>
+                        <p class="service_item_title">スマホ対応</p>
+                        <div class="service_border"></div>
+                        <p class="service_item_text">PC・スマホ・タブレット表示に対応致します。<br>既存サイトのレスポンシブ化など、お気軽にご相談ください。
+                        </p>
+                    </div>
+                    <div class="service_item">
+                        <i class="fab fa-wordpress service_item_icon"></i>
+                        <p class="service_item_title">WordPressサイト制作</p>
+                        <div class="service_border"></div>
+                        <p class="service_item_text">企業ホームページ、ブログ等のWordPressサイト制作、既存サイトのWordPress化対応を行います。管理画面からの更新方法を記載したドキュメント等もご用意致します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end service -->
+
+        <!-- start works -->
+        <section id="works">
+            <div class="works">
+                <h2 class="works_title">WORKS</h2>
+                <div class="works_items">
+                    <div class="works_item">
+                        <div class="works_frame">
+                            <div class="img_wrap">
+                                <a href="./img/work4.png" target="_blank"><img src="./img/work4_min.png" width="500" height="400" alt="work4" border="0"></a>
+                            </div>
+                        </div>
+                        <p class="works_text">Portfolio</p>
+                    </div>
+                    <div class="works_item">
+                        <div class="works_frame">
+                            <div class="img_wrap">
+                                <a href="http://suzukenblog.org/wp30days/" target="_blank"><img src="./img/work3_min.png" width="500" height="400" alt="work3" border="0"></a>
+                            </div>    
+                        </div>
+                        <p class="works_text">【課題】コーディング/CMS(PC対応)</p><br>
+                        <p class="works_text">ID:kensuke</p><br>
+                        <p class="works_text">PASS:wordpress</p>
+                    </div>
+                </div>
+                <div class="works_items">
+                    <div class="works_item">
+                        <div class="works_frame">
+                            <div class="img_wrap">
+                                <a href="./img/work5.png" target="_blank"><img src="./img/work5_min.png" width="500" height="400" alt="work5" border="0"></a>
+                            </div>
+                        </div>
+                        <p class="works_text">【課題】コーディング/CMS</p>
+                    </div>
+                    <div class="works_item">
+                        <div class="works_frame">
+                            <div class="img_wrap">
+                                <a href="./img/work2.png" target="_blank"><img src="./img/work2_min.png" width="500" height="400" alt="work2" border="0"></a>
+                            </div>
+                        </div>
+                        <p class="works_text">NUNO</p>
+                    </div>
+                </div>
+                <div class="works_items">
+                    <div class="works_item">
+                        <div class="works_frame">
+                            <div class="img_wrap">
+                                <a href="./img/work1.png" target="_blank"><img src="./img/work1_min.png" width="500" height="400" alt="work1" border="0"></a>
+                            </div>
+                        </div>
+                        <p class="works_text">【課題】コーディング</p>
+                    </div>
+                    <div class="works_item">
+                        <div class="works_frame">
+                            <div class="img_wrap">
+                                <a href="./img/work6.png" target="_blank"><img src="./img/work6_min.png" width="500" height="400" alt="work6" border="0"></a>
+                            </div>
+                        </div>
+                        <p class="works_text">【自作テーマ】コーディング/CMS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end works -->
+        
+        <!-- start contact -->
+        <section id="contact">
+            <div class="contact">
+                <h2 class="contact_title">CONTACT</h2>
+                <p class="contact_text">お気軽にお問い合わせください</p>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSddPhiQ73j0m-BlJqCZVW6AMGKhWhzCM-4tlkGiPkUDAC89sg/formResponse" method="post" name="myForm" class="contact-form" target="contact-dummy">
+                    <p class="contact-input"><input id="name" type="text" name="entry.2005620554" placeholder="Name" required ></p>
+                    <p class="contact-input"><input id="email" type="email" name="entry.1045781291" placeholder="E-mail" required
+                            pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$"></p>
+                    <!-- <p class="contact-input"><input id="title" type="text" name="entry.839337160" placeholder="Title" required ></p> -->
+                    <p class="contact-textarea"><textarea id="content" name="entry.839337160" placeholder="Message"
+                            required></textarea></p>
+                    <p class="contact-submit"><input id="submit" type="submit"></p>
+                </form>
+            </div>
+        </section>
+        <!-- end contact -->
+
+        <!-- start top arrow -->
+        <div id="page_top"><a href="#"></a></div>
+        <!-- end top arrow -->
+    </main>
+    
+    <!-- start footer -->
+    <footer id="footer">
+        <div class="footer">
+            <a href="https://twitter.com/ken2web"><i class="fab fa-twitter footer-icon"></i></a>
+            <p class="footer_copyright">© 2020 Kensuke's Portfolio, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+</body>
+</html>
