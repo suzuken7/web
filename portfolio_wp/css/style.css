@@ -29,38 +29,92 @@ body {
 }
 
 /*------------------------------------------*
-* グローバルナビ
+* common
 *------------------------------------------*/
-#global-navi-wrapper nav ul li {
+.com_headline {
+  color: #0066CC;
+  font-size: 6rem;
+  text-align: left;
+}
+
+/*------------------------------------------*
+* global-nav
+*------------------------------------------*/
+.global-nav {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  font-size: 2.6rem;
+  color: #333333;
+  padding-top: 60px;
+  background-color: white;
+}
+
+.global-nav__logo_sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 50px;
+  margin-bottom: 78px;
+}
+
+.global-nav__logo {
+  position: absolute;
+  left: 0;
+}
+
+.global-nav__logo span {
+  color: #0066CC;
+}
+
+.global-nav__sns {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.global-nav__sns .fa-instagram, .global-nav__sns .fa-twitter {
+  margin-right: 50px;
+}
+
+#global-nav-wrapper {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#global-nav-wrapper nav ul li {
   display: inline-block;
   font-size: 1.6rem;
   padding: 30px 20px 25px 28px;
 }
 
-#global-navi-wrapper nav ul li a {
+#global-nav-wrapper nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #333333;
 }
 
 @media (max-width: 768px) {
-  #global-navi-wrapper nav {
+  #global-nav-wrapper nav {
     position: fixed;
     top: 0;
     right: -300px;
     width: 300px;
     height: 100%;
     padding-top: 50px;
-    background: #333;
+    background: #333333;
     font-size: 1.6rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     z-index: 2;
   }
-  #global-navi-wrapper nav ul li {
+  #global-nav-wrapper nav ul li {
     display: block;
     padding: 20px 28px;
   }
-  #global-navi-wrapper .btn-gnavi {
+  #global-nav-wrapper .btn-gnavi {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -73,7 +127,7 @@ body {
     -webkit-transition: all 400ms;
     transition: all 400ms;
   }
-  #global-navi-wrapper span {
+  #global-nav-wrapper span {
     position: absolute;
     width: 30px;
     height: 4px;
@@ -82,30 +136,92 @@ body {
     -webkit-transition: all 400ms;
     transition: all 400ms;
   }
-  #global-navi-wrapper span:nth-child(1) {
+  #global-nav-wrapper span:nth-child(1) {
     top: 0;
   }
-  #global-navi-wrapper span:nth-child(2) {
+  #global-nav-wrapper span:nth-child(2) {
     top: 10px;
   }
-  #global-navi-wrapper span:nth-child(3) {
+  #global-nav-wrapper span:nth-child(3) {
     top: 20px;
   }
-  #global-navi-wrapper .btn-gnavi.open {
+  #global-nav-wrapper .btn-gnavi.open {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
-  #global-navi-wrapper .btn-gnavi.open span {
+  #global-nav-wrapper .btn-gnavi.open span {
     background: #fff;
     width: 24px;
   }
 }
 
-.global-navi {
-  position: fixed;
-  top: 0;
-  right: 0px;
+/*------------------------------------------*
+* mainVisual
+*------------------------------------------*/
+.mainVisual {
+  background: url(../img/main.png) no-repeat center center;
+  background-size: contain;
   width: 100%;
-  text-align: center;
+  height: 100vh;
 }
+
+/*------------------------------------------*
+* message
+*------------------------------------------*/
+.message__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.message__box__border {
+  color: #333333;
+  width: 100%;
+  height: 7rem;
+  margin-left: 1rem;
+  border-bottom: 3px solid;
+  position: relative;
+}
+
+.message__box__border::after {
+  content: "web制作をお考え中の方へ";
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  font-size: 2rem;
+  color: #333333;
+  border-bottom: 3px solid;
+  border-color: #0066CC;
+}
+
+.message__catchphrase {
+  color: #0066CC;
+  font-size: 8.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+
+.message__text {
+  font-size: 2rem;
+  text-align: center;
+  color: #333333;
+}
+
+/*------------------------------------------*
+* about
+*------------------------------------------*/
+/*------------------------------------------*
+* service
+*------------------------------------------*/
+/*------------------------------------------*
+* works
+*------------------------------------------*/
+/*------------------------------------------*
+* contact
+*------------------------------------------*/
+/*------------------------------------------*
+* footer
+*------------------------------------------*/
 /*# sourceMappingURL=style.css.map */
