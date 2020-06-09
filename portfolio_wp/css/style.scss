@@ -61,7 +61,13 @@ body {
 .com_headline {
     color: $blue;
     font-size: 6rem;
+    font-weight: normal;
     text-align: left;
+}
+
+.com_title {
+    font-size: 3.6rem;
+    font-weight: bold;
 }
 
 /*------------------------------------------*
@@ -201,7 +207,9 @@ body {
 *------------------------------------------*/
 .message {
 
-    &__box {
+    margin-bottom: 90px;
+
+    &__head {
         display: flex;
         margin-bottom: 50px;
 
@@ -212,6 +220,7 @@ body {
             margin-left: 1rem;
             border-bottom: 3px solid;
             position: relative;
+            z-index: -1;
         }
         &__border::after {
             content: "web制作をお考え中の方へ";
@@ -243,7 +252,90 @@ body {
 /*------------------------------------------*
 * about
 *------------------------------------------*/
+.about {
 
+    &__block {
+        display: flex;
+    }
+
+    &__head {
+        display: flex;
+        margin-bottom: 50px;
+
+        &__border {
+            color: $black;
+            width: 100%;
+            height: 7rem;
+            margin-left: 1rem;
+            border-bottom: 3px solid;
+            position: relative;
+            z-index: -1;
+        }
+        &__border::after {
+            content: "自己紹介";
+            position: absolute;
+            bottom: -3px;
+            right: 0;
+            font-size: 2rem;
+            color: $black;
+            border-bottom: 3px solid;
+            border-color: $blue;
+        }
+    }
+
+    &__info {
+        width: 65%;
+        color: $black;
+        text-align: left;
+        
+        &__title {
+            margin-bottom: 2.6rem;
+        }
+
+        &__text {
+            font-size: 2.0rem;
+            margin-bottom: 20px;
+        }
+
+        &__icons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        $iconHeight: 80px;
+
+        &__icon {
+            width: 100px;
+            text-align: center;
+            margin-right: 30px;
+            margin-bottom: 15px;
+
+            i {
+                font-size: 5rem;
+                color: white;
+                line-height: $iconHeight;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+        &__circle {
+            width: 80px;
+            height: $iconHeight;
+            border-radius: 50%;
+            background: $black;
+        }
+    }
+
+    &__image {
+        width: 35%;
+        img {
+            margin-left: auto;
+        }
+    }
+
+}
 
 /*------------------------------------------*
 * service

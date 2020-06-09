@@ -34,7 +34,13 @@ body {
 .com_headline {
   color: #0066CC;
   font-size: 6rem;
+  font-weight: normal;
   text-align: left;
+}
+
+.com_title {
+  font-size: 3.6rem;
+  font-weight: bold;
 }
 
 /*------------------------------------------*
@@ -168,23 +174,28 @@ body {
 /*------------------------------------------*
 * message
 *------------------------------------------*/
-.message__box {
+.message {
+  margin-bottom: 90px;
+}
+
+.message__head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
 }
 
-.message__box__border {
+.message__head__border {
   color: #333333;
   width: 100%;
   height: 7rem;
   margin-left: 1rem;
   border-bottom: 3px solid;
   position: relative;
+  z-index: -1;
 }
 
-.message__box__border::after {
+.message__head__border::after {
   content: "web制作をお考え中の方へ";
   position: absolute;
   bottom: -3px;
@@ -212,6 +223,95 @@ body {
 /*------------------------------------------*
 * about
 *------------------------------------------*/
+.about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.about__head__border {
+  color: #333333;
+  width: 100%;
+  height: 7rem;
+  margin-left: 1rem;
+  border-bottom: 3px solid;
+  position: relative;
+  z-index: -1;
+}
+
+.about__head__border::after {
+  content: "自己紹介";
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  font-size: 2rem;
+  color: #333333;
+  border-bottom: 3px solid;
+  border-color: #0066CC;
+}
+
+.about__info {
+  width: 65%;
+  color: #333333;
+  text-align: left;
+}
+
+.about__info__title {
+  margin-bottom: 2.6rem;
+}
+
+.about__info__text {
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+}
+
+.about__info__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__info__icon {
+  width: 100px;
+  text-align: center;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.about__info__icon i {
+  font-size: 5rem;
+  color: white;
+  line-height: 80px;
+}
+
+.about__info__icon p {
+  font-size: 2rem;
+}
+
+.about__info__circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #333333;
+}
+
+.about__image {
+  width: 35%;
+}
+
+.about__image img {
+  margin-left: auto;
+}
+
 /*------------------------------------------*
 * service
 *------------------------------------------*/
