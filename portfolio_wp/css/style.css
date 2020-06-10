@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*------------------------------------------*
+* import
+*------------------------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+/*------------------------------------------*
 * 変数
 *------------------------------------------*/
 /*------------------------------------------*
@@ -43,6 +47,12 @@ body {
   font-weight: bold;
 }
 
+/*------------------------------------------*
+* mixin
+*------------------------------------------*/
+/*------------------------------------------*
+* extend
+*------------------------------------------*/
 /*------------------------------------------*
 * global-nav
 *------------------------------------------*/
@@ -196,7 +206,7 @@ body {
 }
 
 .message__head__border::after {
-  content: "web制作をお考え中の方へ";
+  content: "dummy text";
   position: absolute;
   bottom: -3px;
   right: 0;
@@ -204,6 +214,10 @@ body {
   color: #333333;
   border-bottom: 3px solid;
   border-color: #0066CC;
+}
+
+.message__head__border::after {
+  content: "web制作をお考え中の方へ";
 }
 
 .message__catchphrase {
@@ -223,6 +237,10 @@ body {
 /*------------------------------------------*
 * about
 *------------------------------------------*/
+.about {
+  margin-bottom: 100px;
+}
+
 .about__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,7 +265,7 @@ body {
 }
 
 .about__head__border::after {
-  content: "自己紹介";
+  content: "dummy text";
   position: absolute;
   bottom: -3px;
   right: 0;
@@ -255,6 +273,10 @@ body {
   color: #333333;
   border-bottom: 3px solid;
   border-color: #0066CC;
+}
+
+.about__head__border::after {
+  content: "自己紹介";
 }
 
 .about__info {
@@ -315,6 +337,95 @@ body {
 /*------------------------------------------*
 * service
 *------------------------------------------*/
+.service {
+  margin-bottom: 66px;
+}
+
+.service__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.service__head__border {
+  color: #333333;
+  width: 100%;
+  height: 7rem;
+  margin-left: 1rem;
+  border-bottom: 3px solid;
+  position: relative;
+  z-index: -1;
+}
+
+.service__head__border::after {
+  content: "dummy text";
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  font-size: 2rem;
+  color: #333333;
+  border-bottom: 3px solid;
+  border-color: #0066CC;
+}
+
+.service__head__border::after {
+  content: "提供サービス";
+}
+
+.service__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-bottom: 80px;
+}
+
+.service__item__icon {
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.service__item__icon i {
+  color: white;
+  font-size: 10rem;
+  line-height: 180px;
+}
+
+.service__item__icon__circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #0066CC;
+}
+
+.service__item__describe {
+  width: 50%;
+  text-align: left;
+  color: #333333;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.service__item__describe__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.service__item__describe__text {
+  font-size: 1.5rem;
+}
+
 /*------------------------------------------*
 * works
 *------------------------------------------*/
