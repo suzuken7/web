@@ -413,7 +413,31 @@ body {
 /*------------------------------------------*
 * works
 *------------------------------------------*/
+.works {
 
+    // margin-bottom: 60px;
+    @include border();
+
+    &__head {
+        &__border::after {
+            content: "制作実績";
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        &__item {
+            width: 48%;
+            margin-right: 0px;
+            margin-bottom: 40px;
+        }
+    }
+
+}
 
 /*------------------------------------------*
 * contact
