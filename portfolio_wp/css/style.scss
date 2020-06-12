@@ -477,8 +477,83 @@ body {
 /*------------------------------------------*
 * contact
 *------------------------------------------*/
+@mixin formSize() {
+    border-radius: 4px;
+    width: 50%;
+}
 
+.contact {
+    font-size: 2rem;
+    color: $black;
+
+    @include border();
+
+    &__head {
+        &__border::after {
+            content: "お問い合わせ";
+        }
+    }
+
+    &__text {
+        margin-bottom: 38px;
+    }
+
+    &__input {
+        margin-bottom: 30px;
+        input {
+            @include formSize();
+        }
+    }
+
+    &__textarea {
+        margin-bottom: 60px;
+        textarea {
+            @include formSize();
+            height: 240px;
+        }
+    }
+
+    &__submit {
+        $buttonSize: 240px;
+        
+        width: $buttonSize;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 210px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        input {
+            width: $buttonSize;
+            height: 50px;
+            background-color: $blue;
+            color: white;
+            display: flex;
+            font-size: 1.8rem;
+            font-weight: 500;
+            justify-content: center;
+        }
+    }
+
+}
 
 /*------------------------------------------*
 * footer
 *------------------------------------------*/
+.footer {
+    $footerHeightSize: 60px;
+
+    height: $footerHeightSize;
+    background-color: $black;
+    text-align: center;
+    padding: 10px 0;
+
+    &__copyright {
+        color: white;
+        font-size: 18px;
+        line-height: $footerHeightSize;
+    }
+
+}
