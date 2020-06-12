@@ -123,6 +123,7 @@ body {
     color: $black;
     padding-top: 60px;
     background-color: white;
+    z-index: 999;
 
     &__logo_sns {
         display: flex;
@@ -415,7 +416,6 @@ body {
 *------------------------------------------*/
 .works {
 
-    // margin-bottom: 60px;
     @include border();
 
     &__head {
@@ -434,10 +434,45 @@ body {
             width: 48%;
             margin-right: 0px;
             margin-bottom: 40px;
+            
+            overflow: hidden;
+            position: relative;
+            
+            &__caption {
+                font-size: 2rem;
+	            text-align: center;
+                color:white;
+    
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                -webkit-transform : translate(-50%,-50%);
+                transform : translate(-50%,-50%);
+            }
+
+            &__mask {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-color: rgba(0,0,0,0.7);
+                -webkit-transition:	all 0.2s ease;
+                transition:	all 0.2s ease;
+
+                border: 5px solid;
+                border-color: $blue;
+                box-sizing: border-box;
+            }
+        }
+        &__item:hover .works__items__item__mask {
+            opacity: 1;
         }
     }
-
 }
+
 
 /*------------------------------------------*
 * contact
