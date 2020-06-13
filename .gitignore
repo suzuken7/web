@@ -6,6 +6,9 @@ UdemyCafe/
 くりnote
 Bootstrap
 
+#mama_testの管理しないもの
+mama_test/img
+mama_test/css/style.css.map
 
 #portfolioの管理しないもの
 portfolio/img
