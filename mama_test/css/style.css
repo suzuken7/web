@@ -266,6 +266,8 @@ body {
 
 .feature__panel_group {
   height: 400px;
+  font-size: 1.6rem;
+  line-height: 20px;
   border-top: none;
   background-color: white;
   border: solid 2px #ff9000;
@@ -273,6 +275,104 @@ body {
 
 .feature__panel {
   display: none;
+}
+
+.feature__panel__tab1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 62px;
+}
+
+.feature__panel__tab1__text {
+  position: absolute;
+  left: 3%;
+}
+
+.feature__panel__tab1__image {
+  position: absolute;
+  right: 2%;
+}
+
+.feature__panel__tab2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 62px;
+}
+
+.feature__panel__tab2__text {
+  position: absolute;
+  right: 3%;
+}
+
+.feature__panel__tab2__image {
+  position: absolute;
+  left: 2%;
+}
+
+.feature__panel__tab3 {
+  background: url(../img/tab_pc.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.feature__panel__tab3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: cover;
+  z-index: 10;
+}
+
+.feature__panel__tab3__text {
+  position: relative;
+  padding: 25px;
+  z-index: 20;
+}
+
+.feature__panel__tab4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 62px;
+}
+
+.feature__panel__tab4__text {
+  position: absolute;
+  left: 3%;
+}
+
+.feature__panel__tab4__leftBlock {
+  width: 50%;
+}
+
+.feature__panel__tab4__rightBlock {
+  width: 50%;
+}
+
+.feature__panel__tab4__rightBlock img {
+  width: 250px;
+  height: 150px;
+}
+
+.feature__panel__tab4__rightBlock__image1 {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.feature__panel__tab4__rightBlock__image2 {
+  margin-left: 20px;
 }
 
 .feature .feature__tab.is-active {

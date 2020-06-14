@@ -11,6 +11,8 @@ $w-pc: 1024px;      // PC
 $w-tab: $w-pc - 1;  // タブレット
 $w-sp: 768px;       // スマホ
 
+$innerSize: 1000px;
+
 $widthOffset: 10%;  // FIXME: カンプに合わせる
 
 $black: #333333;
@@ -56,7 +58,7 @@ body {
 * inner
 *------------------------------------------*/
 .inner {
-    width: 1000px;
+    width: $innerSize;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -253,6 +255,8 @@ body {
     $blue: #1e1efc;
     $pink: #fc1e77;
 
+    $panelHeight: 400px;
+
     margin-bottom: 50px;
 
     .com_title {
@@ -292,13 +296,109 @@ body {
         }
     }
     &__panel_group {
-        height: 400px;
+        height: $panelHeight;
+        font-size: 1.6rem;
+        line-height: 20px;
         border-top: none;
         background-color: white;
-        border: solid 2px $orange;  // タブクリック時にjsでカラーチェンジ処理の対象_
+        border: solid 2px $orange;  // タブクリック時にjsでカラーチェンジ処理の対象_ 
     }
     &__panel {
         display: none;
+
+        &__tab1 {
+            display: flex;
+            position: relative;
+            padding-top: 62px;
+            
+            &__text {
+                position: absolute;
+                left: 3%;
+            }
+
+            &__image {
+                position: absolute;
+                right: 2%;
+            }
+        }
+
+        &__tab2 {
+            display: flex;
+            position: relative;
+            padding-top: 62px;
+
+            &__text {
+                position: absolute;
+                right: 3%;
+            }
+
+            &__image {
+                position: absolute;
+                left: 2%;
+            }
+        }
+
+        &__tab3 {
+            background:url(../img/tab_pc.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            width: 100%;
+            height: 400px;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, .7);
+                background-size: cover;
+                z-index: 10;
+            }
+
+            &__text {
+                position: relative;
+                padding: 25px;
+                z-index: 20;
+            }
+        }
+
+        &__tab4 {
+            display: flex;
+            position: relative;
+            padding-top: 62px;
+            
+            &__text {
+                position: absolute;
+                left: 3%;
+            }
+
+            &__leftBlock {
+                width: 50%;
+            }
+            &__rightBlock {
+                width: 50%;
+
+                img {
+                    width: 250px;
+                    height: 150px;
+                }
+
+                &__image1 {
+                    margin-left: auto;
+                    margin-right: 20px;
+                }
+
+                &__image2 {
+                    margin-left: 20px;
+                }
+            }
+            
+            
+        }
+
     }
     .feature__tab.is-active {
         background-color: white;
@@ -310,8 +410,6 @@ body {
     }
 
 }
-
-
 
 /*------------------------------------------*
 * concept
