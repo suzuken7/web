@@ -230,7 +230,6 @@ body {
                     position: relative;
                 }
             }
-
         }
           
         span {
@@ -249,8 +248,70 @@ body {
 * feature
 *------------------------------------------*/
 .feature {
+    $orange: #ff9000;
+    $green: #3ebc01;
+    $blue: #1e1efc;
+    $pink: #fc1e77;
+
+    margin-bottom: 50px;
+
+    .com_title {
+        margin-bottom: 33.5px;
+    }
+
+    &__tab_group {
+        $heightVal: 50px;
+
+        display: flex;
+        justify-content: center;
+        height: $heightVal;
+        line-height: $heightVal;
+        font-size: 2.4rem;
+    }
+    &__tab {
+        color: white;
+        flex-grow: 1;
+        text-align: center;
+        cursor: pointer;
+
+        &-orange {
+            background-color: $orange;
+            border: solid 2px $orange;
+        }
+        &-green {
+            background-color: $green;
+            border: solid 2px $green;
+        }
+        &-blue {
+            background-color: $blue;
+            border: solid 2px $blue;
+        }
+        &-pink {
+            background-color: $pink;
+            border: solid 2px $pink;
+        }
+    }
+    &__panel_group {
+        height: 400px;
+        border-top: none;
+        background-color: white;
+        border: solid 2px $orange;  // タブクリック時にjsでカラーチェンジ処理の対象_
+    }
+    &__panel {
+        display: none;
+    }
+    .feature__tab.is-active {
+        background-color: white;
+        color: $orange;  // タブクリック時にjsでカラーチェンジ処理の対象_
+        transition: all 0.2s ease-out;
+    }
+    .feature__panel.is-show {
+        display: block;
+    }
 
 }
+
+
 
 /*------------------------------------------*
 * concept

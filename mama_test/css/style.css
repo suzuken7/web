@@ -215,6 +215,77 @@ body {
 /*------------------------------------------*
 * feature
 *------------------------------------------*/
+.feature {
+  margin-bottom: 50px;
+}
+
+.feature .com_title {
+  margin-bottom: 33.5px;
+}
+
+.feature__tab_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2.4rem;
+}
+
+.feature__tab {
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.feature__tab-orange {
+  background-color: #ff9000;
+  border: solid 2px #ff9000;
+}
+
+.feature__tab-green {
+  background-color: #3ebc01;
+  border: solid 2px #3ebc01;
+}
+
+.feature__tab-blue {
+  background-color: #1e1efc;
+  border: solid 2px #1e1efc;
+}
+
+.feature__tab-pink {
+  background-color: #fc1e77;
+  border: solid 2px #fc1e77;
+}
+
+.feature__panel_group {
+  height: 400px;
+  border-top: none;
+  background-color: white;
+  border: solid 2px #ff9000;
+}
+
+.feature__panel {
+  display: none;
+}
+
+.feature .feature__tab.is-active {
+  background-color: white;
+  color: #ff9000;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.feature .feature__panel.is-show {
+  display: block;
+}
+
 /*------------------------------------------*
 * concept
 *------------------------------------------*/
