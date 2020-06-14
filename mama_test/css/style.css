@@ -21,6 +21,7 @@ html {
 *------------------------------------------*/
 body {
   font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: #333333;
 }
 
 /*------------------------------------------*
@@ -35,6 +36,44 @@ body {
 /*------------------------------------------*
 * common
 *------------------------------------------*/
+.com_title {
+  color: #333333;
+  font-size: 3rem;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.com_border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.com_border:before {
+  border-top: 1px solid;
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 1.5rem;
+}
+
+.com_border:after {
+  border-top: 1px solid;
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 1.5rem;
+}
+
 /*------------------------------------------*
 * mixin
 *------------------------------------------*/
@@ -87,10 +126,94 @@ body {
 }
 
 /*------------------------------------------*
-* global-nav
+* gNav
 *------------------------------------------*/
+.gNav {
+  margin-bottom: 43px;
+  border-bottom: 1px solid #333333;
+}
+
+.gNav__message {
+  color: white;
+  background-color: #009DA0;
+  font-size: 1rem;
+  padding-left: 10%;
+}
+
+.gNav__menu {
+  font-size: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+  margin-left: 10%;
+}
+
+.gNav__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+
+.gNav__menu li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gNav__menu li::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 20px;
+  background-color: #b8b9dc;
+  position: absolute;
+  right: -1px;
+  top: calc((100% - 20px)/2);
+}
+
+.gNav__menu li:last-child::after {
+  content: none;
+}
+
+.gNav__menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.gNav__menu a:hover span {
+  color: greenyellow;
+  position: relative;
+}
+
+.gNav__menu span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-break: keep-all;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
 /*------------------------------------------*
-* characteristic
+* feature
 *------------------------------------------*/
 /*------------------------------------------*
 * concept
@@ -110,4 +233,11 @@ body {
 /*------------------------------------------*
 * footer
 *------------------------------------------*/
+.footer {
+  color: white;
+  background-color: #009DA0;
+  text-align: right;
+  height: 45px;
+  line-height: 45px;
+}
 /*# sourceMappingURL=style.css.map */

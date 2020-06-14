@@ -11,7 +11,10 @@ $w-pc: 1024px;      // PC
 $w-tab: $w-pc - 1;  // タブレット
 $w-sp: 768px;       // スマホ
 
+$widthOffset: 10%;  // FIXME: カンプに合わせる
 
+$black: #333333;
+$green: #009DA0;
 
 /*------------------------------------------*
 * メディアクエリ
@@ -46,6 +49,7 @@ html {
 *------------------------------------------*/
 body {
     font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    color: $black;
 }
 
 /*------------------------------------------*
@@ -60,7 +64,35 @@ body {
 /*------------------------------------------*
 * common
 *------------------------------------------*/
+.com_title {
+    color: $black;
+    font-size: 3rem;
+    text-align: center;
+    max-width: 500px;   // 先も含めてこの範囲に収める_
+    margin: 0 auto;
+}
 
+.com_border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @mixin borderSetting() {
+        border-top: 1px solid;
+        content: "";
+        flex-grow: 1;
+    }
+
+    &:before {
+        @include borderSetting();
+        margin-right: 1.5rem;
+    }
+
+    &:after {
+        @include borderSetting();
+        margin-left: 1.5rem;
+    }
+}
 
 /*------------------------------------------*
 * mixin
@@ -89,7 +121,6 @@ body {
 
     // テキスト共通処理
     @mixin textSetting {
-        // width: 100%;
         position: absolute;
         bottom: 0; 
         padding-bottom: 35px;
@@ -101,7 +132,7 @@ body {
 
         &__text {
             @include textSetting();
-            left: 10%;
+            left: $widthOffset;
         }
     }
 
@@ -111,7 +142,7 @@ body {
 
         &__text {
             @include textSetting();
-            right: 10%;
+            right: $widthOffset;
         }
     }
 
@@ -126,14 +157,100 @@ body {
 }
 
 /*------------------------------------------*
-* global-nav
+* gNav
 *------------------------------------------*/
+.gNav {
+    margin-bottom: 43px;
+    border-bottom: 1px solid $black;
 
+    &__message {
+        color: white;
+        background-color: $green;
+        font-size: 1rem;
+        padding-left: $widthOffset;
+    }
+
+    &__menu {
+        font-size: 2.4rem;
+        display: flex;
+        margin: 15px 0;
+        margin-left: $widthOffset;
+
+        ul {
+            display: flex;
+            margin: 0;
+            width: 100%;
+        }
+          
+        li {
+            flex: 1 1;
+            position: relative;
+            display: flex;
+            
+            &::after {
+                content: "";
+                display: block;
+                width: 2px;
+                height: 20px;
+                background-color: #b8b9dc;
+                position: absolute;
+                right: -1px;
+                top: calc((100% - 20px)/2);
+            }
+
+            // &:first-child {
+            //     &::before {
+            //         content: "";
+            //         display: block;
+            //         width: 2px;
+            //         height: 20px;
+            //         background-color: #b8b9dc;
+            //         position: absolute;
+            //         right: 0px;
+            //         top: calc((100% - 20px)/2);
+            //     }
+            // }
+        
+            &:last-child {
+                &::after {
+                    content: none;
+                }
+            }
+        }
+          
+        a { 
+            display: flex;
+            flex: 1 1;
+            justify-content: center;
+            text-decoration: none;
+        
+            &:hover {
+                span {
+                    color: greenyellow;
+                    position: relative;
+                }
+            }
+
+        }
+          
+        span {
+            display: flex;
+            align-items: center;
+            word-break: keep-all;
+
+            margin-left: auto;
+            margin-right: 20px;
+        }
+    }
+
+}
 
 /*------------------------------------------*
-* characteristic
+* feature
 *------------------------------------------*/
+.feature {
 
+}
 
 /*------------------------------------------*
 * concept
@@ -163,3 +280,12 @@ body {
 /*------------------------------------------*
 * footer
 *------------------------------------------*/
+.footer {
+    $footerHeight: 45px;
+
+    color: white;
+    background-color: $green;
+    text-align: right;
+    height: $footerHeight;
+    line-height: $footerHeight;
+}

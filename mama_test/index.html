@@ -13,16 +13,15 @@
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/e92658c180.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="./js/responsiveslides.min.js"></script>
     <script type="text/javascript" src="./js/style.js"></script>
 </head>
-<body>
 
+<body>
     <main>
-        
         <!-- mainVisual -->
         <section id="mainVisual" class="mainVisual">
-            <div id="fadeImage">
+            <div id="slides">
                 <div class="mainVisual__image1">
                     <div class="mainVisual__image1__text">
                         <p class="mainVisual__text1">Mammalian & Companyが</p>
@@ -33,23 +32,37 @@
                     <div class="mainVisual__image2__text">
                         <p class="mainVisual__text1">Mammalian & Companyが</p>
                         <p class="mainVisual__text2">クリエイティブ業界に進出します！</p>
-                    </div>                
+                    </div>
                 </div>
             </div>
         </section>
         <!-- end mainVisual -->
 
-        <!-- global-nav -->
-        
+        <!-- gNav -->
+        <section id="gNav" class="gNav">
+            <div class="gNav__message">
+                <p>子育てしながら在宅ワークでスキルを活かし続けれる！</p>
+            </div>
+            <nav class="gNav__menu">
+                <img src="./img/logo_bl.png" alt="ロゴ">
+                <ul>
+                    <li><a href="#"><span>特徴</span></a></li>
+                    <li><a href="#"><span>コンセプト</span></a></li>
+                    <li><a href="#"><span>先輩たちの声</span></a></li>
+                    <li><a href="#"><span>会社概要</span></a></li>
+                    <li><a href="#"><span>問い合わせ</span></a></li>
+                </ul>
+            </nav>
+        </section>
         <!-- end global-nav -->
 
-        <!-- characteristic -->
-        <section id="characteristic" class="characteristic">
+        <!-- feature -->
+        <section id="feature" class="feature">
             <div class="inner">
-
+                <p class="com_title com_border">Mamasan & Company の特徴</p>
             </div>
         </section>
-        <!-- end characteristic -->
+        <!-- end feature -->
 
         <!-- concept -->
         <section id="concept" class="concept">
@@ -95,7 +108,9 @@
     
     <!-- start footer -->
     <footer id="footer" class="footer">
-        <p>copyright(c) Mamasan＆company All Rights Reserved</p>
+        <div class="inner">
+            <p>copyright(c) Mamasan＆company All Rights Reserved</p>
+        </div>
     </footer>
     <!-- end footer -->
 

@@ -2,10 +2,6 @@
 * メインヴィジュアルフェード処理
 *------------------------------------------*/
 $(function() {
-    $( '#fadeImage' ) .cycle( {
-        fx: 'fade',
-        speed: 3000,
-        timeout: 2000
-    } );
+    $("#slides").responsiveSlides();
 });
 
