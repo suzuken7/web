@@ -446,9 +446,64 @@ body {
 /*------------------------------------------*
 * parallax
 *------------------------------------------*/
+.parallax img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*------------------------------------------*
 * voice
 *------------------------------------------*/
+.voice {
+  margin-bottom: 50px;
+}
+
+.voice .com_title {
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
+.voice__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.voice__items p {
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+
+.voice__items__left {
+  width: 50%;
+}
+
+.voice__items__right {
+  width: 49%;
+  padding-top: 60px;
+  margin-left: auto;
+}
+
+.voice__items__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.voice__items__info img {
+  margin-right: 15px;
+  margin-bottom: 17px;
+}
+
+.voice__items__text {
+  background-color: #DDECF2;
+  border-radius: 20px;
+  padding: 15px 20px 17px 15px;
+  width: 91%;
+}
+
 /*------------------------------------------*
 * company
 *------------------------------------------*/

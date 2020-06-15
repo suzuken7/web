@@ -442,7 +442,7 @@ body {
     &__thumbnails {
         margin-right: 14px;
         margin-left: 8px;
-        
+
         img {
             width: 100%;
             margin-bottom: 20px;
@@ -467,18 +467,68 @@ body {
     }
 }
 
-
-
-
 /*------------------------------------------*
 * parallax
 *------------------------------------------*/
+.parallax {
+    // FIXME:パララックス処理をする
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
 
 
 /*------------------------------------------*
 * voice
 *------------------------------------------*/
+.voice {
+    margin-bottom: 50px;
 
+    .com_title {
+        // 他の箇所も含め上下間隔が不揃いだけどカンプ合わせにしておく_
+        padding-top: 45px;
+        padding-bottom: 35px;
+    }
+
+    &__items {
+        display: flex;
+
+        p {
+            font-size: 1.6rem;
+            line-height: 30px;
+        }
+
+        &__left {
+            width: 50%;
+        }
+
+        &__right {
+            width: 49%;
+            padding-top: 60px;
+            margin-left: auto;
+        }
+
+        &__info {
+            display: flex;
+            
+            img {
+                margin-right: 15px;
+                margin-bottom: 17px;
+            }           
+        }
+
+        &__text {
+            background-color: #DDECF2;
+            border-radius: 20px;
+            padding: 15px 20px 17px 15px;
+            width: 91%;
+        }
+
+    }
+
+}
 
 /*------------------------------------------*
 * company
