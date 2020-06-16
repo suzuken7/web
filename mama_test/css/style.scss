@@ -549,18 +549,23 @@ body {
     table.no-outer-border > tbody > tr > td:last-child { border-right: 0; }
     table.no-outer-border > tbody > tr:last-child > td { border-bottom: 0; }
 
-    table {
-        width: 50%;
-        td {
-            padding: 15px;
+    &__items {
+        display: flex;
+
+        table {
+            width: 50%;
+            font-size: 1.6rem;
+            line-height: 30px;
+            td {
+                padding: 15px;
+            }
+        }
+
+        &__map {
+            margin-left: auto;
         }
     }
-
-    &__items {
-        font-size: 1.6rem;
-        line-height: 30px;
-    }
-
+    
 }
 
 /*------------------------------------------*

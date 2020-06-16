@@ -537,17 +537,24 @@ body {
   border-bottom: 0;
 }
 
-.company table {
-  width: 50%;
+.company__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.company table td {
+.company__items table {
+  width: 50%;
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+
+.company__items table td {
   padding: 15px;
 }
 
-.company__items {
-  font-size: 1.6rem;
-  line-height: 30px;
+.company__items__map {
+  margin-left: auto;
 }
 
 /*------------------------------------------*
