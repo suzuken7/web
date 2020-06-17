@@ -75,3 +75,20 @@ $(function(){
     $('.justify').justify();
 });
     
+
+/*------------------------------------------*
+* パララックス処理
+*------------------------------------------*/
+$(function(){
+    
+    let scrollPosi = 0;
+
+    $(window).scroll(function () {
+        scrollPosi = $(document).scrollTop();
+        
+        $('#parallax').stop(true, true).animate({
+            'background-position-y': -scrollPosi / 6 + 'px'
+        }, 100);
+    });
+ 
+});

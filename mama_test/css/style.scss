@@ -470,13 +470,16 @@ body {
 /*------------------------------------------*
 * parallax
 *------------------------------------------*/
-.parallax {
-    // FIXME:パララックス処理をする
-    img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
+
+#parallax {
+    background-image: url("../img/parallax.png");
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    // object-fit: cover;
 }
 
 
@@ -516,6 +519,11 @@ body {
             img {
                 margin-right: 15px;
                 margin-bottom: 17px;
+
+                width: 270px;
+                height: 190px;
+                object-fit: contain;
+                background-color: gray;
             }           
         }
 
