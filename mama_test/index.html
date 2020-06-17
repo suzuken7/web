@@ -295,7 +295,61 @@
         <!-- contact -->
         <section id="contact" class="contact">
             <div class="inner">
+                <p class="com_title com_border">お問い合わせ</p>
                 
+                <div class="contact__item">
+                    <p class="contact__item__label">お名前</p>
+                    <span class="contact__item__required">必須</span>
+                    <input type="text" class="contact__item__input">
+                </div>
+                <div class="contact__item bg_gray">
+                    <p class="contact__item__label">フリガナ</p>
+                    <span class="contact__item__required">必須</span>
+                    <input type="text" class="contact__item__input">
+                </div>
+                <div class="contact__item">
+                    <p class="contact__item__label">電話番号</p>
+                    <span class="contact__item__required">必須</span>
+                    <input type="text" class="contact__item__input">
+                </div>
+                <div class="contact__item bg_gray">
+                    <p class="contact__item__label">メールアドレス</p>
+                    <span class="contact__item__required">必須</span>
+                    <input type="text" class="contact__item__input mailWidth">
+                </div>
+                <div class="contact__item">
+                    <p class="contact__item__label">職務経験</p>
+                    <span class="contact__item__required">必須</span>
+                    <span class="contact__item__radioBtn">
+                        <input type="radio" name="q1" value="あり"><span> あり</span> 
+                        <input type="radio" name="q1" value="なし"><span> なし</span>
+                    </span>
+                </div>
+                <div class="contact__item bg_gray">
+                    <p class="contact__item__label isTop">所有資格</p>
+                    <span class="contact__item__required isTop">必須</span>
+                    <div class="contact__item__checkBtn">
+                        <p>
+                            <input type="checkbox" name="q2" value="1"><span> Web Designer</span>
+                            <input type="checkbox" name="q2" value="2"><span> HTML Corder</span>
+                            <input type="checkbox" name="q2" value="3"><span> Programer</span>
+                            <input type="checkbox" name="q2" value="3"><span> Video Producer</span>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="q2" value="1"><span> Web Designer</span>
+                            <input type="checkbox" name="q2" value="2"><span> HTML Corder</span>
+                            <input type="checkbox" name="q2" value="3"><span> Programer</span>
+                            <input type="checkbox" name="q2" value="3"><span> Video Producer</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <p class="contact__item__label isTop">自己アピール</p>
+                    <span class="contact__item__required isTop">必須</span>
+                    <textarea class="contact__item__textarea"></textarea>
+                </div>
+                <input type="submit" class="contact__btn" value="送信する">
             </div>
         </section>
         <!-- end contact -->

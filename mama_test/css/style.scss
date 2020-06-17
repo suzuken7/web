@@ -565,12 +565,113 @@ body {
             margin-left: auto;
         }
     }
-    
+
 }
 
 /*------------------------------------------*
 * contact
 *------------------------------------------*/
+.contact {
+    margin-top: 47px;
+    margin-bottom: 100px;
+
+    .com_title {
+        padding-bottom: 32.5px;
+    }
+
+    .bg_gray {
+        background-color: $gray;
+    }
+
+    &__item {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        display: flex;
+        align-items: center;
+
+        &__label {
+            width: 100%;
+            max-width: 150px;
+            font-size: 1.6rem;
+            padding-left: 30px;
+        }
+
+        &__required {
+            width: 40px;
+            text-align: center;
+            background: #ff0000;
+            color: #fff;
+            font-size: 12px;       
+        }
+
+        .isTop {
+            margin-top: 8px;
+            margin-bottom: auto;
+        }
+
+        &__input {
+            border: 2px solid #ddd;
+            margin-left: 40px;
+            padding-left: 1em;
+            padding-right: 1em;
+            height: 38px;
+            flex: 1;
+            width: 100%;
+            max-width: 337px;
+            font-size: 18px;
+        }
+        .mailWidth {
+            max-width: 550px;
+        }
+
+        &__radioBtn {
+            margin-left: 40px;
+            
+            span {
+                font-size: 1.6rem;
+                margin-right: 2em;
+            }
+        }
+
+        &__checkBtn {
+            margin-left: 40px;
+            
+            span {
+                font-size: 1.6rem;
+                margin-right: 2em;
+            }
+        }
+
+        &__textarea {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-left: 40px;
+            padding-left: 1em;
+            padding-right: 1em;
+            height: 140px;
+            flex: 1;
+            width: 100%;
+            max-width: 680px;
+            font-size: 18px;
+        }
+    }
+
+    &__btn {
+        margin-top: 56px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        width: 360px;
+        height: 75px;
+        display: block;
+        background: #fdc543;
+        color: $black;
+        font-size: 30px;
+
+        border: none;
+    }
+
+}
 
 
 /*------------------------------------------*
