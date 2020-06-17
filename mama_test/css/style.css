@@ -128,9 +128,17 @@ body {
 /*------------------------------------------*
 * gNav
 *------------------------------------------*/
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
 .gNav {
-  margin-bottom: 43px;
   border-bottom: 1px solid #333333;
+  background-color: white;
+  width: 100%;
 }
 
 .gNav__message {
@@ -216,6 +224,7 @@ body {
 * feature
 *------------------------------------------*/
 .feature {
+  margin-top: 43px;
   margin-bottom: 50px;
 }
 

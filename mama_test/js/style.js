@@ -1,8 +1,30 @@
 /*------------------------------------------*
 * メインヴィジュアルフェード処理
 *------------------------------------------*/
+// $(function() {
+//     $("#slides").responsiveSlides();
+// });
+
 $(function() {
-    $("#slides").responsiveSlides();
+    $('#slides').slick({
+        autoplay: true,
+        autoplaySpeed: 2500,
+        infinite: true,
+        speed: 1000,
+        fade: true,
+        arrows: false,
+    });
+});
+
+$( window ).on( 'scroll', function() {
+    var winH = 550; // メインビジュアルのサイズ_   
+    if ( winH < jQuery( this ).scrollTop() ) {
+        jQuery( 'body' ).css( 'padding-top', 100);  
+        jQuery( '#gNav' ).addClass( 'fixed' );
+    } else {
+        jQuery( 'body' ).css( 'padding-top', 0 );
+        jQuery( '#gNav' ).removeClass( 'fixed' );
+    }
 });
 
 
