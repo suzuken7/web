@@ -2,13 +2,40 @@
 /*------------------------------------------*
 * import
 *------------------------------------------*/
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 /*------------------------------------------*
 * 変数
 *------------------------------------------*/
 /*------------------------------------------*
 * メディアクエリ
 *------------------------------------------*/
+/*------------------------------------------*
+* debug
+*------------------------------------------*/
+.debug {
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  z-index: 9999;
+}
+
+@media (min-width: 1024px) {
+  .debug {
+    background-color: green;
+  }
+}
+
+@media (max-width: 1023px) {
+  .debug {
+    background-color: tomato;
+  }
+}
+
+@media (max-width: 768px) {
+  .debug {
+    background-color: yellow;
+  }
+}
+
 /*------------------------------------------*
 * html
 *------------------------------------------*/
@@ -20,8 +47,16 @@ html {
 * body
 *------------------------------------------*/
 body {
-  font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
   color: #333333;
+}
+
+@media (max-width: 1023px) {
+  body {
+    font-size: 1.2rem;
+  }
 }
 
 /*------------------------------------------*
@@ -33,6 +68,12 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1023px) {
+  .inner {
+    width: 750px;
+  }
+}
+
 /*------------------------------------------*
 * common
 *------------------------------------------*/
@@ -42,6 +83,18 @@ body {
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+  .com_title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .com_title {
+    font-size: 2rem;
+  }
 }
 
 .com_border {
@@ -102,6 +155,16 @@ body {
   left: 10%;
 }
 
+@media (max-width: 768px) {
+  .mainVisual__image1__text {
+    bottom: 40%;
+    padding-bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
 .mainVisual__image2 {
   background: url(../img/main2.png) no-repeat;
   background-size: cover;
@@ -117,12 +180,34 @@ body {
   right: 10%;
 }
 
+@media (max-width: 768px) {
+  .mainVisual__image2__text {
+    bottom: 40%;
+    padding-bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
 .mainVisual__text1 {
   font-size: 2.4rem;
 }
 
+@media (max-width: 768px) {
+  .mainVisual__text1 {
+    font-size: 1.8rem;
+  }
+}
+
 .mainVisual__text2 {
   font-size: 3.6rem;
+}
+
+@media (max-width: 768px) {
+  .mainVisual__text2 {
+    font-size: 2.4rem;
+  }
 }
 
 /*------------------------------------------*
@@ -149,12 +234,18 @@ body {
 }
 
 .gNav__menu {
-  font-size: 2.4rem;
+  font-size: 1.8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 15px 0;
-  margin-left: 10%;
+  margin-left: 7%;
+}
+
+@media (max-width: 1023px) {
+  .gNav__menu {
+    font-size: 1.5rem;
+  }
 }
 
 .gNav__menu ul {
@@ -162,7 +253,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  margin-left: 100px;
+  margin-left: 10%;
+}
+
+@media (max-width: 1023px) {
+  .gNav__menu ul {
+    margin-left: 3%;
+  }
 }
 
 .gNav__menu li {
@@ -246,6 +343,12 @@ body {
   font-size: 2.4rem;
 }
 
+@media (max-width: 1023px) {
+  .feature__tab_group {
+    font-size: 2rem;
+  }
+}
+
 .feature__tab {
   color: white;
   -webkit-box-flex: 1;
@@ -277,7 +380,6 @@ body {
 
 .feature__panel_group {
   height: 400px;
-  font-size: 1.6rem;
   line-height: 20px;
   border-top: none;
   background-color: white;
@@ -306,6 +408,12 @@ body {
   right: 2%;
 }
 
+@media (max-width: 1023px) {
+  .feature__panel__tab1__image {
+    width: 350px;
+  }
+}
+
 .feature__panel__tab2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,6 +430,12 @@ body {
 .feature__panel__tab2__image {
   position: absolute;
   left: 2%;
+}
+
+@media (max-width: 1023px) {
+  .feature__panel__tab2__image {
+    width: 350px;
+  }
 }
 
 .feature__panel__tab3 {
@@ -449,7 +563,6 @@ body {
 }
 
 .concept__text {
-  font-size: 1.6rem;
   line-height: 20px;
   width: 35%;
 }
@@ -479,25 +592,71 @@ body {
   padding-bottom: 35px;
 }
 
-.voice__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 1024px) {
+  .voice__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .voice__items p {
-  font-size: 1.6rem;
   line-height: 30px;
 }
 
-.voice__items__left {
-  width: 50%;
+@media (max-width: 1023px) {
+  .voice__items p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .voice__items p {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .voice__items__left {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .voice__items__left {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .voice__items__left {
+    margin: 0 auto;
+  }
 }
 
 .voice__items__right {
-  width: 49%;
   padding-top: 62px;
-  margin-left: auto;
+}
+
+@media (min-width: 1024px) {
+  .voice__items__right {
+    width: 49%;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1023px) {
+  .voice__items__right {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .voice__items__right {
+    margin: 0 auto;
+  }
 }
 
 .voice__items__info {
@@ -520,7 +679,7 @@ body {
   background-color: #DDECF2;
   border-radius: 20px;
   padding: 15px 20px 17px 15px;
-  width: 91%;
+  width: 92%;
 }
 
 /*------------------------------------------*
@@ -536,36 +695,80 @@ body {
   padding-bottom: 32px;
 }
 
-.company table.no-outer-border > tbody > tr > td {
-  border: 1px solid #333333;
+@media (min-width: 1024px) {
+  .company table.no-outer-border > tbody > tr > td {
+    border: 1px solid #333333;
+  }
+  .company table.no-outer-border > tbody > tr:first-child > td {
+    border-top: 0;
+  }
+  .company table.no-outer-border > tbody > tr > td:first-child {
+    border-left: 0;
+  }
+  .company table.no-outer-border > tbody > tr > td:last-child {
+    border-right: 0;
+  }
+  .company table.no-outer-border > tbody > tr:last-child > td {
+    border-bottom: 0;
+  }
 }
 
-.company table.no-outer-border > tbody > tr:first-child > td {
-  border-top: 0;
+@media (max-width: 1023px) {
+  .company table.no-outer-border > tbody > tr > td {
+    border: 1px solid #333333;
+  }
+  .company table.no-outer-border > tbody > tr:first-child > td {
+    border-top: 1;
+  }
+  .company table.no-outer-border > tbody > tr > td:first-child {
+    border-left: 1;
+  }
+  .company table.no-outer-border > tbody > tr > td:last-child {
+    border-right: 1;
+  }
+  .company table.no-outer-border > tbody > tr:last-child > td {
+    border-bottom: 1;
+  }
 }
 
-.company table.no-outer-border > tbody > tr > td:first-child {
-  border-left: 0;
+@media (max-width: 768px) {
+  .company table.no-outer-border > tbody > tr > td {
+    border: 1px solid #333333;
+  }
+  .company table.no-outer-border > tbody > tr:first-child > td {
+    border-top: 1;
+  }
+  .company table.no-outer-border > tbody > tr > td:first-child {
+    border-left: 1;
+  }
+  .company table.no-outer-border > tbody > tr > td:last-child {
+    border-right: 1;
+  }
+  .company table.no-outer-border > tbody > tr:last-child > td {
+    border-bottom: 1;
+  }
 }
 
-.company table.no-outer-border > tbody > tr > td:last-child {
-  border-right: 0;
-}
-
-.company table.no-outer-border > tbody > tr:last-child > td {
-  border-bottom: 0;
-}
-
-.company__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 1024px) {
+  .company__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .company__items table {
   width: 50%;
-  font-size: 1.6rem;
   line-height: 30px;
+}
+
+@media (max-width: 1023px) {
+  .company__items table {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .company__items table td {
@@ -573,7 +776,20 @@ body {
 }
 
 .company__items__map {
-  margin-left: auto;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .company__items__map {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1023px) {
+  .company__items iframe {
+    width: 750px;
+    height: 600px;
+  }
 }
 
 /*------------------------------------------*
@@ -606,7 +822,6 @@ body {
 .contact__item__label {
   width: 100%;
   max-width: 150px;
-  font-size: 1.6rem;
   padding-left: 30px;
 }
 
@@ -646,7 +861,6 @@ body {
 }
 
 .contact__item__radioBtn span {
-  font-size: 1.6rem;
   margin-right: 2em;
 }
 
@@ -655,7 +869,6 @@ body {
 }
 
 .contact__item__checkBtn span {
-  font-size: 1.6rem;
   margin-right: 2em;
 }
 
