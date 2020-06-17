@@ -1,10 +1,6 @@
 /*------------------------------------------*
 * メインヴィジュアルフェード処理
 *------------------------------------------*/
-// $(function() {
-//     $("#slides").responsiveSlides();
-// });
-
 $(function() {
     $('#slides').slick({
         autoplay: true,
@@ -16,6 +12,10 @@ $(function() {
     });
 });
 
+
+/*------------------------------------------*
+* ナビゲーションバー固定処理
+*------------------------------------------*/
 $( window ).on( 'scroll', function() {
     var winH = 550; // メインビジュアルのサイズ_   
     if ( winH < jQuery( this ).scrollTop() ) {
@@ -25,6 +25,22 @@ $( window ).on( 'scroll', function() {
         jQuery( 'body' ).css( 'padding-top', 0 );
         jQuery( '#gNav' ).removeClass( 'fixed' );
     }
+});
+
+/*------------------------------------------*
+* スムーススクロール
+* ナビメニュータップ時のアニメーション
+*------------------------------------------*/
+$(function(){
+    $('a[href^="#"]').click(function(){
+        var navOffset = 92;     // ナビバー用の調整値_
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top - navOffset;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
 });
 
 
