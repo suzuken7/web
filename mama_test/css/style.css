@@ -677,6 +677,32 @@ body {
 }
 
 /*------------------------------------------*
+* Top Arrow
+*------------------------------------------*/
+#page_top {
+  width: 36px;
+  height: 36px;
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  background: #009DA0;
+  cursor: pointer;
+}
+
+.arrow::after {
+  position: absolute;
+  top: 0;
+  bottom: 8px;
+  left: 5px;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+  border-style: solid;
+  border-width: 0px 13px 20px 13px;
+  border-color: transparent transparent white transparent;
+}
+
+/*------------------------------------------*
 * footer
 *------------------------------------------*/
 .footer {
