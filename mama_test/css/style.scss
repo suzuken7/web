@@ -829,6 +829,10 @@ body {
         font-size: 30px;
 
         border: none;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.6;
+        }
     }
 
 }
@@ -844,6 +848,10 @@ body {
     bottom: 60px;
     background: $green;
     cursor: pointer;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .arrow::after{

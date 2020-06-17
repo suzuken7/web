@@ -898,6 +898,11 @@ body {
   color: #333333;
   font-size: 30px;
   border: none;
+  cursor: pointer;
+}
+
+.contact__btn:hover {
+  opacity: 0.6;
 }
 
 /*------------------------------------------*
@@ -911,6 +916,10 @@ body {
   bottom: 60px;
   background: #009DA0;
   cursor: pointer;
+}
+
+#page_top:hover {
+  opacity: 0.6;
 }
 
 .arrow::after {
