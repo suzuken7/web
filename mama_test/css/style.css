@@ -679,11 +679,13 @@ body {
 }
 
 .concept__featured {
+  width: 500px;
   height: 310px;
 }
 
 @media (max-width: 768px) {
   .concept__featured {
+    width: auto;
     margin: 0 auto;
   }
 }
@@ -1035,6 +1037,23 @@ body {
   margin-bottom: auto;
 }
 
+.contact__item div {
+  width: 100%;
+  max-width: 650px;
+}
+
+@media (max-width: 1023px) {
+  .contact__item div {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__item div {
+    width: 500px;
+  }
+}
+
 .contact__item__input {
   border: 2px solid #ddd;
   margin-left: 40px;
@@ -1046,14 +1065,13 @@ body {
           flex: 1;
   width: 100%;
   max-width: 337px;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 768px) {
   .contact__item__input {
     margin-top: 5px;
     margin-left: 30px;
-    width: 500px;
   }
 }
 
@@ -1065,10 +1083,6 @@ body {
   .contact__item .mailWidth {
     max-width: 400px;
   }
-}
-
-.contact__item div {
-  width: 500px;
 }
 
 .contact__item__radioBtn {
@@ -1114,6 +1128,12 @@ body {
   width: 100%;
   max-width: 680px;
   font-size: 18px;
+}
+
+@media (max-width: 1023px) {
+  .contact__item__textarea {
+    max-width: 480px;
+  }
 }
 
 @media (max-width: 768px) {
