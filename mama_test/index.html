@@ -24,7 +24,7 @@
     <main>
 
         <!-- debug -->
-        <p class="debug">デバッグ表示</p>
+        <!-- <p class="debug">デバッグ表示</p> -->
 
         <!-- mainVisual -->
         <section id="mainVisual" class="mainVisual">
@@ -50,20 +50,29 @@
             <div class="gNav__message">
                 <p>子育てしながら在宅ワークでスキルを活かし続けれる！</p>
             </div>
-            <nav class="gNav__menu">
-                <span>
-                    <a href="#mainVisual">
-                        <img src="./img/logo_bl.png" alt="ロゴ">
-                    </a>
-                </span>
-                <ul>
-                    <li><a href="#feature"><span>特徴</span></a></li>
-                    <li><a href="#concept"><span>コンセプト</span></a></li>
-                    <li><a href="#voice"><span>先輩たちの声</span></a></li>
-                    <li><a href="#company"><span>会社概要</span></a></li>
-                    <li><a href="#contact"><span>問い合わせ</span></a></li>
-                </ul>
-            </nav>
+            
+            <div class="gNav__wrapper">
+                <!-- ハンバーガーメニュー用 -->
+                <p class="gNav__wrapper__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
+                <nav id="gNav__menu" class="gNav__menu">
+                    <span class="gNav__menu__img">
+                        <a href="#mainVisual">
+                            <img src="./img/logo_bl.png" alt="ロゴ">
+                        </a>
+                    </span>
+                    <ul>
+                        <li><a href="#feature"><span class="gNav__menu__item">特徴</span></a></li>
+                        <li><a href="#concept"><span class="gNav__menu__item">コンセプト</span></a></li>
+                        <li><a href="#voice"><span class="gNav__menu__item">先輩たちの声</span></a></li>
+                        <li><a href="#company"><span class="gNav__menu__item">会社概要</span></a></li>
+                        <li><a href="#contact"><span class="gNav__menu__item">問い合わせ</span></a></li>
+                    </ul>
+                </nav>
+            </div>
         </section>
         <!-- end global-nav -->
 

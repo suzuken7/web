@@ -10,7 +10,7 @@ $w-pc: 1024px;      // PC
 $w-tab: $w-pc - 1;  // タブレット
 $w-sp: 768px;       // スマホ
 
-$widthOffset: 10%;  // FIXME: カンプに合わせる
+$widthOffset: 10%;
 
 $black: #333333;
 $green: #009DA0;
@@ -154,6 +154,10 @@ body {
 .mainVisual {
     position: relative;
 
+    // @include sp {
+    //     margin-top: 85px;   // バナーの高さ分ずらす_ 
+    // }
+
     // 画像共通設定
     @mixin imageSetting {
         background-size: cover;
@@ -169,7 +173,6 @@ body {
         padding-bottom: 35px;
 
         @include sp {
-            // background-color: yellow;
             bottom: 40%;
             padding-bottom: 0;
 
@@ -232,11 +235,22 @@ body {
     background-color: white;
     width: 100%;
 
+    @include sp {
+        // position: fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     &__message {
         color: white;
         background-color: $green;
         font-size: 1rem;
         padding-left: $widthOffset;
+
+        @include sp {
+            display: none;
+        }
     }
 
     &__menu {
@@ -249,7 +263,13 @@ body {
             font-size: 1.5rem;
         }
 
-        // background-color: tomato;
+        @include sp {
+            margin: 0;
+
+            &__img {
+                display: none;
+            }
+        }
 
         ul {
             display: flex;
@@ -259,7 +279,12 @@ body {
             @include tab {
                 margin-left: 3%;
             }
-            // background-color: turquoise;
+
+            @include sp {
+                display: block;
+                width: 100%;
+                margin-left: 0;
+            }
         }
           
         li {
@@ -267,6 +292,13 @@ body {
             display: flex;
             padding: 0 25px;
             
+            @include sp {
+                width: 150px;
+                height: 70px;
+                padding: 0;
+                margin: 0 auto;
+            }
+
             &::after {
                 content: "";
                 display: block;
@@ -276,6 +308,10 @@ body {
                 position: absolute;
                 right: -1px;
                 top: calc((100% - 20px)/2);
+
+                @include sp {
+                    display: none;
+                }
             }
 
             &:first-child {
@@ -288,6 +324,10 @@ body {
                     position: absolute;
                     left: 0;
                     top: calc((100% - 20px)/2);
+
+                    @include sp {
+                        display: none;
+                    }
                 }
             }
         }
@@ -297,6 +337,11 @@ body {
             flex: 1 1;
             justify-content: center;
             text-decoration: none;
+
+            @include sp {
+                color: white;
+                height: 30px;
+            }
         
             &:hover {
                 span {
@@ -306,12 +351,73 @@ body {
             }
         }
           
-        span {
+        &__item {
             display: flex;
             align-items: center;
         }
     }
 
+
+    &__wrapper {
+
+        @include sp {
+            nav {
+                position: fixed;
+                top: 0;
+                right: -300px;
+                width: 300px;
+                height: 100%;
+                padding-top: 30%;
+                background: $black;
+                opacity: 0.9;
+                font-size: 1.6rem;
+                z-index: 2;
+            }
+            
+            &__btn {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                width: 30px;
+                height: 24px;
+                z-index: 3;
+                cursor: pointer;
+                -webkit-transition: all 400ms;
+                transition: all 400ms;
+
+                span {
+                    position: absolute;
+                    width: 30px;
+                    height: 4px;
+                    background: #666;
+                    border-radius: 10px;
+                    -webkit-transition: all 400ms;
+                    transition: all 400ms;
+    
+                }
+
+                span:nth-child(1) {
+                    top: 0;
+                }
+                span:nth-child(2) {
+                    top: 10px;
+                }
+                span:nth-child(3) {
+                    top: 20px;
+                }
+            }
+
+            &__btn.open {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+
+            &__btn.open span {
+                background: #fff;
+                width: 24px;
+            }
+        }
+    }
 }
 
 /*------------------------------------------*
@@ -851,6 +957,10 @@ body {
 
     &:hover {
         opacity: 0.6;
+    }
+
+    @include sp {
+        visibility: hidden;
     }
 }
 

@@ -1,4 +1,10 @@
 /*------------------------------------------*
+* 定数
+*------------------------------------------*/
+var winW = 768;     // スマホブレイクポイント_
+
+
+/*------------------------------------------*
 * メインヴィジュアルフェード処理
 *------------------------------------------*/
 $(function() {
@@ -17,9 +23,11 @@ $(function() {
 * ナビゲーションバー固定処理
 *------------------------------------------*/
 $( window ).on( 'scroll', function() {
-    var winH = 550; // メインビジュアルのサイズ_   
-    if ( winH < jQuery( this ).scrollTop() ) {
-        jQuery( 'body' ).css( 'padding-top', 100);  
+    var winH = 550;     // メインビジュアルのサイズ_
+
+    // pcとタブレットのみ対応_
+    if ( winH < jQuery( this ).scrollTop() && winW < window.innerWidth ) {
+        jQuery( 'body' ).css( 'padding-top', 100);
         jQuery( '#gNav' ).addClass( 'fixed' );
     } else {
         jQuery( 'body' ).css( 'padding-top', 0 );
@@ -27,13 +35,40 @@ $( window ).on( 'scroll', function() {
     }
 });
 
+
+/*------------------------------------------*
+* ハンバーガーメニュー切り替え処理
+*------------------------------------------*/
+$(function(){
+    $(".gNav__wrapper__btn").on("click", function(){
+        var rightVal = 0;
+
+        if($(this).hasClass("open")) {
+            // 位置を移動させメニューを開いた状態にする
+            rightVal = -300;
+            $(this).removeClass("open");
+        } else {
+            $(this).addClass("open");
+        }
+ 
+        $("#gNav__menu").stop().animate({
+            right: rightVal
+        }, 200);
+    });
+});
+
+
 /*------------------------------------------*
 * スムーススクロール
 * ナビメニュータップ時のアニメーション
 *------------------------------------------*/
 $(function(){
     $('a[href^="#"]').click(function(){
-        var navOffset = 92;     // ナビバー用の調整値_
+        var navOffset = 0;
+        if ( winW < window.innerWidth ) {
+            navOffset = 92;     // ナビバー用の調整値_
+        }
+
         var speed = 500;
         var href= $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
