@@ -158,10 +158,6 @@ body {
 .mainVisual {
     position: relative;
 
-    // @include sp {
-    //     margin-top: 85px;   // バナーの高さ分ずらす_ 
-    // }
-
     // 画像共通設定
     @mixin imageSetting {
         background-size: cover;
@@ -487,6 +483,7 @@ body {
     &__panel {
         display: none;
         $tabImageWidth: 350px;
+        $spImageWidth: 200px;
 
         &__tab1 {
             display: flex;
@@ -504,6 +501,10 @@ body {
 
                 @include tab {
                     width: $tabImageWidth;
+                }
+
+                @include sp {
+                    width: $spImageWidth;
                 }
             }
         }
@@ -524,6 +525,10 @@ body {
 
                 @include tab {
                     width: $tabImageWidth;
+                }
+
+                @include sp {
+                    width: $spImageWidth;
                 }
             }
         }
@@ -573,7 +578,10 @@ body {
 
                 img {
                     width: 250px;
-                    height: 150px;
+
+                    @include sp {
+                        width: $spImageWidth;
+                    }
                 }
 
                 &__image1 {
@@ -583,6 +591,11 @@ body {
 
                 &__image2 {
                     margin-left: 20px;
+                    @include sp {
+                        margin-top: 20px;
+                        margin-left: auto;
+                        margin-right: 20px;
+                    }
                 }
             }
             
