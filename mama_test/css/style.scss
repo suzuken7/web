@@ -885,13 +885,17 @@ body {
         padding-top: 11px;
         padding-bottom: 11px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
 
         &__label {
             width: 100%;
             max-width: 150px;
-            // font-size: 1.6rem;
             padding-left: 30px;
+            
+            @include sp {
+                max-width: 100px;
+            }
         }
 
         &__required {
@@ -899,7 +903,7 @@ body {
             text-align: center;
             background: #ff0000;
             color: #fff;
-            font-size: 12px;       
+            font-size: 12px;
         }
 
         .isTop {
@@ -917,17 +921,35 @@ body {
             width: 100%;
             max-width: 337px;
             font-size: 18px;
+
+            @include sp {
+                margin-top: 5px;
+                margin-left: 30px;
+                width: 500px;
+            }
         }
         .mailWidth {
             max-width: 550px;
+
+            @include tab {
+                max-width: 400px;
+            }
+        }
+
+        div {
+            width: 500px;
         }
 
         &__radioBtn {
             margin-left: 40px;
             
             span {
-                // font-size: 1.6rem;
                 margin-right: 2em;
+            }
+
+            @include sp {
+                margin-top: 5px;
+                margin-left: 30px;
             }
         }
 
@@ -935,8 +957,12 @@ body {
             margin-left: 40px;
             
             span {
-                // font-size: 1.6rem;
                 margin-right: 2em;
+            }
+
+            @include sp {
+                margin-top: 5px;
+                margin-left: 30px;
             }
         }
 
@@ -951,6 +977,11 @@ body {
             width: 100%;
             max-width: 680px;
             font-size: 18px;
+            
+            @include sp {
+                margin-top: 5px;
+                margin-left: 30px;
+            }
         }
     }
 
@@ -964,12 +995,18 @@ body {
         display: block;
         background: #fdc543;
         color: $black;
-        font-size: 30px;
+        font-size: 3rem;
 
         border: none;
         cursor: pointer;
         &:hover {
             opacity: 0.6;
+        }
+
+        @include sp {
+            width: 280px;
+            height: 60px;
+            font-size: 2.4rem;
         }
     }
 
@@ -992,7 +1029,7 @@ body {
     }
 
     @include sp {
-        visibility: hidden;
+        bottom: 50px;
     }
 }
 
