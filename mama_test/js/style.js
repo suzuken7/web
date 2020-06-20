@@ -97,6 +97,8 @@ $(function() {
         // クリックしたタブと同じインデックス番号をもつコンテンツを表示
         $('.feature__panel').eq(index).addClass('is-show');
 
+        jQuery( '.feature__panel_group' ).css( 'height', 400 );
+
         switch (index) {
             case 0: // 特徴1
                 ChangeBorderColor('#ff9000');
@@ -106,9 +108,11 @@ $(function() {
                 break;
             case 2: // 特徴3
                 ChangeBorderColor('#1e1efc');
+                jQuery( '.feature__panel_group' ).css( 'height', "auto");
                 break;
             case 3: // 特徴4
                 ChangeBorderColor('#fc1e77');
+
                 break;
         } 
     });
@@ -157,10 +161,10 @@ $(function(){
     let scrollPosi = 0;
 
     $(window).scroll(function () {
-        scrollPosi = $(document).scrollTop();
+        scrollPosi = $(document).scrollTop() - 300;
         
         $('#parallax').stop(true, true).animate({
-            'background-position-y': -scrollPosi / 6 + 'px'
+            'background-position-y': -scrollPosi / 5 + 'px'
         }, 100);
     });
  

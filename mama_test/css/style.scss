@@ -69,11 +69,11 @@ body {
     margin: 0 auto;
 
     @include tab {
-        width: 95%;
+        width: 97%;
     }
 
     @include sp {
-        width: 95%;
+        width: 97%;
     }
 }
 
@@ -456,7 +456,6 @@ body {
         border-top: none;
         background-color: white;
         border: solid 2px $orange;  // タブクリック時にjsでカラーチェンジ処理の対象_ 
-
         position: relative;
     }
     &__panel {
@@ -468,6 +467,10 @@ body {
             display: flex;
             position: relative;
             padding-top: 62px;
+
+            @include sp {
+                padding-top: 10px;
+            }
             
             &__text {
                 position: absolute;
@@ -498,6 +501,10 @@ body {
             display: flex;
             position: relative;
             padding-top: 62px;
+
+            @include sp {
+                padding-top: 10px;
+            }
 
             &__text {
                 position: absolute;
@@ -530,8 +537,7 @@ body {
             background-position: center;
             position: relative;
             width: 100%;
-            height: 400px;
-            
+
             &::after {
                 content: '';
                 position: absolute;
@@ -559,6 +565,10 @@ body {
             display: flex;
             position: relative;
             padding-top: 62px;
+
+            @include sp {
+                padding-top: 10px;
+            }
             
             &__text {
                 position: absolute;
@@ -700,7 +710,7 @@ body {
 
 #parallax {
     background-image: url("../img/parallax.png");
-    background-position: top center;
+    background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -778,6 +788,16 @@ body {
 
         &__info {
             display: flex;
+
+            @include sp {
+                display: block;
+                text-align: center;
+
+                p {
+                    margin: 10px 0;
+                }
+                
+            }
             
             img {
                 margin-right: 15px;
@@ -787,6 +807,10 @@ body {
                 height: 190px;
                 object-fit: contain;
                 background-color: gray;
+
+                @include sp {
+                    margin: 0 auto;
+                }
             }           
         }
 
@@ -796,6 +820,9 @@ body {
             padding: 15px 20px 17px 15px;
             width: 92%;
 
+            @include sp {
+                text-align: center;
+            }
         }
 
     }
