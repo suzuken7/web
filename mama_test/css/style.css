@@ -976,6 +976,14 @@ body {
   }
 }
 
+.company__items .justify {
+  text-align: center;
+}
+
+.company__items .isTop {
+  vertical-align: top;
+}
+
 @media (min-width: 1024px) {
   .company__items {
     display: -webkit-box;
@@ -1136,7 +1144,7 @@ body {
     margin-left: 30px;
   }
   .contact__item__radioBtn .radioBtn_width {
-    max-width: 100%;
+    max-width: 40%;
   }
 }
 

@@ -867,6 +867,15 @@ body {
     }
 
     &__items {
+
+        .justify {
+            text-align: center;
+        }
+
+        .isTop {
+            vertical-align: top;
+        }
+
         @include pc {
             display: flex;
         }
@@ -994,14 +1003,13 @@ body {
                 margin-right: 2em;
             }
 
-            
-
             @include sp {
                 margin-top: 5px;
                 margin-left: 30px;
 
+
                 .radioBtn_width {
-                    max-width: 100%;
+                    max-width: 40%;
                 }
             }
         }

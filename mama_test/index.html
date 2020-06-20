@@ -15,9 +15,9 @@
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/e92658c180.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/slick.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.justify.js"></script>
-    <script type="text/javascript" src="./js/style.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.justify.js"></script>
+    <script src="./js/style.js"></script>
 </head>
 
 <body>
@@ -188,12 +188,12 @@
             
                 <div class="concept__items">
                     <div class="concept__featured">
-                        <img id="img" src="./img/concept1.png">
+                        <img id="img" src="./img/concept1.png" alt="選択画像">
                     </div>
                     <div id="thumb_img" class="concept__thumbnails">
-                        <img class="active" src="./img/concept1.png" onclick="ChangeImg('./img/concept1.png',this);">
-                        <img src="./img/concept2.png" onclick="ChangeImg('./img/concept2.png',this);">
-                        <img src="./img/concept3.png" onclick="ChangeImg('./img/concept3.png',this);">
+                        <img class="active" src="./img/concept1.png" alt="コンセプト1" onclick="ChangeImg('./img/concept1.png',this);">
+                        <img src="./img/concept2.png" alt="コンセプト2" onclick="ChangeImg('./img/concept2.png',this);">
+                        <img src="./img/concept3.png" alt="コンセプト3" onclick="ChangeImg('./img/concept3.png',this);">
                     </div>
                     <div class="concept__text">
                         <p>
@@ -269,11 +269,11 @@
                 <div class="company__items">
                     <table class="no-outer-border" style="border-collapse: collapse" >
                         <tr>
-                            <td align="center" class="justify">商号</td>
+                            <td class="justify">商号</td>
                             <td>Mamasan & Company 株式会社</td>
                         </tr>
                         <tr>
-                            <td align="center" valign="top" class="justify">所在地</td>
+                            <td class="justify isTop">所在地</td>
                             <td>
                                 東京Office<br>
                                 〒163-1306 東京都新宿区西新宿6-5-1<br>
@@ -285,11 +285,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" class="justify">創業</td>
+                            <td class="justify">創業</td>
                             <td>2008年9月</td>
                         </tr>
                         <tr>
-                            <td align="center" valign="top" class="justify">事業内容</td>
+                            <td class="justify isTop">事業内容</td>
                             <td>
                                 クラウドワーク環境による事務処理業務全般の請負<br>
                                 業務プロセス可視化及び最適化コンサルティング<br>
@@ -300,7 +300,7 @@
                         </tr>
                     </table>
                     <div class="company__items__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3446160698113!2d139.69095331585834!3d35.693136336925086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd57ca23f51%3A0x92e37e24b01c24ee!2z5paw5a6_44Ki44Kk44Op44Oz44OJ!5e0!3m2!1sja!2sjp!4v1592271761268!5m2!1sja!2sjp" width="470" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3446160698113!2d139.69095331585834!3d35.693136336925086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd57ca23f51%3A0x92e37e24b01c24ee!2z5paw5a6_44Ki44Kk44Op44Oz44OJ!5e0!3m2!1sja!2sjp!4v1592271761268!5m2!1sja!2sjp" width="470" height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -344,12 +344,12 @@
                 <div class="contact__item">
                     <p class="contact__item__label">職務経験</p>
                     <span class="contact__item__required">必須</span>
-                    <span class="contact__item__radioBtn">
+                    <div class="contact__item__radioBtn">
                         <div class="radioBtn_width">
                             <input type="radio" name="q1" value="あり"><span> あり</span>
                             <input type="radio" name="q1" value="なし"><span> なし</span>
                         </div>
-                    </span>
+                    </div>
                 </div>
                 <div class="contact__item bg_gray">
                     <p class="contact__item__label isTop">所有資格</p>
