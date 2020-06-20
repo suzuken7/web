@@ -70,13 +70,13 @@ body {
 
 @media (max-width: 1023px) {
   .inner {
-    width: 750px;
+    width: 95%;
   }
 }
 
 @media (max-width: 768px) {
   .inner {
-    width: 600px;
+    width: 95%;
   }
 }
 
@@ -795,6 +795,7 @@ body {
 @media (max-width: 768px) {
   .voice__items p {
     margin: 0 auto;
+    font-size: 1.4rem;
   }
 }
 
@@ -1038,8 +1039,7 @@ body {
 }
 
 .contact__item div {
-  width: 100%;
-  max-width: 650px;
+  width: 75%;
 }
 
 @media (max-width: 1023px) {
@@ -1063,8 +1063,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  width: 100%;
-  max-width: 337px;
+  width: 90%;
+  max-width: 42%;
   font-size: 1.8rem;
 }
 
@@ -1076,17 +1076,12 @@ body {
 }
 
 .contact__item .mailWidth {
-  max-width: 550px;
-}
-
-@media (max-width: 1023px) {
-  .contact__item .mailWidth {
-    max-width: 400px;
-  }
+  max-width: 70%;
 }
 
 .contact__item__radioBtn {
-  margin-left: 40px;
+  width: 40%;
+  margin-left: 30px;
 }
 
 .contact__item__radioBtn span {
@@ -1098,10 +1093,14 @@ body {
     margin-top: 5px;
     margin-left: 30px;
   }
+  .contact__item__radioBtn .radioBtn_width {
+    max-width: 100%;
+  }
 }
 
 .contact__item__checkBtn {
-  margin-left: 40px;
+  margin-left: 2.2em;
+  max-width: 65%;
 }
 
 .contact__item__checkBtn span {
@@ -1109,31 +1108,28 @@ body {
 }
 
 @media (max-width: 768px) {
+  .contact__item__checkBtn span {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
   .contact__item__checkBtn {
     margin-top: 5px;
-    margin-left: 30px;
+    margin-left: 25px;
   }
 }
 
 .contact__item__textarea {
   border: 1px solid #ddd;
   border-radius: 6px;
-  margin-left: 40px;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin-left: 1.5em;
   height: 140px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  width: 100%;
-  max-width: 680px;
+  width: 90%;
   font-size: 18px;
-}
-
-@media (max-width: 1023px) {
-  .contact__item__textarea {
-    max-width: 480px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1214,5 +1210,11 @@ body {
   text-align: right;
   height: 45px;
   line-height: 45px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
