@@ -9,34 +9,6 @@
 * メディアクエリ
 *------------------------------------------*/
 /*------------------------------------------*
-* debug
-*------------------------------------------*/
-.debug {
-  position: fixed;
-  width: 100%;
-  height: 20px;
-  z-index: 9999;
-}
-
-@media (min-width: 1024px) {
-  .debug {
-    background-color: green;
-  }
-}
-
-@media (max-width: 1023px) {
-  .debug {
-    background-color: tomato;
-  }
-}
-
-@media (max-width: 768px) {
-  .debug {
-    background-color: yellow;
-  }
-}
-
-/*------------------------------------------*
 * html
 *------------------------------------------*/
 html {
@@ -501,6 +473,7 @@ body {
   border-top: none;
   background-color: white;
   border: solid 2px #ff9000;
+  position: relative;
 }
 
 .feature__panel {
@@ -520,6 +493,14 @@ body {
   left: 3%;
 }
 
+@media (max-width: 768px) {
+  .feature__panel__tab1__text {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+}
+
 .feature__panel__tab1__image {
   position: absolute;
   right: 2%;
@@ -533,7 +514,7 @@ body {
 
 @media (max-width: 768px) {
   .feature__panel__tab1__image {
-    width: 200px;
+    display: none;
   }
 }
 
@@ -550,6 +531,14 @@ body {
   right: 3%;
 }
 
+@media (max-width: 768px) {
+  .feature__panel__tab2__text {
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+}
+
 .feature__panel__tab2__image {
   position: absolute;
   left: 2%;
@@ -563,7 +552,7 @@ body {
 
 @media (max-width: 768px) {
   .feature__panel__tab2__image {
-    width: 200px;
+    display: none;
   }
 }
 
@@ -594,6 +583,12 @@ body {
   z-index: 20;
 }
 
+@media (max-width: 768px) {
+  .feature__panel__tab3__text {
+    line-height: 18px;
+  }
+}
+
 .feature__panel__tab4 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,6 +600,14 @@ body {
 .feature__panel__tab4__text {
   position: absolute;
   left: 3%;
+}
+
+@media (max-width: 768px) {
+  .feature__panel__tab4__text {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
 }
 
 .feature__panel__tab4__leftBlock {
@@ -621,7 +624,7 @@ body {
 
 @media (max-width: 768px) {
   .feature__panel__tab4__rightBlock img {
-    width: 200px;
+    display: none;
   }
 }
 

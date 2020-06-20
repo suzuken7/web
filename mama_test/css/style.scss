@@ -40,29 +40,6 @@ $gray: #e0e0e0;
 
 
 /*------------------------------------------*
-* debug
-*------------------------------------------*/
-.debug {
-    position: fixed;
-    width: 100%;
-    height: 20px;
-    z-index: 9999;
-
-    @include pc {
-        background-color: green;
-    }
-
-    @include tab {
-        background-color: tomato;
-    }
-
-    @include sp {
-        background-color: yellow;
-    }
-}
-
-
-/*------------------------------------------*
 * html
 *------------------------------------------*/
 html {
@@ -448,6 +425,7 @@ body {
         @include tab {
             font-size: 2rem;
         }
+
     }
     &__tab {
         color: white;
@@ -478,6 +456,8 @@ body {
         border-top: none;
         background-color: white;
         border: solid 2px $orange;  // タブクリック時にjsでカラーチェンジ処理の対象_ 
+
+        position: relative;
     }
     &__panel {
         display: none;
@@ -492,18 +472,24 @@ body {
             &__text {
                 position: absolute;
                 left: 3%;
+
+                @include sp {
+                    width: 100%;
+                    left:0 ;
+                    text-align: center;
+                }
             }
 
             &__image {
                 position: absolute;
                 right: 2%;
-
+                
                 @include tab {
                     width: $tabImageWidth;
                 }
 
                 @include sp {
-                    width: $spImageWidth;
+                    display: none;
                 }
             }
         }
@@ -516,6 +502,12 @@ body {
             &__text {
                 position: absolute;
                 right: 3%;
+
+                @include sp {
+                    width: 100%;
+                    right: 0;
+                    text-align: center;
+                }
             }
 
             &__image {
@@ -527,7 +519,7 @@ body {
                 }
 
                 @include sp {
-                    width: $spImageWidth;
+                    display: none;
                 }
             }
         }
@@ -556,6 +548,10 @@ body {
                 position: relative;
                 padding: 25px;
                 z-index: 20;
+
+                @include sp {
+                    line-height: 18px;
+                }
             }
         }
 
@@ -567,6 +563,12 @@ body {
             &__text {
                 position: absolute;
                 left: 3%;
+
+                @include sp {
+                    width: 100%;
+                    left: 0;
+                    text-align: center;
+                }
             }
 
             &__leftBlock {
@@ -579,7 +581,7 @@ body {
                     width: 250px;
 
                     @include sp {
-                        width: $spImageWidth;
+                        display: none;
                     }
                 }
 
