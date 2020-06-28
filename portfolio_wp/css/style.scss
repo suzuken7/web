@@ -165,6 +165,10 @@ body {
         a {
             text-decoration: none;
             color: $black;
+
+            @include sp {
+                color: white;
+            }
         }
     }
 
@@ -175,7 +179,7 @@ body {
             right: -300px;
             width: 300px;
             height: 100%;
-            padding-top: 50px;
+            padding-top: 200px;
             background:$black;
             font-size: 1.6rem;
             box-sizing: border-box;
@@ -188,7 +192,7 @@ body {
 
         }
         
-        .btn-gnavi {
+        .btn-gnav {
             position: fixed;
             top: 20px;
             right: 20px;
@@ -221,12 +225,12 @@ body {
             top: 20px;
         }
 
-        .btn-gnavi.open {
+        .btn-gnav.open {
             -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
         }
 
-        .btn-gnavi.open span {
+        .btn-gnav.open span {
             background: #fff;
             width: 24px;
         }

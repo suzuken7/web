@@ -114,13 +114,19 @@ body {
 }
 
 @media (max-width: 768px) {
+  #global-nav-wrapper nav ul li a {
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
   #global-nav-wrapper nav {
     position: fixed;
     top: 0;
     right: -300px;
     width: 300px;
     height: 100%;
-    padding-top: 50px;
+    padding-top: 200px;
     background: #333333;
     font-size: 1.6rem;
     -webkit-box-sizing: border-box;
@@ -131,7 +137,7 @@ body {
     display: block;
     padding: 20px 28px;
   }
-  #global-nav-wrapper .btn-gnavi {
+  #global-nav-wrapper .btn-gnav {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -162,11 +168,11 @@ body {
   #global-nav-wrapper span:nth-child(3) {
     top: 20px;
   }
-  #global-nav-wrapper .btn-gnavi.open {
+  #global-nav-wrapper .btn-gnav.open {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
-  #global-nav-wrapper .btn-gnavi.open span {
+  #global-nav-wrapper .btn-gnav.open span {
     background: #fff;
     width: 24px;
   }
