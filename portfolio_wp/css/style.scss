@@ -44,7 +44,7 @@ html {
 }
 
 /*------------------------------------------*
-* body　
+* body
 *------------------------------------------*/
 body {
     font-family: 'Lato', 'Noto Sans JP', sans-serif;
@@ -57,6 +57,10 @@ body {
     width: 1000px;
     max-width: 100%;
     margin: 0 auto;
+
+    @include sp {
+        width: 90%;
+    }
 }
 
 /*------------------------------------------*
@@ -67,6 +71,7 @@ body {
     font-size: 6rem;
     font-weight: normal;
     text-align: left;
+
 }
 
 .com_title {
@@ -100,6 +105,10 @@ body {
             color: $black;
             border-bottom: 3px solid;
             border-color: $blue;
+
+            @include sp {
+                font-size: 1.5rem;
+            }
         }
     }
 }
@@ -125,16 +134,30 @@ body {
     background-color: white;
     z-index: 999;
 
+    @include sp {
+        padding-top: 20px;
+    }
+
     &__logo_sns {
         display: flex;
         position: relative;
         height: 50px;
-        margin-bottom: 78px;
+        // margin-bottom: 78px;
     }
 
     &__logo {
         position: absolute;
         left: 0;
+
+        @include sp {
+            h2 {
+                font-size: 2rem;    
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
 
         span {
             color: $blue;
@@ -148,6 +171,10 @@ body {
 
         .fa-instagram, .fa-twitter {
             margin-right: 50px;
+        }
+
+        @include sp {
+            display: none;
         }
     }
 }
@@ -258,7 +285,7 @@ body {
     @include border();
     &__head {
         &__border::after {
-            content: "web制作をお考え中の方へ";
+            content: "Web制作をお考え中の方へ";
         }
     }
     
@@ -267,13 +294,24 @@ body {
         font-size: 8.4rem;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 2.6rem;    
+        margin-bottom: 2.6rem;
+
+        @include sp {
+            font-size: 5rem;
+        }
     }
 
     &__text {
         font-size: 2rem;
         text-align: center;
         color: $black;
+
+        @include sp {
+            width: 330px;
+            margin: 0 auto;
+            font-size: 1.6rem;
+            line-height: 30px;
+        }
     }
 }
 
@@ -284,6 +322,10 @@ body {
     margin-bottom: 100px;
     &__block {
         display: flex;
+
+        @include sp {
+            display: block;
+        }
     }
 
     @include border();
@@ -297,6 +339,11 @@ body {
         width: 65%;
         color: $black;
         text-align: left;
+
+        @include sp {
+            width: 90%;
+            margin: 0 auto;
+        }
         
         &__title {
             margin-bottom: 2.6rem;
@@ -320,6 +367,10 @@ body {
             margin-right: 30px;
             margin-bottom: 15px;
 
+            @include sp {
+                margin: 0 auto;
+            }
+            
             i {
                 font-size: 5rem;
                 color: white;
@@ -340,6 +391,11 @@ body {
 
     &__image {
         width: 35%;
+        
+        @include sp {
+            margin: 0 auto;
+        }
+
         img {
             margin-left: auto;
         }
@@ -354,7 +410,6 @@ body {
     margin-bottom: 66px;
 
     @include border();
-
     &__head {
         &__border::after {
             content: "提供サービス";
@@ -364,20 +419,32 @@ body {
     &__items {
         display: flex;
         flex-wrap: wrap;
+
+        @include sp {
+            display: block;
+        }
     }
 
     &__item {
         $iconSize: 180px;
-
         display: flex;
         width: 50%;
         margin-bottom: 80px;
+
+        @include sp {
+            display: block;
+            margin: 0 auto;
+        }
 
         &__icon {
             width: $iconSize;
             height: $iconSize;
             text-align: center;
             margin-right: 30px;
+
+            @include sp {
+                margin: 0 auto;
+            }
         
             i {
                 color: white;
@@ -399,10 +466,20 @@ body {
             color: $black;
             font-family: "Noto Sans JP", sans-serif;
 
+            @include sp {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+
             &__title {
                 font-size: 2.4rem;
                 font-weight: bold;
                 margin-bottom: 15px;
+
+                @include sp {
+                    text-align: center;
+                }
             }
     
             &__text {
@@ -434,6 +511,10 @@ body {
         justify-content: space-between;
         margin-bottom: 60px;
 
+        @include sp {
+            display: block;
+        }
+
         &__item {
             width: 48%;
             margin-right: 0px;
@@ -441,6 +522,11 @@ body {
             
             overflow: hidden;
             position: relative;
+
+            @include sp {
+                width: 80%;
+                margin: 40px auto;
+            }
             
             &__caption {
                 font-size: 2rem;
@@ -453,6 +539,10 @@ body {
                 left: 50%;
                 -webkit-transform : translate(-50%,-50%);
                 transform : translate(-50%,-50%);
+
+                @include sp {
+                    font-size: 1.6rem;
+                }
             }
 
             &__mask {
@@ -484,11 +574,26 @@ body {
 @mixin formSize() {
     border-radius: 4px;
     width: 50%;
+
+    @include sp {
+        width: 70%;
+    }
 }
 
 .contact {
     font-size: 2rem;
     color: $black;
+
+    @include sp {
+        font-size: 1.4rem;
+    }
+
+    form {
+        @include sp {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
 
     @include border();
 
@@ -556,8 +661,12 @@ body {
 
     &__copyright {
         color: white;
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: $footerHeightSize;
+
+        @include sp {
+            font-size: 1.2rem;
+        }
     }
 
 }

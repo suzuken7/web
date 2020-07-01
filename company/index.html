@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>CompanyWebSite</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.justify.js"></script>
+    <script src="./js/style.js"></script>
+</head>
+
+<body>
+    <main>
+
+        <!-- mainVisual -->
+        <section id="mainVisual" class="mainVisual">
+            <div id="slides">
+                <div class="mainVisual__image1">
+                    <div class="mainVisual__image1__text">
+                        <p class="mainVisual__text1">Company Web Site</p>
+                        <p class="mainVisual__text2">人を美しくする仕事は、美しい。</p>
+                    </div>
+                </div>
+                <div class="mainVisual__image2">
+                    <div class="mainVisual__image2__text">
+                        <p class="mainVisual__text1">Company Web Site</p>
+                        <p class="mainVisual__text2">クリエイティブな力を発揮できる場所</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end mainVisual -->
+
+        <!-- gNav -->
+        <section id="gNav" class="gNav">
+            <div class="gNav__message">
+                <p>笑顔で一緒に働ける仲間を募集しています</p>
+            </div>
+            
+            <div class="gNav__wrapper">
+                <!-- ハンバーガーメニュー用 -->
+                <p class="gNav__wrapper__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
+                <nav id="gNav__menu" class="gNav__menu">
+                    <span class="gNav__menu__img">
+                        <a href="#mainVisual">
+                            <img src="./img/logo_bl.png" alt="ロゴ">
+                        </a>
+                    </span>
+                    <ul>
+                        <li><a href="#feature"><span class="gNav__menu__item">特徴</span></a></li>
+                        <li><a href="#concept"><span class="gNav__menu__item">コンセプト</span></a></li>
+                        <li><a href="#voice"><span class="gNav__menu__item">スタッフ</span></a></li>
+                        <li><a href="#company"><span class="gNav__menu__item">会社概要</span></a></li>
+                        <li><a href="#contact"><span class="gNav__menu__item">問い合わせ</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- end global-nav -->
+
+        <!-- feature -->
+        <section id="feature" class="feature">
+            <div class="inner">
+                <p class="com_title com_border">Company の特徴</p>
+
+                <!-- タブ -->
+                <ul class="feature__tab_group">
+                    <li class="feature__tab feature__tab-orange is-active">特徴1</li>
+                    <li class="feature__tab feature__tab-green">特徴2</li>
+                    <li class="feature__tab feature__tab-blue">特徴3</li>
+                    <li class="feature__tab feature__tab-pink">特徴4</li>
+                </ul>
+
+                <!-- タブを切り替えて表示するコンテンツ -->
+                <div class="feature__panel_group">
+                    <div class="feature__panel is-show">
+                        <div class="feature__panel__tab1">
+                            <p class="feature__panel__tab1__text">
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキストテキスト。<br>
+                                <br>
+                                テキストテキストテキストテキスト。<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキストテキストテキストテキストテキストテキスト<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキスト。<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキスト。<br>
+                            </p>
+                            <img src="./img/tab_pc.png" alt="特徴1" class="feature__panel__tab1__image">
+                        </div>
+                    </div>
+                    <div class="feature__panel">
+                        <div class="feature__panel__tab2">
+                            <img src="./img/tab_pc.png" alt="特徴2" class="feature__panel__tab2__image">
+                            <p class="feature__panel__tab2__text">
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキストテキスト。<br>
+                                <br>
+                                テキストテキストテキストテキスト。<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキストテキストテキストテキストテキストテキスト<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキストテキスト<br>
+                                テキスト。<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキスト。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature__panel">
+                        <div class="feature__panel__tab3">
+                            <p class="feature__panel__tab3__text">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br>
+                                <br>
+                                テキストテキストテキストテキスト。<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキストテキストテキスト。<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキスト。<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                                <br>
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature__panel">
+                        <div class="feature__panel__tab4">
+                            <div class="feature__panel__tab4__leftBlock">
+                                <p class="feature__panel__tab4__text">
+                                    テキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキスト。<br>
+                                    <br>
+                                    テキストテキストテキストテキスト。<br>
+                                    <br>
+                                    テキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキストテキストテキストテキストテキスト<br>
+                                    <br>
+                                    テキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキスト。<br>
+                                    <br>
+                                    テキストテキストテキストテキストテキストテキスト。<br>
+                                </p>
+                            </div>
+                            
+                            <div class="feature__panel__tab4__rightBlock">
+                                <img src="./img/tab_pc.png" alt="特徴4_1" class="feature__panel__tab4__rightBlock__image1">
+                                <img src="./img/tab_pc.png" alt="特徴4_2" class="feature__panel__tab4__rightBlock__image2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end feature -->
+
+        <!-- concept -->
+        <section id="concept" class="concept">
+            <div class="inner">
+                <p class="com_title com_border">コンセプト</p>
+            
+                <div class="concept__items">
+                    <div class="concept__featured">
+                        <img id="img" src="./img/concept1.png" alt="選択画像">
+                    </div>
+                    <div id="thumb_img" class="concept__thumbnails">
+                        <img class="active" src="./img/concept1.png" alt="コンセプト1" onclick="ChangeImg('./img/concept1.png',this);">
+                        <img src="./img/concept2.png" alt="コンセプト2" onclick="ChangeImg('./img/concept2.png',this);">
+                        <img src="./img/concept3.png" alt="コンセプト3" onclick="ChangeImg('./img/concept3.png',this);">
+                    </div>
+                    <div class="concept__text">
+                        <p>
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                            <br>
+                            テキストテキストテキストテキスト<br>
+                            <br>
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキスト<br>
+                            <br>
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>  
+        </section>
+        <!-- end concept -->
+
+        <!-- parallax -->
+        <section id="parallax" class="parallax">
+        </section>
+        <!-- end parallax -->
+
+        <!-- voice -->
+        <section id="voice" class="voice">
+            <div class="inner">
+                <p class="com_title com_border">スタッフ</p>
+                <div class="voice__items">
+                    <div class="voice__items__left">
+                        <div class="voice__items__info">
+                            <img src="./img/mamabosyu1.png" alt="事例1">
+                            <p>
+                                年代：30代<br>
+                                子供：1人<br>
+                                前職・社歴：営業事務 4年
+                            </p>
+                        </div>
+                        <p class="voice__items__text">
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキスト<br>
+                        </p>
+                    </div>
+                    <div class="voice__items__right">
+                        <div class="voice__items__info">
+                            <img src="./img/mamabosyu2.png" alt="事例2">
+                            <p>
+                                年代：30代<br>
+                                子供：0人<br>
+                                前職・社歴：営業事務 6年
+                            </p>
+                        </div>
+                        <p class="voice__items__text">
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキスト<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end voice -->
+
+        <!-- company -->
+        <section id="company" class="company">
+            <div class="inner">
+                <p class="com_title com_border">会社概要</p>
+                <div class="company__items">
+                    <table class="no-outer-border" style="border-collapse: collapse" >
+                        <tr>
+                            <td class="justify">商号</td>
+                            <td>Company 株式会社</td>
+                        </tr>
+                        <tr>
+                            <td class="justify isTop">所在地</td>
+                            <td>
+                                東京Office<br>
+                                〒123-4567 東京都XXXXXXXX 1-2-3<br>
+                                XXXXXXXXタワー10F<br>
+                                <br>
+                                大阪Office<br>
+                                〒123-4567 大阪府XXXXXXXX 1-2-3<br>
+                                XXXXXXXXタワー20F<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="justify">創業</td>
+                            <td>2000年10月</td>
+                        </tr>
+                        <tr>
+                            <td class="justify isTop">事業内容</td>
+                            <td>
+                                インターネットに関する総合コンサルティング業務<br>
+                                ホームページの企画立案、制作に関する業務<br>
+                                ホームページの企画制作並びに運営管理<br>
+                                ウェブサイトの企画、設計、開発、運営及び販売<br>
+                                インターネットのコンテンツの企画・制作・運営<br>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="company__items__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13143.841903562878!2d139.752336792905!3d35.68385326404378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1593355482971!5m2!1sja!2sjp" width="470" height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end company -->
+
+        <!-- contact -->
+        <section id="contact" class="contact">
+            <div class="inner">
+                <p class="com_title com_border">お問い合わせ</p>
+                
+                <div class="contact__item">
+                    <p class="contact__item__label">お名前</p>
+                    <span class="contact__item__required">必須</span>
+                    <div>
+                        <input type="text" class="contact__item__input">
+                    </div>
+                </div>
+                
+                <div class="contact__item bg_gray">
+                    <p class="contact__item__label">フリガナ</p>
+                    <span class="contact__item__required">必須</span>
+                    <div>
+                        <input type="text" class="contact__item__input">
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <p class="contact__item__label">電話番号</p>
+                    <span class="contact__item__required">必須</span>
+                    <div>
+                        <input type="text" class="contact__item__input">
+                    </div>
+                </div>
+                <div class="contact__item bg_gray">
+                    <p class="contact__item__label">メールアドレス</p>
+                    <span class="contact__item__required">必須</span>
+                    <div>
+                        <input type="text" class="contact__item__input mailWidth">
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <p class="contact__item__label">職務経験</p>
+                    <span class="contact__item__required">必須</span>
+                    <div class="contact__item__radioBtn">
+                        <div class="radioBtn_width">
+                            <input type="radio" name="q1" value="あり"><span> あり</span>
+                            <input type="radio" name="q1" value="なし"><span> なし</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__item bg_gray">
+                    <p class="contact__item__label isTop">所有資格</p>
+                    <span class="contact__item__required isTop">必須</span>
+                    <div class="contact__item__checkBtn">
+                        <p>
+                            <input type="checkbox" name="q2" value="1"><span> Web Designer</span>
+                            <input type="checkbox" name="q2" value="2"><span> HTML Corder</span>
+                            <input type="checkbox" name="q2" value="3"><span> Programer</span>
+                            <input type="checkbox" name="q2" value="3"><span> Video Producer</span>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="q2" value="1"><span> Web Designer</span>
+                            <input type="checkbox" name="q2" value="2"><span> HTML Corder</span>
+                            <input type="checkbox" name="q2" value="3"><span> Programer</span>
+                            <input type="checkbox" name="q2" value="3"><span> Video Producer</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <p class="contact__item__label isTop">自己アピール</p>
+                    <span class="contact__item__required isTop">必須</span>
+                    <div>
+                        <textarea class="contact__item__textarea"></textarea>
+                    </div>
+                </div>
+                <input type="submit" class="contact__btn" value="送信する">
+            </div>
+        </section>
+        <!-- end contact -->
+
+        <!-- start top arrow -->
+        <div id="page_top" class="arrow"><a href="#"></a></div>
+        <!-- end top arrow -->
+
+    </main>
+    
+    <!-- start footer -->
+    <footer id="footer" class="footer">
+        <div class="inner">
+            <p>copyright(c) Company All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+</body>
+</html>

@@ -17,7 +17,7 @@ html {
 }
 
 /*------------------------------------------*
-* body　
+* body
 *------------------------------------------*/
 body {
   font-family: 'Lato', 'Noto Sans JP', sans-serif;
@@ -30,6 +30,12 @@ body {
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
 }
 
 /*------------------------------------------*
@@ -68,18 +74,33 @@ body {
   z-index: 999;
 }
 
+@media (max-width: 768px) {
+  .global-nav {
+    padding-top: 20px;
+  }
+}
+
 .global-nav__logo_sns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   height: 50px;
-  margin-bottom: 78px;
 }
 
 .global-nav__logo {
   position: absolute;
   left: 0;
+}
+
+@media (max-width: 768px) {
+  .global-nav__logo h2 {
+    font-size: 2rem;
+  }
+}
+
+.global-nav__logo a {
+  text-decoration: none;
 }
 
 .global-nav__logo span {
@@ -94,6 +115,12 @@ body {
 
 .global-nav__sns .fa-instagram, .global-nav__sns .fa-twitter {
   margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .global-nav__sns {
+    display: none;
+  }
 }
 
 #global-nav-wrapper {
@@ -223,8 +250,14 @@ body {
   border-color: #0066CC;
 }
 
+@media (max-width: 768px) {
+  .message__head__border::after {
+    font-size: 1.5rem;
+  }
+}
+
 .message__head__border::after {
-  content: "web制作をお考え中の方へ";
+  content: "Web制作をお考え中の方へ";
 }
 
 .message__catchphrase {
@@ -235,10 +268,25 @@ body {
   margin-bottom: 2.6rem;
 }
 
+@media (max-width: 768px) {
+  .message__catchphrase {
+    font-size: 5rem;
+  }
+}
+
 .message__text {
   font-size: 2rem;
   text-align: center;
   color: #333333;
+}
+
+@media (max-width: 768px) {
+  .message__text {
+    width: 330px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
 }
 
 /*------------------------------------------*
@@ -252,6 +300,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .about__block {
+    display: block;
+  }
 }
 
 .about__head {
@@ -282,6 +336,12 @@ body {
   border-color: #0066CC;
 }
 
+@media (max-width: 768px) {
+  .about__head__border::after {
+    font-size: 1.5rem;
+  }
+}
+
 .about__head__border::after {
   content: "自己紹介";
 }
@@ -290,6 +350,13 @@ body {
   width: 65%;
   color: #333333;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about__info {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .about__info__title {
@@ -316,6 +383,12 @@ body {
   margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  .about__info__icon {
+    margin: 0 auto;
+  }
+}
+
 .about__info__icon i {
   font-size: 5rem;
   color: white;
@@ -335,6 +408,12 @@ body {
 
 .about__image {
   width: 35%;
+}
+
+@media (max-width: 768px) {
+  .about__image {
+    margin: 0 auto;
+  }
 }
 
 .about__image img {
@@ -376,6 +455,12 @@ body {
   border-color: #0066CC;
 }
 
+@media (max-width: 768px) {
+  .service__head__border::after {
+    font-size: 1.5rem;
+  }
+}
+
 .service__head__border::after {
   content: "提供サービス";
 }
@@ -388,6 +473,12 @@ body {
       flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .service__items {
+    display: block;
+  }
+}
+
 .service__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,11 +487,24 @@ body {
   margin-bottom: 80px;
 }
 
+@media (max-width: 768px) {
+  .service__item {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .service__item__icon {
   width: 180px;
   height: 180px;
   text-align: center;
   margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .service__item__icon {
+    margin: 0 auto;
+  }
 }
 
 .service__item__icon i {
@@ -423,10 +527,24 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media (max-width: 768px) {
+  .service__item__describe {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
 .service__item__describe__title {
   font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .service__item__describe__title {
+    text-align: center;
+  }
 }
 
 .service__item__describe__text {
@@ -464,6 +582,12 @@ body {
   border-color: #0066CC;
 }
 
+@media (max-width: 768px) {
+  .works__head__border::after {
+    font-size: 1.5rem;
+  }
+}
+
 .works__head__border::after {
   content: "制作実績";
 }
@@ -480,12 +604,25 @@ body {
   margin-bottom: 60px;
 }
 
+@media (max-width: 768px) {
+  .works__items {
+    display: block;
+  }
+}
+
 .works__items__item {
   width: 48%;
   margin-right: 0px;
   margin-bottom: 40px;
   overflow: hidden;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .works__items__item {
+    width: 80%;
+    margin: 40px auto;
+  }
 }
 
 .works__items__item__caption {
@@ -498,6 +635,12 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .works__items__item__caption {
+    font-size: 1.6rem;
+  }
 }
 
 .works__items__item__mask {
@@ -528,6 +671,19 @@ body {
   color: #333333;
 }
 
+@media (max-width: 768px) {
+  .contact {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact form {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 .contact__head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,6 +712,12 @@ body {
   border-color: #0066CC;
 }
 
+@media (max-width: 768px) {
+  .contact__head__border::after {
+    font-size: 1.5rem;
+  }
+}
+
 .contact__head__border::after {
   content: "お問い合わせ";
 }
@@ -573,6 +735,12 @@ body {
   width: 50%;
 }
 
+@media (max-width: 768px) {
+  .contact__input input {
+    width: 70%;
+  }
+}
+
 .contact__textarea {
   margin-bottom: 60px;
 }
@@ -581,6 +749,12 @@ body {
   border-radius: 4px;
   width: 50%;
   height: 240px;
+}
+
+@media (max-width: 768px) {
+  .contact__textarea textarea {
+    width: 70%;
+  }
 }
 
 .contact__submit {
@@ -621,7 +795,13 @@ body {
 
 .footer__copyright {
   color: white;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 60px;
+}
+
+@media (max-width: 768px) {
+  .footer__copyright {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
