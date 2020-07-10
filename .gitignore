@@ -68,3 +68,7 @@ flower/img
 #wp30daysのimgはgit管理しない
 wp30days/img
 wp30days/css/style.css.map
+
+#titan
+titan/assets
+titan/php
